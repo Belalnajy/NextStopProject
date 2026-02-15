@@ -13,7 +13,6 @@
   ],
   "rewrites": [
     { "source": "/api/(.*)", "destination": "backend/src/index.ts" },
-    { "source": "/(.*)", "destination": "frontend/$1", "continue": true },
     { "source": "/(.*)", "destination": "frontend/index.html" }
   ]
 }

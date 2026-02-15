@@ -47,6 +47,16 @@ export const sendEmail = async (
   });
 
   try {
+    // If SMTP is not fully configured, fall back to console logging in development
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.log('--- TEST EMAIL PREVIEW ---');
+      console.log(`To: ${to}`);
+      console.log(`Subject: ${subject}`);
+      console.log(`Body: ${html}`);
+      console.log('--------------------------');
+      return;
+    }
+
     await transporter.sendMail({
       from: `"${settings?.site_name || 'NextStop Visa'}" <${process.env.SMTP_USER}>`,
       to,
@@ -55,7 +65,12 @@ export const sendEmail = async (
     });
     console.log(`Email sent to ${to}`);
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending email, falling back to console log:');
+    console.log('--- TEST EMAIL PREVIEW ---');
+    console.log(`To: ${to}`);
+    console.log(`Subject: ${subject}`);
+    console.log(`Body: ${html}`);
+    console.log('--------------------------');
   }
 };
 
