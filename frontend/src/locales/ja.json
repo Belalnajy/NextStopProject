@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "当サイトについて",
+    "apply": "今すぐ申請",
+    "contact": "お問い合わせ",
+    "eligibility": "資格を確認する"
+  },
+  "hero": {
+    "badge": "英国公式ETAサービス",
+    "title1": "あなたの",
+    "title2": "連合王国への玄関口",
+    "subtitle": "電子的渡航認可（ETA）を迅速かつ安全に取得。英国訪問者の標準的な要件です。",
+    "cta_apply": "今すぐ申請",
+    "cta_check": "資格を確認する"
+  },
+  "info": {
+    "title": "英国ETAとは？",
+    "subtitle": "電子渡航認可（ETA）は、英国入国にビザを必要としない方を対象とした新しい要件です。パスポートと電子的に紐付けられます。",
+    "card1_title": "迅速な審査",
+    "card1_desc": "ほとんどの申請は3営業日以内に処理されます。",
+    "card2_title": "2年間の有効期間",
+    "card2_desc": "2年間の有効期間内であれば、何度でも渡航可能です。",
+    "card3_title": "完全デジタル化",
+    "card3_desc": "大使館への訪問や物理的な書類の提出は不要です。"
+  },
+  "how_to_apply": {
+    "title": "申請方法",
+    "step1_title": "フォーム入力",
+    "step1_desc": "簡単なオンライン申請フォームに詳細を入力してください。",
+    "step2_title": "確認と支払い",
+    "step2_desc": "手数料を安全に支払い、情報を確認してください。",
+    "step3_title": "ETAの受け取り",
+    "step3_desc": "承認されたETAをメールで直接受け取ります。"
+  },
+  "form": {
+    "common": {
+      "nextStep": "次へ",
+      "back": "戻る",
+      "yes": "はい",
+      "no": "いいえ",
+      "upload": "ファイルを選択",
+      "example": "例",
+      "guidelines": "ガイドライン",
+      "step": "ステップ",
+      "englishRequirement": "すべての項目を英語で入力してください",
+      "proceedToPayment": "支払いへ進む"
+    },
+    "step1": {
+      "title": "渡航情報",
+      "subtitle": "渡航およびパスポートの詳細を入力してください",
+      "labels": {
+        "nationality": "現在の国籍",
+        "otherNationalities": "他の国籍をお持ちですか？",
+        "arrivalDate": "英国到着予定日",
+        "passportNumber": "パスポート番号",
+        "passportCopy": "パスポートのコピー"
+      },
+      "subtexts": {
+        "otherNationalities": "過去に持っていた国籍も含めてください。",
+        "passportCopy": "写真は加工せず、鮮明で、反射がなく、4つの角がすべて写っている必要があります。"
+      },
+      "placeholders": {
+        "nationality": "国を選択...",
+        "passportNumber": "パスポート番号を入力"
+      }
+    },
+    "step2": {
+      "title": "個人詳細",
+      "subtitle": "個人情報を入力してください",
+      "labels": {
+        "fullName": "氏名（フルネーム）",
+        "dob": "生年月日",
+        "phone": "電話番号",
+        "email": "メールアドレス",
+        "photo": "顔写真"
+      },
+      "subtexts": {
+        "email": "ETAの結果を受け取るメールアドレス",
+        "photo": "写真は加工せず、最近撮影されたもので、背景は無地の明るい色である必要があります。"
+      },
+      "placeholders": {
+        "fullName": "フルネームを入力",
+        "phone": "000 000 0000",
+        "email": "example@email.com"
+      },
+      "photoGuidelines": {
+        "title": "写真のガイドライン",
+        "item1": "背景は無地の明るい色",
+        "item2": "被り物なし（宗教的・医学的理由を除く）",
+        "item3": "無表情で、目がはっきりと見えること",
+        "item4": "適切な照明で、影がないこと"
+      },
+      "phone_codes": {
+        "search": "国を選択..."
+      }
+    },
+    "step3": {
+      "title": "住所",
+      "subtitle": "現住所の詳細を入力してください",
+      "labels": {
+        "street": "町名・番地",
+        "building": "建物名・部屋番号",
+        "apartment": "アパート・部屋番号（任意）",
+        "area": "市区町村",
+        "postalCode": "郵便番号",
+        "additional": "追加情報（任意）",
+        "city": "市区町村",
+        "country": "国"
+      },
+      "placeholders": {
+        "street": "町名・番地を入力",
+        "building": "建物名を入力",
+        "apartment": "部屋番号を入力",
+        "area": "市区町村を入力",
+        "postalCode": "郵便番号を入力",
+        "additional": "例：スーパーの近く",
+        "city": "都市を入力",
+        "country": "国を選択..."
+      }
+    },
+    "step4": {
+      "title": "追加情報",
+      "subtitle": "職業および経歴について",
+      "labels": {
+        "employmentStatus": "雇用形態",
+        "jobTitle": "職種・役職",
+        "criminalConvictions": "犯罪歴はありますか？",
+        "terrorismQuestion": "以下のいずれかに関与、または疑いを持たれたことはありますか？",
+        "checklist": {
+          "item1": "戦争犯罪、大量虐殺、人道に対する罪",
+          "item2": "テロ活動（テロ組織への支援や所属を含む）",
+          "item3": "過激派組織への支援",
+          "item4": "過激な見解の表明"
+        }
+      },
+      "placeholders": {
+        "jobTitle": "職種を入力",
+        "details": "詳細を入力してください"
+      },
+      "options": {
+        "employed": "会社員・公務員",
+        "selfEmployed": "自営業",
+        "student": "学生",
+        "unemployed": "無職",
+        "retired": "定年退職"
+      }
+    },
+    "step5": {
+      "title": "宣誓事項",
+      "subtitle": "以下の事項を確認してください",
+      "declarations": {
+        "confirmInfo": {
+          "title": "情報の確認",
+          "text": "この申請を送信することにより、提供された情報が本人の知る限り正確であることを確認したものとみなされます。",
+          "warning": "虚偽の情報を申告した場合：申請が却下される、起訴される、または英国への入国が禁止される可能性があります。代理で申請する場合は、申請内容が完全かつ正確であることを本人に確認する必要があります。"
+        },
+        "acceptTerms": {
+          "title": "利用規約",
+          "text": "利用規約およびプライバシーポリシーを読み、理解しました。料金には政府手数料（16ポンド）および代行・事務手数料（81ポンド）が含まれています。"
+        },
+        "confirmProcessingTime": {
+          "title": "審査期間",
+          "text": "審査には最大3営業日かかる場合があることを理解し、英国到着日が今日から3営業日以降であることを確認します。"
+        }
+      }
+    },
+    "step6": {
+      "title": "お支払い",
+      "subtitle": "申請料金の支払いを完了してください",
+      "labels": {
+        "summary": {
+          "title": "申請内容の要約",
+          "applicant": "申請者"
+        },
+        "pricing": {
+          "title": "事務手数料",
+          "govFee": "政府手数料",
+          "serviceFee": "代行・事務手数料",
+          "total": "合計金額"
+        },
+        "card": {
+          "title": "カード詳細",
+          "holder": "カード名義人",
+          "number": "カード番号",
+          "expiry": "有効期限",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "カードの表記通り"
+      },
+      "subtexts": {
+        "securePayment": "256ビットSSL暗号化による安全な支払い",
+        "recaptcha": {
+          "text": "このサイトはreCAPTCHAによって保護されており、Googleの",
+          "and": "および",
+          "apply": "が適用されます。"
+        }
+      },
+      "status": {
+        "processing": "支払いを処理中..."
+      }
+    },
+    "step7": {
+      "title": "申請が送信されました！",
+      "subtitle": "申請ありがとうございます。指定されたアドレスに確認メールを送信しました。ETAの審査結果は通常3営業日以内に通知されます。",
+      "labels": {
+        "reference": "申請リファレンス",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "今後の流れ",
+          "step1": "メールで確認通知をチェック",
+          "step2": "3営業日以内に申請内容を審査します",
+          "step3": "承認されたETAをメールで受け取ります"
+        },
+        "returnHome": "ホームに戻る"
+      },
+      "status": {
+        "copied": "クリップボードにコピーしました！"
+      }
+    },
+    "countries": {
+      "Egypt": "エジプト",
+      "SaudiArabia": "サウジアラビア",
+      "UAE": "アラブ首長国連邦",
+      "Qatar": "カタール",
+      "Kuwait": "クウェート",
+      "Bahrain": "バーレーン",
+      "Oman": "オマーン",
+      "Jordan": "ヨルダン",
+      "Lebanon": "レバノン",
+      "USA/Canada": "アメリカ/カナダ",
+      "UK": "イギリス",
+      "Germany": "ドイツ",
+      "France": "フランス",
+      "Italy": "イタリア",
+      "Spain": "スペイン",
+      "Netherlands": "オランダ",
+      "India": "インド",
+      "Pakistan": "パキスタン",
+      "China": "中国",
+      "Japan": "日本",
+      "SouthKorea": "韓国",
+      "Australia": "オーストラリア",
+      "Brazil": "ブラジル",
+      "Mexico": "メキシコ",
+      "SouthAfrica": "南アフリカ",
+      "Nigeria": "ナイジェリア"
+    }
+  },
+  "footer": {
+    "brand_desc": "英国へのスムーズなデジタル渡航認可サービスを通じて、世界の旅行者をサポートします。",
+    "quick_links": "クイックリンク",
+    "legal": "法務・サポート",
+    "legal_links": {
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー"
+    },
+    "contact": "お問い合わせ",
+    "disclaimer": "免責事項：当サイトは民間の情報ガイドです。英国政府とは一切関係ありません。"
+  }
+}

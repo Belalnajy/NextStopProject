@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "apply": "지금 신청",
+    "contact": "문의",
+    "eligibility": "자격 확인"
+  },
+  "hero": {
+    "badge": "공식 영구 ETA 서비스",
+    "title1": "당신의",
+    "title2": "영국 방문을 위한 관문",
+    "subtitle": "전자여행허가(ETA)를 빠르고 안전하게 받으세요. 영국 방문객을 위한 표준 요건입니다.",
+    "cta_apply": "지금 신청",
+    "cta_check": "자격 확인"
+  },
+  "info": {
+    "title": "영국 ETA란 무엇인가요?",
+    "subtitle": "전자여행허가(ETA)는 영국 방문 시 비자가 필요 없는 분들을 위한 새로운 요건입니다. 귀하의 여권과 전자적으로 연결됩니다.",
+    "card1_title": "빠른 처리",
+    "card1_desc": "대부분의 신청은 영업일 기준 3일 이내에 처리됩니다.",
+    "card2_title": "2년 유효 기간",
+    "card2_desc": "2년 동안 여러 번의 여행에 대해 유효합니다.",
+    "card3_title": "완전 디지털",
+    "card3_desc": "대사관 방문이나 물리적 서류 제출이 필요 없습니다."
+  },
+  "how_to_apply": {
+    "title": "신청 방법",
+    "step1_title": "양식 작성",
+    "step1_desc": "간단한 온라인 신청 양식에 세부 정보를 입력하세요.",
+    "step2_title": "검토 및 결제",
+    "step2_desc": "처리 수수료를 안전하게 결제하고 정보를 검토하세요.",
+    "step3_title": "ETA 수령",
+    "step3_desc": "이메일로 직접 승인된 ETA를 받으세요."
+  },
+  "form": {
+    "common": {
+      "nextStep": "다음 단계",
+      "back": "뒤로",
+      "yes": "예",
+      "no": "아니요",
+      "upload": "파일 선택",
+      "example": "예시",
+      "guidelines": "가이드라인",
+      "step": "단계",
+      "englishRequirement": "모든 항목은 영문으로 작성해야 합니다",
+      "proceedToPayment": "결제 진행"
+    },
+    "step1": {
+      "title": "여행 정보",
+      "subtitle": "여행 및 여권 상세 정보를 입력하세요",
+      "labels": {
+        "nationality": "현재 국적",
+        "otherNationalities": "다른 국적을 소지하고 계신가요?",
+        "arrivalDate": "영국 도착 예정일",
+        "passportNumber": "여권 번호",
+        "passportCopy": "여권 사본"
+      },
+      "subtexts": {
+        "otherNationalities": "과거에 소지했던 모든 국적을 포함하십시오.",
+        "passportCopy": "사진은 수정되지 않고 선명해야 하며, 번짐이 없고 4개의 모서리가 모두 보여야 합니다."
+      },
+      "placeholders": {
+        "nationality": "국가 검색...",
+        "passportNumber": "여권 번호 입력"
+      }
+    },
+    "step2": {
+      "title": "개인 정보",
+      "subtitle": "개인 정보를 입력하세요",
+      "labels": {
+        "fullName": "성명 (풀네임)",
+        "dob": "생년월일",
+        "phone": "전화번호",
+        "email": "이메일 주소",
+        "photo": "개인 사진"
+      },
+      "subtexts": {
+        "email": "ETA 결정 결과를 받을 이메일 주소",
+        "photo": "사진은 수정되지 않은 최근 촬영본이어야 하며, 배경은 무늬가 없는 밝은 색이어야 합니다."
+      },
+      "placeholders": {
+        "fullName": "성명 입력",
+        "phone": "000 000 0000",
+        "email": "example@email.com"
+      },
+      "photoGuidelines": {
+        "title": "사진 가이드라인",
+        "item1": "무늬 없는 밝은 색 배경",
+        "item2": "머리 덮개 금지 (종교적/의학적 이유 제외)",
+        "item3": "무표정, 눈이 보여야 함",
+        "item4": "그림자 없는 밝은 조명"
+      },
+      "phone_codes": {
+        "search": "국가 검색..."
+      }
+    },
+    "step3": {
+      "title": "주소",
+      "subtitle": "거주지 주소 상세 정보를 입력하세요",
+      "labels": {
+        "street": "거리 이름",
+        "building": "건물 번호/이름",
+        "apartment": "아파트/호수 (선택 사항)",
+        "area": "지역/구",
+        "postalCode": "우편번호",
+        "additional": "추가 정보 (선택 사항)",
+        "city": "도시",
+        "country": "국가"
+      },
+      "placeholders": {
+        "street": "거리 이름 입력",
+        "building": "건물 번호 입력",
+        "apartment": "호수 입력",
+        "area": "지역 입력",
+        "postalCode": "우편번호 입력",
+        "additional": "예: 슈퍼마켓 근처",
+        "city": "도시 입력",
+        "country": "국가 검색..."
+      }
+    },
+    "step4": {
+      "title": "추가 정보",
+      "subtitle": "고용 및 이력 배경",
+      "labels": {
+        "employmentStatus": "고용 상태",
+        "jobTitle": "직함",
+        "criminalConvictions": "범죄 경력이 있습니까?",
+        "terrorismQuestion": "다음 중 하나에 연루되었거나 연루된 혐의를 받은 적이 있습니까?",
+        "checklist": {
+          "item1": "전쟁 범죄, 집단 학살 또는 인도에 반한 죄",
+          "item2": "테러 단체 지원 또는 가입을 포함한 테러 행위",
+          "item3": "극단주의 단체 지원",
+          "item4": "극단주의 견해 표명"
+        }
+      },
+      "placeholders": {
+        "jobTitle": "직함 입력",
+        "details": "상세 정보를 제공해 주십시오"
+      },
+      "options": {
+        "employed": "직장인",
+        "selfEmployed": "자영업",
+        "student": "학생",
+        "unemployed": "무직",
+        "retired": "퇴직"
+      }
+    },
+    "step5": {
+      "title": "선서",
+      "subtitle": "다음 사항을 확인해 주십시오",
+      "declarations": {
+        "confirmInfo": {
+          "title": "정보 확인",
+          "text": "이 신청서를 제출함으로써 귀하는 본인이 아는 한 제공된 정보가 정확함을 확인합니다.",
+          "warning": "허위 정보를 제공한 경우: 신청이 거부될 수 있으며, 기소될 수 있고, 영국 입국이 금지될 수 있습니다. 다른 사람을 대신하여 신청하는 경우 해당 인물과 신청 내용이 완전하고 정확함을 확인해야 합니다."
+        },
+        "acceptTerms": {
+          "title": "이용 약관",
+          "text": "이용 약관 및 개인정보 처리방침을 읽고 이해했습니다. 가격에는 정부 수수료(£16)와 처리 수수료(£81)가 포함되어 있습니다."
+        },
+        "confirmProcessingTime": {
+          "title": "처리 시간",
+          "text": "처리에 영업일 기준 최대 3일이 소요될 수 있음을 이해하며, 영국 도착일이 오늘로부터 영업일 기준 최소 3일 이후임을 확인합니다."
+        }
+      }
+    },
+    "step6": {
+      "title": "결제",
+      "subtitle": "신청 결제를 완료해 주십시오",
+      "labels": {
+        "summary": {
+          "title": "신청 요약",
+          "applicant": "신청인"
+        },
+        "pricing": {
+          "title": "처리 수수료",
+          "govFee": "정부 수수료",
+          "serviceFee": "서비스 및 처리 수수료",
+          "total": "총 금액"
+        },
+        "card": {
+          "title": "카드 상세 정보",
+          "holder": "카드 소유자 성명",
+          "number": "카드 번호",
+          "expiry": "만료일",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "카드에 기재된 이름"
+      },
+      "subtexts": {
+        "securePayment": "보안 256비트 SSL 암호화 결제",
+        "recaptcha": {
+          "text": "이 사이트는 reCAPTCHA로 보호되며 Google의",
+          "and": "및",
+          "apply": "이 적용됩니다."
+        }
+      },
+      "status": {
+        "processing": "결제 처리 중..."
+      }
+    },
+    "step7": {
+      "title": "신청서가 제출되었습니다!",
+      "subtitle": "신청해 주셔서 감사합니다. 기재하신 주소로 확인 이메일을 발송했습니다. ETA 결정은 보통 영업일 기준 3일 이내에 처리됩니다.",
+      "labels": {
+        "reference": "신청 참조 번호",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "다음 단계는?",
+          "step1": "확인 이메일을 체크하세요",
+          "step2": "영업일 기준 3일 이내에 신청서를 검토합니다",
+          "step3": "이메일로 승인된 ETA를 수령하세요"
+        },
+        "returnHome": "홈으로 돌아가기"
+      },
+      "status": {
+        "copied": "클립보드에 복사되었습니다!"
+      }
+    },
+    "countries": {
+      "Egypt": "이집트",
+      "SaudiArabia": "사우디아라비아",
+      "UAE": "아랍에미리트",
+      "Qatar": "카타르",
+      "Kuwait": "쿠웨이트",
+      "Bahrain": "바레인",
+      "Oman": "오만",
+      "Jordan": "요르단",
+      "Lebanon": "레바논",
+      "USA/Canada": "미국/캐나다",
+      "UK": "영국",
+      "Germany": "독일",
+      "France": "프랑스",
+      "Italy": "이탈리아",
+      "Spain": "스페인",
+      "Netherlands": "네덜란드",
+      "India": "인도",
+      "Pakistan": "파키스탄",
+      "China": "중국",
+      "Japan": "일본",
+      "SouthKorea": "대한민국",
+      "Australia": "호주",
+      "Brazil": "브라질",
+      "Mexico": "멕시코",
+      "SouthAfrica": "남아프리카 공화국",
+      "Nigeria": "나이지리아"
+    }
+  },
+  "footer": {
+    "brand_desc": "영국을 방문하는 전 세계 여행자들을 위해 원활한 디지털 허가 서비스를 제공합니다.",
+    "quick_links": "빠른 링크",
+    "legal": "법적 고지 및 지원",
+    "legal_links": {
+      "terms": "이용 약관",
+      "privacy": "개인정보 처리방침"
+    },
+    "contact": "문의하기",
+    "disclaimer": "면책 조항: 이 웹사이트는 민간 정보 가이드입니다. 영국 정부와 관련이 없습니다."
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "apply": "Apply Now",
+    "contact": "Contact",
+    "eligibility": "Check Eligibility"
+  },
+  "hero": {
+    "badge": "Official UK ETA Service",
+    "title1": "Your Gateway to the",
+    "title2": "United Kingdom",
+    "subtitle": "Get your Electronic Travel Authorization quickly and securely. The standard requirement for visitors to the UK.",
+    "cta_apply": "Apply Now",
+    "cta_check": "Check Eligibility"
+  },
+  "info": {
+    "title": "What is UK ETA?",
+    "subtitle": "The Electronic Travel Authorization (ETA) is a new requirement for people who do not need a visa to come to the UK. It is electronically linked to your passport.",
+    "card1_title": "Fast Processing",
+    "card1_desc": "Most applications are processed within 3 business days.",
+    "card2_title": "2 Year Validity",
+    "card2_desc": "Valid for multiple trips over a 2-year period.",
+    "card3_title": "Fully Digital",
+    "card3_desc": "No need to visit an embassy or provide physical documents."
+  },
+  "how_to_apply": {
+    "title": "How to Apply",
+    "step1_title": "Fill Form",
+    "step1_desc": "Complete our simple online application form with your details.",
+    "step2_title": "Review & Pay",
+    "step2_desc": "Securely pay the processing fee and review your information.",
+    "step3_title": "Receive ETA",
+    "step3_desc": "Get your approved ETA sent directly to your email."
+  },
+  "form": {
+    "common": {
+      "nextStep": "Next Step",
+      "back": "Back",
+      "yes": "Yes",
+      "no": "No",
+      "upload": "Choose File",
+      "chooseFile": "Choose File",
+      "example": "Example",
+      "guidelines": "Guidelines",
+      "step": "Step",
+      "clickToEnlarge": "Click to enlarge",
+      "ifApplicable": "If applicable",
+      "optional": "Optional",
+      "englishRequirement": "All fields must be completed in English",
+      "proceedToPayment": "Proceed to Payment"
+    },
+    "step1": {
+      "title": "Travel Information",
+      "subtitle": "Enter your travel and passport details",
+      "labels": {
+        "nationality": "Current Nationality",
+        "otherNationalities": "Do you have other nationalities?",
+        "arrivalDate": "Arrival Date in the UK",
+        "passportNumber": "Passport Number",
+        "passportCopy": "Passport Copy"
+      },
+      "subtexts": {
+        "otherNationalities": "Include any nationalities you have had in the past.",
+        "passportCopy": "The photo must be unaltered, clear, without glare, and show all 4 corners.",
+        "passportGuideline": "The photo must be unaltered, clear, without glare, and show all 4 corners.",
+        "uploadFormats": "Accepted formats: JPG, PNG, PDF (Max 10MB)"
+      },
+      "placeholders": {
+        "nationality": "Search countries...",
+        "passportNumber": "Enter passport number"
+      }
+    },
+    "step2": {
+      "title": "Personal Details",
+      "subtitle": "Enter your personal information",
+      "labels": {
+        "fullName": "Full Name",
+        "dob": "Date of Birth",
+        "phone": "Phone Number",
+        "email": "Email Address",
+        "photo": "Personal Photo",
+        "personalPhoto": "Personal Photo",
+        "guidelines": "Photo Guidelines"
+      },
+      "subtexts": {
+        "email": "The email address where you want to receive your ETA decision",
+        "photo": "The photo must be unaltered, recently taken, with a plain light background.",
+        "photoGuideline": "The photo must be unaltered, recently taken, with a plain light background."
+      },
+      "placeholders": {
+        "fullName": "Enter your full name",
+        "phone": "000 000 0000",
+        "email": "example@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Photo Guidelines",
+        "item1": "Plain light-colored background",
+        "item2": "No head coverings (unless religious/medical)",
+        "item3": "Neutral expression, eyes visible",
+        "item4": "Good lighting, no shadows"
+      },
+      "phone_codes": {
+        "search": "Search countries..."
+      }
+    },
+    "step3": {
+      "title": "Address",
+      "subtitle": "Provide your home address details",
+      "labels": {
+        "street": "Street Name",
+        "building": "Building Number/Name",
+        "apartment": "Apartment/Unit (Optional)",
+        "area": "Area/District",
+        "postalCode": "Postal Code",
+        "additional": "Additional Info (Optional)",
+        "city": "Town/City",
+        "country": "Country",
+        "additionalInfo": "Additional Information"
+      },
+      "placeholders": {
+        "street": "Enter street name",
+        "building": "Enter building number",
+        "apartment": "Enter apartment number",
+        "area": "Enter area",
+        "postalCode": "Enter postal code",
+        "additional": "e.g. Near supermarket",
+        "additionalInfo": "e.g. Near supermarket",
+        "city": "Enter city",
+        "country": "Search countries..."
+      }
+    },
+    "step4": {
+      "title": "Additional",
+      "subtitle": "Employment and history context",
+      "labels": {
+        "employmentStatus": "Employment Status",
+        "jobTitle": "Job Title",
+        "criminalConvictions": "Any criminal convictions?",
+        "terrorismQuestion": "Have you ever been involved in, or suspected of, any of the following?",
+        "hasJob": "Are you currently employed?",
+        "hasCriminalRecord": "Do you have any criminal convictions?",
+        "checklist": {
+          "item1": "War crimes, genocide or crimes against humanity",
+          "item2": "Terrorism including support for, or membership of, terrorist groups",
+          "item3": "Supporting extremist groups",
+          "item4": "Expressing extremist views"
+        }
+      },
+      "subtexts": {
+        "criminalGuideline": "Include any convictions, even if they occurred many years ago or in another country."
+      },
+      "placeholders": {
+        "jobTitle": "Enter your job title",
+        "details": "Please provide details"
+      },
+      "options": {
+        "employed": "Employed",
+        "selfEmployed": "Self-Employed",
+        "student": "Student",
+        "unemployed": "Unemployed",
+        "retired": "Retired"
+      }
+    },
+    "step5": {
+      "title": "Declarations",
+      "subtitle": "Please confirm the following statements",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Information Confirmation",
+          "text": "By sending this application, you confirm that, to the best of your knowledge, the information you have given is correct.",
+          "warning": "If you have given any false information: your application can be refused, you may be prosecuted, you may be banned from the UK. If you are applying on behalf of someone else you must have confirmed with them that the application is complete and correct."
+        },
+        "acceptTerms": {
+          "title": "Terms and Conditions",
+          "text": "I have read and understood the Terms and Conditions and the Privacy Policy. The price includes government fee (£16) and processing fee (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Processing Time",
+          "text": "I understand that processing may take UP TO 3 BUSINESS DAYS and confirm that my arrival date in the UK will not be earlier than 3 BUSINESS DAYS FROM TODAY."
+        }
+      }
+    },
+    "step6": {
+      "title": "Payment",
+      "subtitle": "Complete your application payment",
+      "labels": {
+        "summary": {
+          "title": "Application Summary",
+          "applicant": "Applicant"
+        },
+        "pricing": {
+          "title": "Processing Fee",
+          "govFee": "Government Fee",
+          "serviceFee": "Service & Processing Fee",
+          "total": "Total Amount"
+        },
+        "card": {
+          "title": "Card Details",
+          "holder": "Cardholder Name",
+          "number": "Card Number",
+          "expiry": "Expiry Date",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Name on card"
+      },
+      "subtexts": {
+        "securePayment": "Secure 256-bit SSL Encrypted Payment",
+        "recaptcha": {
+          "text": "This site is protected by reCAPTCHA and the Google",
+          "and": "and",
+          "apply": "apply."
+        }
+      },
+      "status": {
+        "processing": "Processing Payment..."
+      }
+    },
+    "step7": {
+      "title": "Application Submitted!",
+      "subtitle": "Thank you for your application. We have sent a confirmation email to your provided address. Your ETA decision is usually processed within 3 business days.",
+      "labels": {
+        "reference": "Application Reference",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "What happens next?",
+          "step1": "Check your email for confirmation",
+          "step2": "We'll review your application within 3 business days",
+          "step3": "Receive your approved ETA via email"
+        },
+        "returnHome": "Return to Home"
+      },
+      "status": {
+        "copied": "Copied to clipboard!"
+      }
+    },
+    "countries": {
+      "Dutch": "Dutch",
+      "Belgian": "Belgian",
+      "Swiss": "Swiss",
+      "Austrian": "Austrian",
+      "Swedish": "Swedish",
+      "Norwegian": "Norwegian",
+      "Danish": "Danish",
+      "Finnish": "Finnish",
+      "Irish": "Irish",
+      "Portuguese": "Portuguese",
+      "Greek": "Greek",
+      "Polish": "Polish",
+      "Czech": "Czech",
+      "Hungarian": "Hungarian",
+      "Romanian": "Romanian",
+      "Bulgarian": "Bulgarian",
+      "Croatian": "Croatian",
+      "Serbian": "Serbian",
+      "Turkish": "Turkish",
+      "Russian": "Russian",
+      "Ukrainian": "Ukrainian",
+      "Chinese": "Chinese",
+      "Japanese": "Japanese",
+      "Korean": "Korean",
+      "Indian": "Indian",
+      "Pakistani": "Pakistani",
+      "Bangladeshi": "Bangladeshi",
+      "Malaysian": "Malaysian",
+      "Singaporean": "Singaporean",
+      "Indonesian": "Indonesian",
+      "Thai": "Thai",
+      "Vietnamese": "Vietnamese",
+      "Filipino": "Filipino",
+      "Brazilian": "Brazilian",
+      "Mexican": "Mexican",
+      "Argentine": "Argentine",
+      "Colombian": "Colombian",
+      "Chilean": "Chilean",
+      "Peruvian": "Peruvian",
+      "Venezuelan": "Venezuelan",
+      "South African": "South African",
+      "Nigerian": "Nigerian",
+      "Kenyan": "Kenyan",
+      "Ghanaian": "Ghanaian",
+      "Ethiopian": "Ethiopian",
+      "Other": "Other",
+      "Egypt": "Egypt",
+      "SaudiArabia": "Saudi Arabia",
+      "UAE": "UAE",
+      "Qatar": "Qatar",
+      "Kuwait": "Kuwait",
+      "Bahrain": "Bahrain",
+      "Oman": "Oman",
+      "Jordan": "Jordan",
+      "Lebanon": "Lebanon",
+      "USA/Canada": "USA / Canada",
+      "UK": "United Kingdom",
+      "Germany": "Germany",
+      "France": "France",
+      "Italy": "Italy",
+      "Spain": "Spain",
+      "Netherlands": "Netherlands",
+      "SouthAfrica": "South Africa",
+      "India": "India",
+      "Pakistan": "Pakistan",
+      "China": "China",
+      "Japan": "Japan",
+      "South Korea": "South Korea",
+      "Brazil": "Brazil",
+      "Mexico": "Mexico",
+      "Nigeria": "Nigeria"
+    }
+  },
+  "footer": {
+    "brand_desc": "Empowering global travelers with seamless digital authorization services for the United Kingdom.",
+    "quick_links": "Quick Links",
+    "legal": "Legal & Support",
+    "legal_links": {
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy"
+    },
+    "contact": "Contact Us",
+    "disclaimer": "Disclaimer: This website is a private informational guide. We are not affiliated with the UK Government."
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPassport": "Please enter a valid passport number",
+    "invalidDate": "Please enter a valid date",
+    "futureDateRequired": "Arrival date must be at least 3 business days from today",
+    "fileRequired": "This file is required",
+    "maxFileSize": "File size must be less than 10MB",
+    "invalidFormat": "Only JPG, PNG, and PDF formats are allowed"
+  },
+  "countries": {
+    "Dutch": "Dutch",
+    "Belgian": "Belgian",
+    "Swiss": "Swiss",
+    "Austrian": "Austrian",
+    "Swedish": "Swedish",
+    "Norwegian": "Norwegian",
+    "Danish": "Danish",
+    "Finnish": "Finnish",
+    "Irish": "Irish",
+    "Portuguese": "Portuguese",
+    "Greek": "Greek",
+    "Polish": "Polish",
+    "Czech": "Czech",
+    "Hungarian": "Hungarian",
+    "Romanian": "Romanian",
+    "Bulgarian": "Bulgarian",
+    "Croatian": "Croatian",
+    "Serbian": "Serbian",
+    "Turkish": "Turkish",
+    "Russian": "Russian",
+    "Ukrainian": "Ukrainian",
+    "Chinese": "Chinese",
+    "Japanese": "Japanese",
+    "Korean": "Korean",
+    "Indian": "Indian",
+    "Pakistani": "Pakistani",
+    "Bangladeshi": "Bangladeshi",
+    "Malaysian": "Malaysian",
+    "Singaporean": "Singaporean",
+    "Indonesian": "Indonesian",
+    "Thai": "Thai",
+    "Vietnamese": "Vietnamese",
+    "Filipino": "Filipino",
+    "Brazilian": "Brazilian",
+    "Mexican": "Mexican",
+    "Argentine": "Argentine",
+    "Colombian": "Colombian",
+    "Chilean": "Chilean",
+    "Peruvian": "Peruvian",
+    "Venezuelan": "Venezuelan",
+    "South African": "South African",
+    "Nigerian": "Nigerian",
+    "Kenyan": "Kenyan",
+    "Ghanaian": "Ghanaian",
+    "Ethiopian": "Ethiopian",
+    "Other": "Other",
+    "Egypt": "Egypt",
+    "SaudiArabia": "Saudi Arabia",
+    "UAE": "UAE",
+    "Qatar": "Qatar",
+    "Kuwait": "Kuwait",
+    "Bahrain": "Bahrain",
+    "Oman": "Oman",
+    "Jordan": "Jordan",
+    "Lebanon": "Lebanon",
+    "USA/Canada": "USA / Canada",
+    "UK": "United Kingdom",
+    "Germany": "Germany",
+    "France": "France",
+    "Italy": "Italy",
+    "Spain": "Spain",
+    "Netherlands": "Netherlands",
+    "SouthKorea": "South Korea",
+    "Australia": "Australia",
+    "SouthAfrica": "South Africa",
+    "India": "India",
+    "Pakistan": "Pakistan",
+    "China": "China",
+    "Japan": "Japan",
+    "South Korea": "South Korea",
+    "Brazil": "Brazil",
+    "Nigeria": "Nigeria"
+  }
+}

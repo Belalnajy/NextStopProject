@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "apply": "Postuler maintenant",
+    "contact": "Contact",
+    "eligibility": "Vérifier l'éligibilité"
+  },
+  "hero": {
+    "badge": "Service officiel de l'AVE au Royaume-Uni",
+    "title1": "Votre porte d'entrée vers le",
+    "title2": "Royaume-Uni",
+    "subtitle": "Obtenez votre autorisation de voyage électronique rapidement et en toute sécurité. L'exigence standard pour les visiteurs au Royaume-Uni.",
+    "cta_apply": "Postuler maintenant",
+    "cta_check": "Vérifier l'éligibilité"
+  },
+  "info": {
+    "title": "Qu'est-ce que l'AVE du Royaume-Uni ?",
+    "subtitle": "L'Autorisation de voyage électronique (AVE) est une nouvelle exigence pour les personnes qui n'ont pas besoin de visa pour venir au Royaume-Uni. Elle est liée électroniquement à votre passeport.",
+    "card1_title": "Traitement rapide",
+    "card1_desc": "La plupart des demandes sont traitées dans un délai de 3 jours ouvrables.",
+    "card2_title": "Validité de 2 ans",
+    "card2_desc": "Valable pour plusieurs voyages sur une période de 2 ans.",
+    "card3_title": "Entièrement numérique",
+    "card3_desc": "Pas besoin de se rendre dans une ambassade ou de fournir des documents physiques."
+  },
+  "how_to_apply": {
+    "title": "Comment postuler",
+    "step1_title": "Remplir le formulaire",
+    "step1_desc": "Remplissez notre formulaire de demande en ligne simple avec vos coordonnées.",
+    "step2_title": "Réviser et payer",
+    "step2_desc": "Payez en toute sécurité les frais de traitement et vérifiez vos informations.",
+    "step3_title": "Recevoir l'AVE",
+    "step3_desc": "Recevez votre AVE approuvée directement dans votre boîte e-mail."
+  },
+  "form": {
+    "common": {
+      "nextStep": "Étape suivante",
+      "back": "Retour",
+      "yes": "Oui",
+      "no": "Non",
+      "upload": "Choisir un fichier",
+      "example": "Exemple",
+      "guidelines": "Directives",
+      "step": "Étape",
+      "englishRequirement": "Tous les champs doivent être remplis en anglais",
+      "proceedToPayment": "Procéder au paiement"
+    },
+    "step1": {
+      "title": "Informations de voyage",
+      "subtitle": "Saisissez vos informations de voyage et de passeport",
+      "labels": {
+        "nationality": "Nationalité actuelle",
+        "otherNationalities": "Avez-vous d'autres nationalités ?",
+        "arrivalDate": "Date d'arrivée au Royaume-Uni",
+        "passportNumber": "Numéro de passeport",
+        "passportCopy": "Copie du passeport"
+      },
+      "subtexts": {
+        "otherNationalities": "Incluez toutes les nationalités que vous avez eues par le passé.",
+        "passportCopy": "La photo doit être non altérée, claire, sans reflet et montrer les 4 coins."
+      },
+      "placeholders": {
+        "nationality": "Rechercher des pays...",
+        "passportNumber": "Entrez le numéro de passeport"
+      }
+    },
+    "step2": {
+      "title": "Détails personnels",
+      "subtitle": "Saisissez vos informations personnelles",
+      "labels": {
+        "fullName": "Nom complet",
+        "dob": "Date de naissance",
+        "phone": "Numéro de téléphone",
+        "email": "Adresse e-mail",
+        "photo": "Photo personnelle"
+      },
+      "subtexts": {
+        "email": "L'adresse e-mail où vous souhaitez recevoir votre décision AVE",
+        "photo": "La photo doit être non altérée, prise récemment, avec un fond clair uni."
+      },
+      "placeholders": {
+        "fullName": "Saisissez votre nom complet",
+        "phone": "000 000 0000",
+        "email": "exemple@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Directives pour la photo",
+        "item1": "Fond uni de couleur claire",
+        "item2": "Pas de couvre-chef (sauf religieux/médical)",
+        "item3": "Expression neutre, yeux visibles",
+        "item4": "Bon éclairage, sans ombre"
+      },
+      "phone_codes": {
+        "search": "Rechercher des pays..."
+      }
+    },
+    "step3": {
+      "title": "Adresse",
+      "subtitle": "Fournissez les détails de votre adresse personnelle",
+      "labels": {
+        "street": "Nom de la rue",
+        "building": "Numéro/Nom du bâtiment",
+        "apartment": "Appartement/Unité (Facultatif)",
+        "area": "Zone/Quartier",
+        "postalCode": "Code postal",
+        "additional": "Info suppl. (Facultatif)",
+        "city": "Ville",
+        "country": "Pays"
+      },
+      "placeholders": {
+        "street": "Saisissez le nom de la rue",
+        "building": "Saisissez le numéro du bâtiment",
+        "apartment": "Saisissez le numéro d'appartement",
+        "area": "Saisissez la zone",
+        "postalCode": "Saisissez le code postal",
+        "additional": "ex. Près du supermarché",
+        "city": "Saisissez la ville",
+        "country": "Rechercher des pays..."
+      }
+    },
+    "step4": {
+      "title": "Informations additionnelles",
+      "subtitle": "Contexte professionnel et antécédents",
+      "labels": {
+        "employmentStatus": "Statut professionnel",
+        "jobTitle": "Titre du poste",
+        "criminalConvictions": "Avez-vous des condamnations pénales ?",
+        "terrorismQuestion": "Avez-vous déjà été impliqué ou soupçonné de l'un des faits suivants ?",
+        "checklist": {
+          "item1": "Crimes de guerre, génocide ou crimes contre l'humanité",
+          "item2": "Terrorisme, y compris le soutien ou l'appartenance à des groupes terroristes",
+          "item3": "Soutien à des groupes extrémistes",
+          "item4": "Expression de points de vue extrémistes"
+        }
+      },
+      "placeholders": {
+        "jobTitle": "Saisissez votre titre de poste",
+        "details": "Veuillez fournir des détails"
+      },
+      "options": {
+        "employed": "Employé",
+        "selfEmployed": "Indépendant",
+        "student": "Étudiant",
+        "unemployed": "Sans emploi",
+        "retired": "Retraité"
+      }
+    },
+    "step5": {
+      "title": "Déclarations",
+      "subtitle": "Veuillez confirmer les déclarations suivantes",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Confirmation des informations",
+          "text": "En envoyant cette demande, vous confirmez qu'à votre connaissance, les informations que vous avez fournies sont exactes.",
+          "warning": "Si vous avez fourni de fausses informations : votre demande peut être refusée, vous pouvez être poursuivi, vous pouvez être interdit d'entrée au Royaume-Uni. Si vous postulez au nom d'une autre personne, vous devez avoir confirmé avec elle que la demande est complète et exacte."
+        },
+        "acceptTerms": {
+          "title": "Termes et Conditions",
+          "text": "J'ai lu et compris les Termes et Conditions et la Politique de Confidentialité. Le prix comprend les frais gouvernementaux (£16) et les frais de traitement (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Temps de traitement",
+          "text": "Je comprends que le traitement peut prendre JUSQU'À 3 JOURS OUVRABLES et je confirme que ma date d'arrivée au Royaume-Uni ne sera pas antérieure à 3 JOURS OUVRABLES À PARTIR D'AUJOURD'HUI."
+        }
+      }
+    },
+    "step6": {
+      "title": "Paiement",
+      "subtitle": "Finalisez le paiement de votre demande",
+      "labels": {
+        "summary": {
+          "title": "Résumé de la demande",
+          "applicant": "Candidat"
+        },
+        "pricing": {
+          "title": "Frais de traitement",
+          "govFee": "Frais gouvernementaux",
+          "serviceFee": "Frais de service et de traitement",
+          "total": "Montant total"
+        },
+        "card": {
+          "title": "Détails de la carte",
+          "holder": "Nom du titulaire",
+          "number": "Numéro de carte",
+          "expiry": "Date d'expiration",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Nom sur la carte"
+      },
+      "subtexts": {
+        "securePayment": "Paiement sécurisé crypté SSL 256 bits",
+        "recaptcha": {
+          "text": "Ce site est protégé par reCAPTCHA et les",
+          "and": "et",
+          "apply": "de Google s'appliquent."
+        }
+      },
+      "status": {
+        "processing": "Traitement du paiement..."
+      }
+    },
+    "step7": {
+      "title": "Demande soumise !",
+      "subtitle": "Merci pour votre demande. Nous avons envoyé un e-mail de confirmation à l'adresse fournie. Votre décision AVE est généralement traitée dans un délai de 3 jours ouvrables.",
+      "labels": {
+        "reference": "Référence de la demande",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "Que se passe-t-il ensuite ?",
+          "step1": "Vérifiez votre boîte e-mail pour la confirmation",
+          "step2": "Nous examinerons votre demande dans un délai de 3 jours ouvrables",
+          "step3": "Recevez votre AVE approuvée par e-mail"
+        },
+        "returnHome": "Retour à l'accueil"
+      },
+      "status": {
+        "copied": "Copié dans le presse-papiers !"
+      }
+    },
+    "countries": {
+      "Egypt": "Égypte",
+      "SaudiArabia": "Arabie Saoudite",
+      "UAE": "ÉAU",
+      "Qatar": "Qatar",
+      "Kuwait": "Koweït",
+      "Bahrain": "Bahreïn",
+      "Oman": "Oman",
+      "Jordan": "Jordanie",
+      "Lebanon": "Liban",
+      "USA/Canada": "États-Unis/Canada",
+      "UK": "Royaume-Uni",
+      "Germany": "Allemagne",
+      "France": "France",
+      "Italy": "Italie",
+      "Spain": "Espagne",
+      "Netherlands": "Pays-Bas",
+      "India": "Inde",
+      "Pakistan": "Pakistan",
+      "China": "Chine",
+      "Japan": "Japon",
+      "SouthKorea": "Corée du Sud",
+      "Australia": "Australie",
+      "Brazil": "Brésil",
+      "Mexico": "Mexique",
+      "SouthAfrica": "Afrique du Sud",
+      "Nigeria": "Nigeria"
+    }
+  },
+  "footer": {
+    "brand_desc": "Donner aux voyageurs du monde entier les moyens d'agir grâce à des services d'autorisation numérique fluides pour le Royaume-Uni.",
+    "quick_links": "Liens rapides",
+    "legal": "Juridique et support",
+    "legal_links": {
+      "terms": "Termes et Conditions",
+      "privacy": "Politique de Confidentialité"
+    },
+    "contact": "Contactez-nous",
+    "disclaimer": "Avertissement : Ce site Web est un guide d'information privé. Nous ne sommes pas affiliés au gouvernement britannique."
+  }
+}

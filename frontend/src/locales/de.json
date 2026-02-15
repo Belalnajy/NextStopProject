@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "apply": "Jetzt beantragen",
+    "contact": "Kontakt",
+    "eligibility": "Berechtigung prüfen"
+  },
+  "hero": {
+    "badge": "Offizieller UK ETA Service",
+    "title1": "Ihr Tor zum",
+    "title2": "Vereinigten Königreich",
+    "subtitle": "Erhalten Sie Ihre elektronische Reisegenehmigung schnell und sicher. Die Standardanforderung für Besucher des Vereinigten Königreichs.",
+    "cta_apply": "Jetzt beantragen",
+    "cta_check": "Berechtigung prüfen"
+  },
+  "info": {
+    "title": "Was ist UK ETA?",
+    "subtitle": "Die elektronische Reisegenehmigung (ETA) ist eine neue Anforderung für Personen, die kein Visum für die Einreise in das Vereinigte Königreich benötigen. Sie ist elektronisch mit Ihrem Reisepass verknüpft.",
+    "card1_title": "Schnelle Bearbeitung",
+    "card1_desc": "Die meisten Anträge werden innerhalb von 3 Werktagen bearbeitet.",
+    "card2_title": "2 Jahre Gültigkeit",
+    "card2_desc": "Gültig für mehrere Reisen über einen Zeitraum von 2 Jahren.",
+    "card3_title": "Vollständig digital",
+    "card3_desc": "Kein Besuch einer Botschaft oder Bereitstellung physischer Dokumente erforderlich."
+  },
+  "how_to_apply": {
+    "title": "So bewerben Sie sich",
+    "step1_title": "Formular ausfüllen",
+    "step1_desc": "Füllen Sie unser einfaches Online-Antragsformular mit Ihren Daten aus.",
+    "step2_title": "Prüfen & Bezahlen",
+    "step2_desc": "Bezahlen Sie sicher die Bearbeitungsgebühr und überprüfen Sie Ihre Angaben.",
+    "step3_title": "ETA erhalten",
+    "step3_desc": "Erhalten Sie Ihre genehmigte ETA direkt per E-Mail."
+  },
+  "form": {
+    "common": {
+      "nextStep": "Nächster Schritt",
+      "back": "Zurück",
+      "yes": "Ja",
+      "no": "Nein",
+      "upload": "Datei auswählen",
+      "example": "Beispiel",
+      "guidelines": "Richtlinien",
+      "step": "Schritt",
+      "englishRequirement": "Alle Felder müssen in Englisch ausgefüllt werden",
+      "proceedToPayment": "Weiter zur Zahlung"
+    },
+    "step1": {
+      "title": "Reiseinformationen",
+      "subtitle": "Geben Sie Ihre Reise- und Passdaten ein",
+      "labels": {
+        "nationality": "Aktuelle Nationalität",
+        "otherNationalities": "Besitzen Sie andere Nationalitäten?",
+        "arrivalDate": "Ankunftsdatum im Vereinigten Königreich",
+        "passportNumber": "Reisepassnummer",
+        "passportCopy": "Ausweiskopie"
+      },
+      "subtexts": {
+        "otherNationalities": "Geben Sie alle Nationalitäten an, die Sie in der Vergangenheit besessen haben.",
+        "passportCopy": "Das Foto muss unverändert, klar, blendfrei sein und alle 4 Ecken zeigen."
+      },
+      "placeholders": {
+        "nationality": "Länder suchen...",
+        "passportNumber": "Reisepassnummer eingeben"
+      }
+    },
+    "step2": {
+      "title": "Persönliche Daten",
+      "subtitle": "Geben Sie Ihre persönlichen Informationen ein",
+      "labels": {
+        "fullName": "Vollständiger Name",
+        "dob": "Geburtsdatum",
+        "phone": "Telefonnummer",
+        "email": "E-Mail-Adresse",
+        "photo": "Persönliches Foto"
+      },
+      "subtexts": {
+        "email": "Die E-Mail-Adresse, an die Sie Ihre ETA-Entscheidung erhalten möchten",
+        "photo": "Das Foto muss unverändert sein, vor kurzem aufgenommen worden sein und einen einfarbigen hellen Hintergrund haben."
+      },
+      "placeholders": {
+        "fullName": "Geben Sie Ihren vollständigen Namen ein",
+        "phone": "000 000 0000",
+        "email": "beispiel@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Foto-Richtlinien",
+        "item1": "Einfarbiger heller Hintergrund",
+        "item2": "Keine Kopfbedeckung (außer religiös/medizinisch)",
+        "item3": "Neutraler Gesichtsausdruck, Augen sichtbar",
+        "item4": "Gute Beleuchtung, keine Schatten"
+      },
+      "phone_codes": {
+        "search": "Länder suchen..."
+      }
+    },
+    "step3": {
+      "title": "Adresse",
+      "subtitle": "Geben Sie Ihre Privatadresse ein",
+      "labels": {
+        "street": "Straßenname",
+        "building": "Hausnummer/Name",
+        "apartment": "Wohnung/Einheit (Optional)",
+        "area": "Gebiet/Bezirk",
+        "postalCode": "Postleitzahl",
+        "additional": "Zusatzinfo (Optional)",
+        "city": "Stadt",
+        "country": "Land"
+      },
+      "placeholders": {
+        "street": "Straßennamen eingeben",
+        "building": "Hausnummer eingeben",
+        "apartment": "Wohnungsnummer eingeben",
+        "area": "Gebiet eingeben",
+        "postalCode": "Postleitzahl eingeben",
+        "additional": "z.B. In der Nähe des Supermarkts",
+        "city": "Stadt eingeben",
+        "country": "Länder suchen..."
+      }
+    },
+    "step4": {
+      "title": "Zusätzliche Informationen",
+      "subtitle": "Beschäftigung und Hintergrund",
+      "labels": {
+        "employmentStatus": "Beschäftigungsstatus",
+        "jobTitle": "Berufsbezeichnung",
+        "criminalConvictions": "Haben Sie strafrechtliche Verurteilungen?",
+        "terrorismQuestion": "Waren Sie jemals an einem der folgenden Punkte beteiligt oder wurden dessen verdächtigt?",
+        "checklist": {
+          "item1": "Kriegsverbrechen, Völkermord oder Verbrechen gegen die Menschlichkeit",
+          "item2": "Terrorismus, einschließlich Unterstützung für oder Mitgliedschaft in terroristischen Gruppen",
+          "item3": "Unterstützung extremistischer Gruppen",
+          "item4": "Äußerung extremistischer Ansichten"
+        }
+      },
+      "placeholders": {
+        "jobTitle": "Geben Sie Ihre Berufsbezeichnung ein",
+        "details": "Bitte machen Sie Angaben"
+      },
+      "options": {
+        "employed": "Angestellt",
+        "selfEmployed": "Selbstständig",
+        "student": "Student",
+        "unemployed": "Arbeitslos",
+        "retired": "Im Ruhestand"
+      }
+    },
+    "step5": {
+      "title": "Erklärungen",
+      "subtitle": "Bitte bestätigen Sie die folgenden Aussagen",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Informationsbestätigung",
+          "text": "Mit dem Absenden dieses Antrags bestätigen Sie, dass die von Ihnen gemachten Angaben nach bestem Wissen und Gewissen richtig sind.",
+          "warning": "Falls Sie falsche Angaben gemacht haben: Ihr Antrag kann abgelehnt werden, Sie könnten strafrechtlich verfolgt werden, Ihnen könnte die Einreise ins Vereinigte Königreich untersagt werden. Wenn Sie den Antrag im Namen einer anderen Person stellen, müssen Sie mit dieser bestätigt haben, dass der Antrag vollständig und richtig ist."
+        },
+        "acceptTerms": {
+          "title": "Allgemeine Geschäftsbedingungen",
+          "text": "Ich habe die Allgemeinen Geschäftsbedingungen und die Datenschutzerklärung gelesen und verstanden. Der Preis beinhaltet die Regierungsgebühr (£16) und die Bearbeitungsgebühr (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Bearbeitungszeit",
+          "text": "Ich verstehe, dass die Bearbeitung BIS ZU 3 WERKTAGE dauern kann und bestätige, dass mein Ankunftsdatum im Vereinigten Königreich nicht früher als 3 WERKTAGE AB HEUTE liegen wird."
+        }
+      }
+    },
+    "step6": {
+      "title": "Zahlung",
+      "subtitle": "Schließen Sie die Zahlung für Ihren Antrag ab",
+      "labels": {
+        "summary": {
+          "title": "Antragsübersicht",
+          "applicant": "Antragsteller"
+        },
+        "pricing": {
+          "title": "Bearbeitungsgebühr",
+          "govFee": "Regierungsgebühr",
+          "serviceFee": "Service- & Bearbeitungsgebühr",
+          "total": "Gesamtbetrag"
+        },
+        "card": {
+          "title": "Kartendetails",
+          "holder": "Name des Karteninhabers",
+          "number": "Kartennummer",
+          "expiry": "Ablaufdatum",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Name auf der Karte"
+      },
+      "subtexts": {
+        "securePayment": "Sichere 256-Bit SSL-verschlüsselte Zahlung",
+        "recaptcha": {
+          "text": "Diese Seite ist durch reCAPTCHA geschützt und es gelten die",
+          "and": "und",
+          "apply": "von Google."
+        }
+      },
+      "status": {
+        "processing": "Zahlung wird verarbeitet..."
+      }
+    },
+    "step7": {
+      "title": "Antrag eingereicht!",
+      "subtitle": "Vielen Dank für Ihren Antrag. Wir haben eine Bestätigungs-E-Mail an die von Ihnen angegebene Adresse gesendet. Ihr ETA-Bescheid wird in der Regel innerhalb von 3 Werktagen bearbeitet.",
+      "labels": {
+        "reference": "Antragsnummer",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "Wie geht es weiter?",
+          "step1": "Prüfen Sie Ihre E-Mails auf eine Bestätigung",
+          "step2": "Wir prüfen Ihren Antrag innerhalb von 3 Werktagen",
+          "step3": "Erhalten Sie Ihre genehmigte ETA per E-Mail"
+        },
+        "returnHome": "Zurück zur Startseite"
+      },
+      "status": {
+        "copied": "In die Zwischenablage kopiert!"
+      }
+    },
+    "countries": {
+      "Egypt": "Ägypten",
+      "SaudiArabia": "Saudi-Arabien",
+      "UAE": "VAE",
+      "Qatar": "Katar",
+      "Kuwait": "Kuwait",
+      "Bahrain": "Bahrain",
+      "Oman": "Oman",
+      "Jordan": "Jordanien",
+      "Lebanon": "Libanon",
+      "USA/Canada": "USA/Kanada",
+      "UK": "GB",
+      "Germany": "Deutschland",
+      "France": "Frankreich",
+      "Italy": "Italien",
+      "Spain": "Spanien",
+      "Netherlands": "Niederlande",
+      "India": "Indien",
+      "Pakistan": "Pakistan",
+      "China": "China",
+      "Japan": "Japan",
+      "SouthKorea": "Südkorea",
+      "Australia": "Australien",
+      "Brazil": "Brasilien",
+      "Mexico": "Mexiko",
+      "SouthAfrica": "Südafrika",
+      "Nigeria": "Nigeria"
+    }
+  },
+  "footer": {
+    "brand_desc": "Wir unterstützen Reisende weltweit mit nahtlosen digitalen Genehmigungsdiensten für das Vereinigte Königreich.",
+    "quick_links": "Quick Links",
+    "legal": "Rechtliches & Support",
+    "legal_links": {
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "privacy": "Datenschutzerklärung"
+    },
+    "contact": "Kontaktieren Sie uns",
+    "disclaimer": "Haftungsausschluss: Diese Website ist ein privater Informationsleitfaden. Wir stehen in keiner Verbindung zur britischen Regierung."
+  }
+}

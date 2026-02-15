@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "apply": "Aplicar ahora",
+    "contact": "Contacto",
+    "eligibility": "Verificar elegibilidad"
+  },
+  "hero": {
+    "badge": "Servicio Oficial ETA del Reino Unido",
+    "title1": "Tu puerta de entrada al",
+    "title2": "Reino Unido",
+    "subtitle": "Obtén tu Autorización Electrónica de Viaje de forma rápida y segura. El requisito estándar para visitantes al Reino Unido.",
+    "cta_apply": "Aplicar ahora",
+    "cta_check": "Verificar elegibilidad"
+  },
+  "info": {
+    "title": "¿Qué es la ETA del Reino Unido?",
+    "subtitle": "La Autorización Electrónica de Viaje (ETA) es un nuevo requisito para las personas que no necesitan visa para venir al Reino Unido. Está vinculada electrónicamente a su pasaporte.",
+    "card1_title": "Procesamiento Rápido",
+    "card1_desc": "La mayoría de las solicitudes se procesan en 3 días hábiles.",
+    "card2_title": "Validez de 2 Años",
+    "card2_desc": "Válida para múltiples viajes durante un período de 2 años.",
+    "card3_title": "Totalmente Digital",
+    "card3_desc": "No es necesario visitar una embajada ni proporcionar documentos físicos."
+  },
+  "how_to_apply": {
+    "title": "Cómo Aplicar",
+    "step1_title": "Llenar Formulario",
+    "step1_desc": "Complete nuestro sencillo formulario de solicitud en línea con sus datos.",
+    "step2_title": "Revisar y Pagar",
+    "step2_desc": "Pague de forma segura la tarifa de procesamiento y revise su información.",
+    "step3_title": "Recibir ETA",
+    "step3_desc": "Reciba su ETA aprobada directamente en su correo electrónico."
+  },
+  "form": {
+    "common": {
+      "nextStep": "Siguiente Paso",
+      "back": "Atrás",
+      "yes": "Sí",
+      "no": "No",
+      "upload": "Elegir Archivo",
+      "example": "Ejemplo",
+      "guidelines": "Guía",
+      "step": "Paso",
+      "englishRequirement": "Todos los campos deben completarse en inglés",
+      "proceedToPayment": "Proceder al Pago"
+    },
+    "step1": {
+      "title": "Información de Viaje",
+      "subtitle": "Ingrese sus detalles de viaje y pasaporte",
+      "labels": {
+        "nationality": "Nacionalidad Actual",
+        "otherNationalities": "¿Tiene otras nacionalidades?",
+        "arrivalDate": "Fecha de llegada al Reino Unido",
+        "passportNumber": "Número de Pasaporte",
+        "passportCopy": "Copia del Pasaporte"
+      },
+      "subtexts": {
+        "otherNationalities": "Incluya cualquier nacionalidad que haya tenido en el pasado.",
+        "passportCopy": "La foto debe ser inalterada, clara, sin reflejos y mostrar las 4 esquinas."
+      },
+      "placeholders": {
+        "nationality": "Buscar países...",
+        "passportNumber": "Ingrese el número de pasaporte"
+      }
+    },
+    "step2": {
+      "title": "Datos Personales",
+      "subtitle": "Ingrese su información personal",
+      "labels": {
+        "fullName": "Nombre Completo",
+        "dob": "Fecha de Nacimiento",
+        "phone": "Número de Teléfono",
+        "email": "Correo Electrónico",
+        "photo": "Foto Personal"
+      },
+      "subtexts": {
+        "email": "El correo electrónico donde desea recibir su decisión de ETA",
+        "photo": "La foto debe ser inalterada, tomada recientemente, con un fondo claro liso."
+      },
+      "placeholders": {
+        "fullName": "Ingrese su nombre completo",
+        "phone": "000 000 0000",
+        "email": "ejemplo@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Guía para la Foto",
+        "item1": "Fondo liso de color claro",
+        "item2": "Sin coberturas en la cabeza (excepto religiosas/médicas)",
+        "item3": "Expresión neutra, ojos visibles",
+        "item4": "Buena iluminación, sin sombras"
+      },
+      "phone_codes": {
+        "search": "Buscar países..."
+      }
+    },
+    "step3": {
+      "title": "Dirección",
+      "subtitle": "Proporcione los detalles de su dirección particular",
+      "labels": {
+        "street": "Nombre de la Calle",
+        "building": "Número/Nombre del Edificio",
+        "apartment": "Apartamento/Unidad (Opcional)",
+        "area": "Área/Distrito",
+        "postalCode": "Código Postal",
+        "additional": "Info Adicional (Opcional)",
+        "city": "Ciudad",
+        "country": "País"
+      },
+      "placeholders": {
+        "street": "Ingrese el nombre de la calle",
+        "building": "Ingrese el número del edificio",
+        "apartment": "Ingrese el número del apartamento",
+        "area": "Ingrese el área",
+        "postalCode": "Ingrese el código postal",
+        "additional": "ej. Cerca del supermercado",
+        "city": "Ingrese la ciudad",
+        "country": "Buscar países..."
+      }
+    },
+    "step4": {
+      "title": "Información Adicional",
+      "subtitle": "Contexto de empleo e historial",
+      "labels": {
+        "employmentStatus": "Estado Laboral",
+        "jobTitle": "Título del Trabajo",
+        "criminalConvictions": "¿Tiene antecedentes penales?",
+        "terrorismQuestion": "¿Ha estado involucrado o sospechado de algo de lo siguiente?",
+        "checklist": {
+          "item1": "Crímenes de guerra, genocidio o crímenes contra la humanidad",
+          "item2": "Terrorismo, incluido el apoyo o la pertenencia a grupos terroristas",
+          "item3": "Apoyo a grupos extremistas",
+          "item4": "Expresión de puntos de vista extremistas"
+        }
+      },
+      "placeholders": {
+        "jobTitle": "Ingrese su título de trabajo",
+        "details": "Por favor proporcione detalles"
+      },
+      "options": {
+        "employed": "Empleado",
+        "selfEmployed": "Autónomo",
+        "student": "Estudiante",
+        "unemployed": "Desempleado",
+        "retired": "Jubilado"
+      }
+    },
+    "step5": {
+      "title": "Declaraciones",
+      "subtitle": "Por favor confirme las siguientes declaraciones",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Confirmación de Información",
+          "text": "Al enviar esta solicitud, confirma que, según su leal saber y entender, la información proporcionada es correcta.",
+          "warning": "Si ha proporcionado información falsa: su solicitud puede ser rechazada, puede ser procesado, se le puede prohibir la entrada al Reino Unido. Si presenta la solicitud en nombre de otra persona, debe haber confirmado con ella que la solicitud está completa y es correcta."
+        },
+        "acceptTerms": {
+          "title": "Términos y Condiciones",
+          "text": "He leído y entendido los Términos y Condiciones y la Política de Privacidad. El precio incluye la tasa gubernamental (£16) y la tasa de procesamiento (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Tiempo de Procesamiento",
+          "text": "Entiendo que el procesamiento puede tardar HASTA 3 DÍAS HÁBILES y confirmo que mi fecha de llegada al Reino Unido no será anterior a 3 DÍAS HÁBILES A PARTIR DE HOY."
+        }
+      }
+    },
+    "step6": {
+      "title": "Pago",
+      "subtitle": "Complete el pago de su solicitud",
+      "labels": {
+        "summary": {
+          "title": "Resumen de la Solicitud",
+          "applicant": "Solicitante"
+        },
+        "pricing": {
+          "title": "Tarifa de Procesamiento",
+          "govFee": "Tasa Gubernamental",
+          "serviceFee": "Tarifa de Servicio y Procesamiento",
+          "total": "Monto Total"
+        },
+        "card": {
+          "title": "Detalles de la Tarjeta",
+          "holder": "Nombre del Titular",
+          "number": "Número de Tarjeta",
+          "expiry": "Fecha de Vencimiento",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Nombre en la tarjeta"
+      },
+      "subtexts": {
+        "securePayment": "Pago seguro cifrado con SSL de 256 bits",
+        "recaptcha": {
+          "text": "Este sitio está protegido por reCAPTCHA y se aplican las",
+          "and": "y",
+          "apply": "de Google."
+        }
+      },
+      "status": {
+        "processing": "Procesando Pago..."
+      }
+    },
+    "step7": {
+      "title": "¡Solicitud Enviada!",
+      "subtitle": "Gracias por su solicitud. Hemos enviado un correo electrónico de confirmación a la dirección proporcionada. Su decisión de ETA suele procesarse en 3 días hábiles.",
+      "labels": {
+        "reference": "Referencia de la Solicitud",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "¿Qué sucede después?",
+          "step1": "Revise su correo electrónico para la confirmación",
+          "step2": "Revisaremos su solicitud en un plazo de 3 días hábiles",
+          "step3": "Reciba su ETA aprobada por correo electrónico"
+        },
+        "returnHome": "Volver al Inicio"
+      },
+      "status": {
+        "copied": "¡Copiado al portapapeles!"
+      }
+    },
+    "countries": {
+      "Egypt": "Egipto",
+      "SaudiArabia": "Arabia Saudita",
+      "UAE": "EAU",
+      "Qatar": "Catar",
+      "Kuwait": "Kuwait",
+      "Bahrain": "Baréin",
+      "Oman": "Omán",
+      "Jordan": "Jordania",
+      "Lebanon": "Líbano",
+      "USA/Canada": "EE. UU./Canadá",
+      "UK": "Reino Unido",
+      "Germany": "Alemania",
+      "France": "Francia",
+      "Italy": "Italia",
+      "Spain": "España",
+      "Netherlands": "Países Bajos",
+      "India": "India",
+      "Pakistan": "Pakistán",
+      "China": "China",
+      "Japan": "Japón",
+      "SouthKorea": "Corea del Sur",
+      "Australia": "Australia",
+      "Brazil": "Brasil",
+      "Mexico": "México",
+      "SouthAfrica": "Sudáfrica",
+      "Nigeria": "Nigeria"
+    }
+  },
+  "footer": {
+    "brand_desc": "Empoderando a los viajeros globales con servicios de autorización digital fluidos para el Reino Unido.",
+    "quick_links": "Enlaces Rápidos",
+    "legal": "Legal y Soporte",
+    "legal_links": {
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad"
+    },
+    "contact": "Contáctenos",
+    "disclaimer": "Descargo de responsabilidad: Este sitio web es una guía informativa privada. No estamos afiliados al Gobierno del Reino Unido."
+  }
+}
