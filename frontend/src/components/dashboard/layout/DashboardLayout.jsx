@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   Bell,
+  Globe,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../../../context/AuthContext';
@@ -85,6 +86,13 @@ export default function DashboardLayout() {
         </div>
 
         <nav className="space-y-2">
+          <NavLink
+            to="/"
+            className="flex items-center gap-3 px-4 py-3 rounded-xl text-accent hover:bg-accent/10 transition-all duration-300 mb-4 border border-accent/20 bg-accent/5">
+            <Globe size={20} strokeWidth={2} />
+            <span className="font-bold">Visit Website</span>
+          </NavLink>
+
           <SidebarItem
             to="/admin"
             icon={LayoutDashboard}
