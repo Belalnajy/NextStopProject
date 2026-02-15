@@ -25,6 +25,10 @@ app.use(
 app.use(helmet());
 app.use(compression());
 app.use(morgan('dev'));
+app.use((req, res, next) => {
+  console.log(`[Request] ${req.method} ${req.url}`);
+  next();
+});
 app.use(express.json());
 
 // Database Initialization Middleware
