@@ -14,4 +14,11 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-sff
+## Deploy on Vercel
+
+1. **Environment variables** (Project Settings → Environment Variables) — required for API (serverless):
+   - `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DATABASE` (or `DB_HOST`, `DB_PORT`, `DB_USERNAME`, `DB_PASSWORD`, `DB_NAME`)
+   - `JWT_SECRET`
+   - Optional: `SMTP_*`, `CLOUDINARY_*` for email and uploads
+
+2. **Frontend API URL**: set `VITE_API_URL` to your deployment URL (e.g. `https://your-project.vercel.app`) so the app calls the same origin for `/api`.

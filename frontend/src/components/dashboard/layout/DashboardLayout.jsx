@@ -72,7 +72,7 @@ export default function DashboardLayout() {
               />
             ) : (
               <img
-                src="/logo.png"
+                src="/vite.svg"
                 alt="NextStop Logo"
                 className="h-28 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-md"
               />
