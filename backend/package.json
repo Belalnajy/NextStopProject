@@ -6,7 +6,8 @@
     "start": "node dist/index.js",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "build": "tsc",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "seed:admin": "ts-node src/scripts/seedAdmin.ts"
   },
   "keywords": [],
   "author": "",
