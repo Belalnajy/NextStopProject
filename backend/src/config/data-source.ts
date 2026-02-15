@@ -10,19 +10,21 @@ dotenv.config();
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
-  host: process.env.DB_HOST,
-  port: parseInt(process.env.DB_PORT || '5432'),
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  synchronize: process.env.NODE_ENV === 'development', // Auto-create tables in dev (disable in prod)
+  host: process.env.POSTGRES_HOST || process.env.DB_HOST,
+  port: parseInt(process.env.POSTGRES_PORT || process.env.DB_PORT || '5432'),
+  username: process.env.POSTGRES_USER || process.env.DB_USERNAME,
+  password: process.env.POSTGRES_PASSWORD || process.env.DB_PASSWORD,
+  database: process.env.POSTGRES_DATABASE || process.env.DB_NAME,
+  synchronize: process.env.NODE_ENV === 'development', // Auto-create tables in dev
+  ssl:
+    process.env.NODE_ENV === 'production'
+      ? { rejectUnauthorized: false }
+      : false,
   logging: false,
   entities: [User, Application, Attachment, Settings, EmailTemplate],
-  migrations: [],
-  subscribers: [],
-  // Add these for serverless stability
+  // ... rest of the config
   extra: {
-    max: 1, // Minimize connections per lambda
+    max: 1,
     idleTimeoutMillis: 30000,
   },
 });
