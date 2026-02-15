@@ -48,6 +48,11 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/email', emailRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
+// Debug Ping Route
+app.get('/api/ping', (req, res) => {
+  res.json({ status: 'API is reachable', timestamp: new Date().toISOString() });
+});
+
 // Health Check
 app.get('/', (req, res) => {
   res.json({ message: 'NextStop Backend API is running' });
