@@ -13,7 +13,6 @@
   ],
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.ts" },
-    { "handle": "filesystem" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
