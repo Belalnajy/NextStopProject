@@ -8,7 +8,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": false,
     "outDir": "dist",
-    "rootDir": "."
+    "rootDir": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false
   },
-  "include": ["api/**/*", "backend/src/**/*"]
+  "include": [
+    "api/**/*",
+    "backend/src/**/*"
+  ]
 }
