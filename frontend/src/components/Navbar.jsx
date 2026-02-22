@@ -281,23 +281,28 @@ const Navbar = () => {
             className="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
             <div className="px-6 py-8 space-y-4">
               <div className="grid grid-cols-2 gap-2 mb-4">
-                {languages.slice(0, 4).map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => changeLanguage(lang.code)}
-                    className={`flex items-center gap-2 p-2 rounded-lg border ${
-                      i18n.language === lang.code
-                        ? 'border-primary bg-primary/5'
-                        : 'border-gray-100'
-                    }`}>
-                    <span>{lang.flag}</span>
-                    <span className="text-xs">{lang.name}</span>
-                  </button>
-                ))}
+                {(isLangOpen ? languages : languages.slice(0, 4)).map(
+                  (lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        changeLanguage(lang.code);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`flex items-center gap-2 p-2 rounded-lg border ${
+                        i18n.language === lang.code
+                          ? 'border-primary bg-primary/5'
+                          : 'border-gray-100'
+                      }`}>
+                      <span>{lang.flag}</span>
+                      <span className="text-xs">{lang.name}</span>
+                    </button>
+                  ),
+                )}
                 <button
                   onClick={() => setIsLangOpen(!isLangOpen)}
                   className="col-span-2 text-primary text-xs font-bold text-center py-2 underline">
-                  Show all languages
+                  {isLangOpen ? 'Show less' : 'Show all languages'}
                 </button>
               </div>
 
