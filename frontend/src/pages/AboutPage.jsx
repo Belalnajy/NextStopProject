@@ -10,26 +10,47 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useSettings } from '../context/SettingsContext';
 
 const AboutPage = () => {
+  const { t } = useTranslation();
+  const { settings } = useSettings();
+
   const stats = [
-    { icon: Users, value: '50K+', label: 'Travelers Assisted' },
-    { icon: Clock, value: '24/7', label: 'Support Available' },
-    { icon: Award, value: '99%', label: 'Approval Rate' },
+    {
+      icon: Users,
+      value: settings?.stats_travelers || '50K+',
+      label: t('about.stats.travelers'),
+    },
+    {
+      icon: Clock,
+      value: settings?.stats_support || '24/7',
+      label: t('about.stats.support'),
+    },
+    {
+      icon: Award,
+      value: settings?.stats_approval || '99%',
+      label: t('about.stats.approval'),
+    },
   ];
 
   const features = [
     {
       icon: Globe,
-      title: 'Global Reach',
-      desc: 'Serving Travelers Everywhere',
+      title: t('about.features.global_title'),
+      desc: t('about.features.global_desc'),
     },
     {
       icon: ShieldCheck,
-      title: 'Secure Process',
-      desc: 'Data Protection Guaranteed',
+      title: t('about.features.secure_title'),
+      desc: t('about.features.secure_desc'),
     },
-    { icon: Star, title: 'Expert Support', desc: '24/7 Assistance' },
+    {
+      icon: Star,
+      title: t('about.features.expert_title'),
+      desc: t('about.features.expert_desc'),
+    },
   ];
 
   const containerVariants = {
@@ -94,41 +115,43 @@ const AboutPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-accent/20 border border-accent/30 text-accent text-sm font-semibold mb-8 w-fit">
             <Award size={14} />
-            Trusted Travel Partner
+            {t('about.badge')}
           </motion.div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight">
-            We Are <br />
-            <motion.span
-              className="relative inline-block"
-              animate={{
-                textShadow: [
-                  '0 0 20px rgba(212, 175, 110, 0)',
-                  '0 0 40px rgba(212, 175, 110, 0.3)',
-                  '0 0 20px rgba(212, 175, 110, 0)',
-                ],
-              }}
-              transition={{ duration: 3, repeat: Infinity }}>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light">
-                NextStop Visa
-              </span>
-              <svg
-                className="absolute w-full h-3 -bottom-1 left-0 text-accent opacity-50"
-                viewBox="0 0 200 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <motion.path
-                  d="M2.00025 6.99997C25.7535 3.19069 98.7107 -2.13111 197.669 2.58043"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 1.5, delay: 0.5 }}
-                />
-              </svg>
-            </motion.span>
+            <>
+              {t('about.title_prefix')} <br />
+              <motion.span
+                className="relative inline-block"
+                animate={{
+                  textShadow: [
+                    '0 0 20px rgba(212, 175, 110, 0)',
+                    '0 0 40px rgba(212, 175, 110, 0.3)',
+                    '0 0 20px rgba(212, 175, 110, 0)',
+                  ],
+                }}
+                transition={{ duration: 3, repeat: Infinity }}>
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light">
+                  {t('about.title_highlight')}
+                </span>
+                <svg
+                  className="absolute w-full h-3 -bottom-1 left-0 text-accent opacity-50"
+                  viewBox="0 0 200 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <motion.path
+                    d="M2.00025 6.99997C25.7535 3.19069 98.7107 -2.13111 197.669 2.58043"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{ duration: 1.5, delay: 0.5 }}
+                  />
+                </svg>
+              </motion.span>
+            </>
           </h1>
 
           <motion.div
@@ -136,30 +159,26 @@ const AboutPage = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible">
-            <motion.p variants={itemVariants}>
-              At <strong className="text-white">NextStop Visa</strong>, we are
-              dedicated to simplifying international travel. We specialize in
-              providing streamlined visa and ETA application assistance for
-              travelers worldwide.
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              Our team of{' '}
-              <span className="text-accent font-semibold">Travel Experts</span>{' '}
-              ensures that every application is reviewed with precision and
-              care, minimizing errors and delays.
-            </motion.p>
-            <motion.div
-              variants={itemVariants}
-              className="p-4 bg-white/5 border-l-4 border-accent rounded-r-xl backdrop-blur-sm">
-              <p className="text-sm italic text-white/60">
-                We are a private travel consultancy and are not affiliated with
-                any government.
-              </p>
-            </motion.div>
-            <motion.p variants={itemVariants}>
-              With our expertise, you can confidently plan your journey to the
-              UK, knowing that your travel authorization is in capable hands.
-            </motion.p>
+            <>
+              <motion.p
+                variants={itemVariants}
+                dangerouslySetInnerHTML={{ __html: t('about.mission_p1') }}
+              />
+              <motion.p
+                variants={itemVariants}
+                dangerouslySetInnerHTML={{ __html: t('about.mission_p2') }}
+              />
+              <motion.div
+                variants={itemVariants}
+                className="p-4 bg-white/5 border-l-4 border-accent rounded-r-xl backdrop-blur-sm">
+                <p className="text-sm italic text-white/60">
+                  {t('about.mission_disclaimer')}
+                </p>
+              </motion.div>
+              <motion.p variants={itemVariants}>
+                {t('about.mission_p3')}
+              </motion.p>
+            </>
           </motion.div>
 
           {/* Stats */}
@@ -197,7 +216,7 @@ const AboutPage = () => {
                 }}
                 whileTap={{ scale: 0.95 }}>
                 <span className="relative z-10 flex items-center gap-3">
-                  Start Your Application
+                  {t('about.cta')}
                   <ArrowRight className="group-hover:translate-x-2 transition-transform" />
                 </span>
                 <motion.div
@@ -219,7 +238,7 @@ const AboutPage = () => {
           className="lg:w-1/2 relative min-h-[500px] lg:min-h-auto overflow-hidden">
           <motion.img
             src="/hero_2.png"
-            alt="London Eye at Night"
+            alt={t('about.alt_london')}
             className="absolute inset-0 w-full h-full object-cover"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}

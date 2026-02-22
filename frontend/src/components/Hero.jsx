@@ -5,19 +5,21 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSettings } from '../context/SettingsContext';
 
-const heroImages = ['/hero.png', '/hero_2.png', '/hero_3.png'];
+const defaultImages = ['/hero.png', '/hero_2.png', '/hero_3.png'];
 
 const Hero = () => {
   const { t } = useTranslation();
   const { settings } = useSettings();
+  const images =
+    settings?.hero_images?.length > 0 ? settings.hero_images : defaultImages;
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+      setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [images.length]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -67,8 +69,8 @@ const Hero = () => {
         <AnimatePresence mode="wait">
           <motion.img
             key={currentImage}
-            src={heroImages[currentImage]}
-            alt="UK Landmark"
+            src={images[currentImage]}
+            alt={t('hero.alt_landmark')}
             initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.05 }}
@@ -137,30 +139,28 @@ const Hero = () => {
           <motion.h1
             variants={itemVariants}
             className="text-5xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
-            {settings?.hero_title || (
-              <>
-                {t('hero.title1')} <br />
-                <motion.span
-                  className="text-accent inline-block"
-                  animate={{
-                    textShadow: [
-                      '0 0 20px rgba(212, 175, 110, 0)',
-                      '0 0 40px rgba(212, 175, 110, 0.3)',
-                      '0 0 20px rgba(212, 175, 110, 0)',
-                    ],
-                  }}
-                  transition={{ duration: 3, repeat: Infinity }}>
-                  {t('hero.title2')}
-                </motion.span>
-              </>
-            )}
+            <>
+              {t('hero.title1')} <br />
+              <motion.span
+                className="text-accent inline-block"
+                animate={{
+                  textShadow: [
+                    '0 0 20px rgba(212, 175, 110, 0)',
+                    '0 0 40px rgba(212, 175, 110, 0.3)',
+                    '0 0 20px rgba(212, 175, 110, 0)',
+                  ],
+                }}
+                transition={{ duration: 3, repeat: Infinity }}>
+                {t('hero.title2')}
+              </motion.span>
+            </>
           </motion.h1>
 
           {/* Description */}
           <motion.p
             variants={itemVariants}
             className="text-xl text-white/80 mb-10 leading-relaxed font-light max-w-2xl">
-            {settings?.hero_subtitle || t('hero.subtitle')}
+            {t('hero.subtitle')}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -230,7 +230,7 @@ const Hero = () => {
 
       {/* Image Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {heroImages.map((_, index) => (
+        {images.map((_, index) => (
           <motion.button
             key={index}
             onClick={() => setCurrentImage(index)}

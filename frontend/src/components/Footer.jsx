@@ -27,6 +27,7 @@ const Footer = () => {
     { icon: Linkedin, label: 'LinkedIn' },
   ];
 
+  const quickLinksURLs = ['/', '/about', '/#requirements', '/#contact'];
   const quickLinks = [
     t('nav.home'),
     t('nav.about'),
@@ -35,11 +36,11 @@ const Footer = () => {
   ];
 
   const legalLinks = [
-    'Terms of Service',
-    'Privacy Policy',
-    'Cookie Policy',
-    'Refund Policy',
-    'Contact Support',
+    { label: t('footer.legal_links.terms'), url: '/terms' },
+    { label: t('footer.legal_links.privacy'), url: '/privacy' },
+    { label: t('footer.legal_links.cookie'), url: '/cookie' },
+    { label: t('footer.legal_links.refund'), url: '/refund' },
+    { label: t('footer.legal_links.support'), url: '/contact' },
   ];
 
   const containerVariants = {
@@ -97,7 +98,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-500 leading-relaxed mb-6">
-              {settings?.about_mission || t('footer.brand_desc')}
+              {t('footer.brand_desc')}
             </p>
             <div className="flex gap-3">
               {socialIcons.map((social, i) => (
@@ -118,18 +119,20 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}>
-            <h4 className="font-bold text-primary mb-8 text-lg">Quick Links</h4>
+            <h4 className="font-bold text-primary mb-8 text-lg">
+              {t('footer.quick_links')}
+            </h4>
             <ul className="space-y-3 text-gray-600">
-              {quickLinks.map((link) => (
-                <motion.li key={link} variants={itemVariants}>
-                  <a
-                    href="#"
+              {quickLinks.map((label, i) => (
+                <motion.li key={quickLinksURLs[i]} variants={itemVariants}>
+                  <Link
+                    to={quickLinksURLs[i]}
                     className="hover:text-primary font-medium flex items-center gap-2 group transition-colors">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent scale-0 group-hover:scale-100 transition-transform" />
                     <span className="group-hover:translate-x-1 transition-transform">
-                      {link}
+                      {label}
                     </span>
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
@@ -142,17 +145,17 @@ const Footer = () => {
             whileInView="visible"
             viewport={{ once: true }}>
             <h4 className="font-bold text-primary mb-8 text-lg">
-              Legal & Support
+              {t('footer.legal_support')}
             </h4>
             <ul className="space-y-3 text-gray-600">
               {legalLinks.map((link) => (
-                <motion.li key={link} variants={itemVariants}>
+                <motion.li key={link.url} variants={itemVariants}>
                   <a
-                    href="#"
+                    href={link.url}
                     className="hover:text-primary font-medium flex items-center gap-2 group transition-colors">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent scale-0 group-hover:scale-100 transition-transform" />
                     <span className="group-hover:translate-x-1 transition-transform">
-                      {link}
+                      {link.label}
                     </span>
                   </a>
                 </motion.li>
@@ -166,7 +169,9 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}>
-            <h4 className="font-bold text-primary mb-8 text-lg">Contact Us</h4>
+            <h4 className="font-bold text-primary mb-8 text-lg">
+              {t('footer.contact')}
+            </h4>
             <div className="space-y-6">
               <motion.div
                 className="flex gap-4 items-start text-gray-600 group cursor-pointer"
@@ -176,7 +181,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-primary mb-1">
-                    Email Support
+                    {t('footer.email_support')}
                   </p>
                   <a
                     href={`mailto:${settings?.contact_email || 'support@nextstopvisa.com'}`}
@@ -193,17 +198,9 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-primary mb-1">
-                    Office Location
+                    {t('footer.office_location')}
                   </p>
-                  <p>
-                    {settings?.contact_address || (
-                      <>
-                        123 Premier Way, London
-                        <br />
-                        United Kingdom, EC1A 1BB
-                      </>
-                    )}
-                  </p>
+                  <p className="whitespace-pre-line">{t('footer.address')}</p>
                 </div>
               </motion.div>
             </div>
@@ -224,7 +221,9 @@ const Footer = () => {
             </motion.div>
             <div>
               <p className="text-sm text-gray-500 leading-relaxed font-medium mb-4">
-                <span className="text-primary font-bold">Disclaimer:</span>{' '}
+                <span className="text-primary font-bold">
+                  {t('footer.disclaimer_title')}:
+                </span>{' '}
                 {t('footer.disclaimer')}
               </p>
             </div>
@@ -232,8 +231,7 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-sm text-gray-400 font-medium">
-              {settings?.copyright_text ||
-                `© ${currentYear} NextStop Visa. All rights reserved.`}
+              {t('footer.copyright', { year: currentYear })}
             </p>
             <div className="flex gap-6 items-center">
               <Link
@@ -244,13 +242,13 @@ const Footer = () => {
                   strokeWidth={2.5}
                   className="group-hover:text-primary transition-colors"
                 />
-                Admin
+                {t('footer.admin')}
               </Link>
               <motion.a
                 href="#"
                 className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors font-bold uppercase tracking-wider"
                 whileHover={{ y: -2 }}>
-                System Status
+                {t('footer.system_status')}
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               </motion.a>
             </div>

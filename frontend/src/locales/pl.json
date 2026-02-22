@@ -1,0 +1,486 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "apply": "Złóż wniosek",
+    "contact": "Kontakt",
+    "eligibility": "Sprawdź kwalifikowalność"
+  },
+  "hero": {
+    "badge": "Oficjalna usługa UK ETA",
+    "title1": "Twoja brama do",
+    "title2": "Wielkiej Brytanii",
+    "subtitle": "Uzyskaj elektroniczne zezwolenie na podróż szybko i bezpiecznie. Standardowy wymóg dla gości odwiedzających Wielką Brytanię.",
+    "cta_apply": "Złóż wniosek teraz",
+    "cta_check": "Sprawdź kwalifikowalność",
+    "alt_landmark": "Atrakcja turystyczna w Wielkiej Brytanii"
+  },
+  "info": {
+    "title": "Co to jest UK ETA?",
+    "subtitle": "Electronic Travel Authorisation (ETA) to nowy wymóg dla osób, które nie potrzebują wizy przy wjeździe do Wielkiej Brytanii. Jest on powiązany elektronicznie z Twoim paszportem.",
+    "card1_title": "Szybkie przetwarzanie",
+    "card1_desc": "Większość wniosków jest rozpatrywana w ciągu 3 dni roboczych.",
+    "card2_title": "Ważność przez 2 lata",
+    "card2_desc": "Ważny na wielokrotne podróże w ciągu 2 lat.",
+    "card3_title": "W pełni cyfrowy",
+    "card3_desc": "Brak konieczności wizyty w ambasadzie lub składania dokumentów papierowych."
+  },
+  "how_to_apply": {
+    "title": "Jak złożyć wniosek",
+    "step1_title": "Wypełnij formularz",
+    "step1_desc": "Wypełnij prosty formularz zgłoszeniowy online swoimi danymi.",
+    "step2_title": "Przegląd i płatność",
+    "step2_desc": "Zapłać bezpiecznie opłatę za przetwarzanie i przejrzyj swoje informacje.",
+    "step3_title": "Otrzymaj ETA",
+    "step3_desc": "Otrzymaj zatwierdzone zezwolenie ETA bezpośrednio na swój e-mail.",
+    "quick_easy": "Szybkie i łatwe"
+  },
+  "form": {
+    "common": {
+      "nextStep": "Następny krok",
+      "back": "Wstecz",
+      "yes": "Tak",
+      "no": "Nie",
+      "upload": "Wybierz plik",
+      "chooseFile": "Wybierz plik",
+      "example": "Przykład",
+      "guidelines": "Wytyczne",
+      "step": "Krok",
+      "clickToEnlarge": "Kliknij, aby powiększyć",
+      "ifApplicable": "Jeśli dotyczy",
+      "optional": "Opcjonalnie",
+      "englishRequirement": "Wszystkie pola muszą być wypełnione w języku angielskim",
+      "proceedToPayment": "Przejdź do płatności"
+    },
+    "step1": {
+      "title": "Informacje o podróży",
+      "subtitle": "Wprowadź dane podróży i paszportu",
+      "labels": {
+        "nationality": "Aktualne obywatelstwo",
+        "otherNationalities": "Czy posiadasz inne obywatelstwa?",
+        "arrivalDate": "Data przyjazdu do Wielkiej Brytanii",
+        "passportNumber": "Numer paszportu",
+        "passportCopy": "Kopia paszportu"
+      },
+      "subtexts": {
+        "otherNationalities": "Wymień wszystkie obywatelstwa posiadane w przeszłości.",
+        "passportCopy": "Zdjęcie musi być wyraźne, nieedytowane i pokazywać wszystkie cztery rogi.",
+        "passportGuideline": "Zdjęcie musi być wyraźne, nieedytowane i pokazywać wszystkie cztery rogi.",
+        "uploadFormats": "Akceptowane formaty: JPG, PNG, PDF (maks. 10 MB)"
+      },
+      "placeholders": {
+        "nationality": "Szukaj krajów...",
+        "passportNumber": "Wprowadź numer paszportu"
+      }
+    },
+    "step2": {
+      "title": "Dane osobowe",
+      "subtitle": "Wprowadź swoje dane osobowe",
+      "labels": {
+        "fullName": "Pełne imię i nazwisko",
+        "dob": "Data urodzenia",
+        "phone": "Numer telefonu",
+        "email": "Adres e-mail",
+        "photo": "Zdjęcie osobiste",
+        "personalPhoto": "Zdjęcie osobiste",
+        "guidelines": "Wytyczne dotyczące zdjęcia"
+      },
+      "subtexts": {
+        "email": "Adres e-mail, na który chcesz otrzymać decyzję o ETA",
+        "photo": "Zdjęcie musi być nieedytowane, na gładkim, jasnym tle i zrobione niedawno.",
+        "photoGuideline": "Zdjęcie musi być nieedytowane, na gładkim, jasnym tle i zrobione niedawno."
+      },
+      "placeholders": {
+        "fullName": "Wprowadź pełne imię i nazwisko",
+        "phone": "000 000 0000",
+        "email": "przyklad@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Wytyczne dotyczące zdjęcia",
+        "item1": "Jednolite, jasne tło",
+        "item2": "Brak nakrycia głowy (z wyjątkiem względów religijnych/medycznych)",
+        "item3": "Neutralny wyraz twarzy, oczy widoczne",
+        "item4": "Dobre oświetlenie bez cieni"
+      },
+      "phone_codes": {
+        "search": "Szukaj krajów..."
+      }
+    },
+    "step3": {
+      "title": "Adres",
+      "subtitle": "Podaj szczegóły swojego adresu zamieszkania",
+      "labels": {
+        "street": "Nazwa ulicy",
+        "building": "Numer/nazwa budynku",
+        "apartment": "Mieszkanie/numer lokalu (opcjonalnie)",
+        "area": "Obszar/dzielnica",
+        "postalCode": "Kod pocztowy",
+        "additional": "Dodatkowe informacje (opcjonalnie)",
+        "city": "Miasto",
+        "country": "Kraj",
+        "additionalInfo": "Dodatkowe informacje"
+      },
+      "placeholders": {
+        "street": "Wprowadź nazwę ulicy",
+        "building": "Wprowadź numer budynku",
+        "apartment": "Wprowadź numer mieszkania",
+        "area": "Wprowadź obszar",
+        "postalCode": "Wprowadź kod pocztowy",
+        "additional": "Np. obok supermarketu",
+        "additionalInfo": "Np. obok supermarketu",
+        "city": "Wprowadź miasto",
+        "country": "Szukaj krajów..."
+      }
+    },
+    "step4": {
+      "title": "Dodatkowe informacje",
+      "subtitle": "Kontekst zatrudnienia i historia",
+      "labels": {
+        "employmentStatus": "Status zatrudnienia",
+        "jobTitle": "Stanowisko",
+        "criminalConvictions": "Czy posiadasz jakiekolwiek wyroki skazujące?",
+        "terrorismQuestion": "Czy kiedykolwiek brałeś udział lub byłeś podejrzany o którykolwiek z poniższych punktów?",
+        "hasJob": "Czy obecnie jesteś zatrudniony?",
+        "hasCriminalRecord": "Czy posiadasz jakiekolwiek wyroki skazujące?",
+        "checklist": {
+          "item1": "Zbrodnie wojenne, ludobójstwo lub zbrodnie przeciwko ludzkości",
+          "item2": "Terroryzm, w tym wspieranie lub członkostwo w grupach terrorystycznych",
+          "item3": "Wspieranie grup ekstremistycznych",
+          "item4": "Wyrażanie poglądów ekstremistycznych"
+        }
+      },
+      "subtexts": {
+        "criminalGuideline": "Wymień wszystkie wyroki skazujące, nawet jeśli miały miejsce wiele lat temu lub w innym kraju."
+      },
+      "placeholders": {
+        "jobTitle": "Wprowadź swoje stanowisko",
+        "details": "Proszę podać szczegóły"
+      },
+      "options": {
+        "employed": "Zatrudniony",
+        "selfEmployed": "Samozatrudniony",
+        "student": "Student",
+        "unemployed": "Bezrobotny",
+        "retired": "Emeryt"
+      }
+    },
+    "step5": {
+      "title": "Oświadczenia",
+      "subtitle": "Potwierdź poniższe dane",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Potwierdzenie informacji",
+          "text": "Przesyłając ten wniosek, potwierdzasz, że zgodnie z Twoją najlepszą wiedzą podane informacje są poprawne.",
+          "warning": "W przypadku podania nieprawdziwych informacji: Twój wniosek może zostać odrzucony, możesz zostać pociągnięty do odpowiedzialności karnej lub otrzymać zakaz wjazdu do Wielkiej Brytanii. Jeśli składasz wniosek w imieniu innej osoby, musisz potwierdzić z nią, że wniosek jest kompletny i poprawny."
+        },
+        "acceptTerms": {
+          "title": "Regulamin",
+          "text": "Przeczytałem i zrozumiałem Regulamin oraz Politykę Prywatności. Cena obejmuje opłatę rządową (£16) oraz opłatę za przetwarzanie (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Czas przetwarzania",
+          "text": "Rozumiem, że przetwarzanie może zająć do 3 dni roboczych i potwierdzam, że data mojego przyjazdu do Wielkiej Brytanii nie nastąpi wcześniej niż po 3 dniach roboczych od dnia dzisiejszego."
+        }
+      }
+    },
+    "step6": {
+      "title": "Płatność",
+      "subtitle": "Dokończ płatność opłaty za wniosek",
+      "labels": {
+        "summary": {
+          "title": "Podsumowanie wniosku",
+          "applicant": "Wnioskodawca"
+        },
+        "pricing": {
+          "title": "Opłaty za przetwarzanie",
+          "govFee": "Opłata rządowa",
+          "serviceFee": "Opłata serwisowa i za przetwarzanie",
+          "total": "Suma całkowita"
+        },
+        "card": {
+          "title": "Dane karty",
+          "holder": "Imię i nazwisko posiadacza karty",
+          "number": "Numer karty",
+          "expiry": "Data ważności",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Imię i nazwisko tak, jak widnieją na karcie"
+      },
+      "subtexts": {
+        "securePayment": "Bezpieczna płatność szyfrowana 256-bitowym protokołem SSL",
+        "recaptcha": {
+          "text": "Ta strona jest chroniona przez reCAPTCHA i obowiązują",
+          "and": "oraz",
+          "apply": "Google."
+        }
+      },
+      "status": {
+        "processing": "Trwa przetwarzanie płatności..."
+      }
+    },
+    "step7": {
+      "title": "Wniosek przesłany pomyślnie!",
+      "subtitle": "Dziękujemy za złożenie wniosku. Wysłaliśmy wiadomość e-mail z potwierdzeniem na podany adres. Decyzja o ETA jest zwykle wydawana w ciągu 3 dni roboczych.",
+      "labels": {
+        "reference": "Numer referencyjny wniosku",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "Co dalej?",
+          "step1": "Sprawdź wiadomość e-mail z potwierdzeniem",
+          "step2": "Przejrzymy Twój wniosek w ciągu 3 dni roboczych",
+          "step3": "Otrzymaj zatwierdzoną decyzję o ETA drogą mailową"
+        },
+        "returnHome": "Wróć do strony głównej"
+      },
+      "status": {
+        "copied": "Skopiowano do schowka!"
+      }
+    },
+    "countries": {
+      "Dutch": "Holender",
+      "Belgian": "Belg",
+      "Swiss": "Szwajcar",
+      "Austrian": "Austriak",
+      "Swedish": "Szwed",
+      "Norwegian": "Norweg",
+      "Danish": "Duńczyk",
+      "Finnish": "Fin",
+      "Irish": "Irlandczyk",
+      "Portuguese": "Portugalczyk",
+      "Greek": "Grecki",
+      "Polish": "Polski",
+      "Czech": "Czech",
+      "Hungarian": "Węgier",
+      "Romanian": "Rumun",
+      "Bulgarian": "Bułgar",
+      "Croatian": "Chorwat",
+      "Serbian": "Serb",
+      "Turkish": "Turek",
+      "Russian": "Rosjanin",
+      "Ukrainian": "Ukrainiec",
+      "Chinese": "Chińczyk",
+      "Japanese": "Japonia",
+      "Korean": "Koreańczyk",
+      "Indian": "Indyjczyk",
+      "Pakistani": "Pakistańczyk",
+      "Bangladeshi": "Banglijczyk",
+      "Malaysian": "Malajczyk",
+      "Singaporean": "Singapurczyk",
+      "Indonesian": "Indonezyjczyk",
+      "Thai": "Tajlandczyk",
+      "Vietnamese": "Wietnamczyk",
+      "Filipino": "Filipińczyk",
+      "Brazilian": "Brazylijczyk",
+      "Mexican": "Meksykanin",
+      "Argentine": "Argentyńczyk",
+      "Colombian": "Kolumbijczyk",
+      "Chilean": "Chilijczyk",
+      "Peruvian": "Peruwiańczyk",
+      "Venezuelan": "Wenezuelczyk",
+      "South African": "Południowoafrykańczyk",
+      "Nigerian": "Nigeryjczyk",
+      "Kenyan": "Kenijczyk",
+      "Ghanaian": "Ghańczyk",
+      "Ethiopian": "Etiopczyk",
+      "Other": "Inne",
+      "Egypt": "Egipt",
+      "SaudiArabia": "Arabia Saudyjska",
+      "UAE": "ZEA",
+      "Qatar": "Katar",
+      "Kuwait": "Kuwejt",
+      "Bahrain": "Bahrajn",
+      "Oman": "Oman",
+      "Jordan": "Jordania",
+      "Lebanon": "Liban",
+      "USA/Canada": "USA / Kanada",
+      "UK": "Wielka Brytania",
+      "Germany": "Niemcy",
+      "France": "Francja",
+      "Italy": "Włochy",
+      "Spain": "Hiszpania",
+      "Netherlands": "Holandia",
+      "SouthAfrica": "RPA",
+      "India": "Indie",
+      "Pakistan": "Pakistan",
+      "China": "Chiny",
+      "Brazil": "Brazylia",
+      "Mexico": "Meksyk",
+      "Nigeria": "Nigeria",
+      "Japan": "Japonia",
+      "South Korea": "Korea Południowa"
+    }
+  },
+  "footer": {
+    "brand_desc": "Wspieranie globalnych podróżników poprzez płynne cyfrowe usługi autoryzacji dla Wielkiej Brytanii.",
+    "quick_links": "Szybkie linki",
+    "legal_links": {
+      "terms": "Regulamin",
+      "privacy": "Polityka Prywatności",
+      "cookie": "Polityka plików cookie",
+      "refund": "Polityka zwrotów",
+      "support": "Skontaktuj się z pomocą techniczną"
+    },
+    "contact": "Skontaktuj się z nami",
+    "disclaimer": "Wyłączenie odpowiedzialności: Ta strona jest prywatnym przewodnikiem informacyjnym. Nie jesteśmy powiązani z rządem Wielkiej Brytanii.",
+    "legal_support": "Legalność i wsparcie",
+    "email_support": "Wsparcie e-mailowe",
+    "office_location": "Lokalizacja biura",
+    "address": "123 Premier Road, Londyn\nWielka Brytania, EC1A 1BB",
+    "disclaimer_title": "Zastrzeżenie",
+    "copyright": "© {{year}} NextStop Visa. Wszelkie prawa zastrzeżone.",
+    "admin": "Panel sterowania",
+    "system_status": "Stan systemu"
+  },
+  "validation": {
+    "required": "To pole jest wymagane",
+    "invalidEmail": "Wprowadź prawidłowy adres e-mail",
+    "invalidPassport": "Wprowadź prawidłowy numer paszportu",
+    "invalidDate": "Wprowadź prawidłową datę",
+    "futureDateRequired": "Data przyjazdu musi przypadać co najmniej 3 dni robocze po dniu dzisiejszym",
+    "fileRequired": "Ten plik jest wymagany",
+    "maxFileSize": "Rozmiar pliku musi być mniejszy niż 10 MB",
+    "invalidFormat": "Dozwolone są tylko formaty JPG, PNG i PDF"
+  },
+  "countries": {
+    "Dutch": "Holenderski",
+    "Belgian": "Belgijski",
+    "Swiss": "Szwajcarski",
+    "Austrian": "Austriacki",
+    "Swedish": "Szwedzki",
+    "Norwegian": "Norweski",
+    "Danish": "Duński",
+    "Finnish": "Fiński",
+    "Irish": "Irlandzki",
+    "Portuguese": "Portugalski",
+    "Greek": "Grecki",
+    "Polish": "Polski",
+    "Czech": "Czeski",
+    "Hungarian": "Węgierski",
+    "Romanian": "Rumuński",
+    "Bulgarian": "Bułgarski",
+    "Croatian": "Chorwacki",
+    "Serbian": "Serbski",
+    "Turkish": "Turecki",
+    "Russian": "Rosyjski",
+    "Ukrainian": "Ukraiński",
+    "Chinese": "Chiński",
+    "Japanese": "Japonia",
+    "Korean": "Koreański",
+    "Indian": "Indyjski",
+    "Pakistani": "Pakistański",
+    "Bangladeshi": "Bangladeski",
+    "Malaysian": "Malajski",
+    "Singaporean": "Singapurski",
+    "Indonesian": "Indonezyjski",
+    "Thai": "Tajski",
+    "Vietnamese": "Wietnamski",
+    "Filipino": "Filipiński",
+    "Brazilian": "Brazylijski",
+    "Mexican": "Meksykański",
+    "Argentine": "Argentyński",
+    "Colombian": "Kolumbijski",
+    "Chilean": "Chilijski",
+    "Peruvian": "Peruwiański",
+    "Venezuelan": "Wenezuelski",
+    "South African": "Południowoafrykański",
+    "Nigerian": "Nigeryjski",
+    "Kenyan": "Kenijski",
+    "Ghanaian": "Ghański",
+    "Ethiopian": "Etiopski",
+    "Other": "Inne",
+    "Egypt": "Egipt",
+    "SaudiArabia": "Arabia Saudyjska",
+    "UAE": "ZEA",
+    "Qatar": "Katar",
+    "Kuwait": "Kuwejt",
+    "Bahrain": "Bahrajn",
+    "Oman": "Oman",
+    "Jordan": "Jordania",
+    "Lebanon": "Liban",
+    "USA/Canada": "USA / Kanada",
+    "UK": "Wielka Brytania",
+    "Germany": "Niemcy",
+    "France": "Francja",
+    "Italy": "Włochy",
+    "Spain": "Hiszpania",
+    "Netherlands": "Holandia",
+    "SouthKorea": "Korea Południowa",
+    "Australia": "Australia",
+    "SouthAfrica": "RPA",
+    "India": "Indie",
+    "Pakistan": "Pakistan",
+    "China": "Chiny",
+    "South Korea": "Korea Południowa",
+    "Brazil": "Brazylia",
+    "Nigeria": "Nigeria",
+    "Japan": "Japonia"
+  },
+  "requirements": {
+    "badge": "Czego będziesz potrzebować",
+    "title": "Wymagania",
+    "subtitle": "Lista kontrolna",
+    "description": "Przed rozpoczęciem składania wniosku upewnij się, że masz przygotowane następujące dokumenty i szczegóły, aby zapewnić płynny i pomyślny proces.",
+    "cta_apply": "Aplikuj teraz",
+    "alt_travel": "Podróż do Wielkiej Brytanii",
+    "eligibility_title": "Natychmiastowa weryfikacja kwalifikowalności",
+    "eligibility_desc": "Nie wiesz, czy potrzebujesz ETA? Skorzystaj z naszego interaktywnego narzędzia do sprawdzania, aby dowiedzieć się w ciągu kilku sekund.",
+    "cta_check": "Sprawdź teraz",
+    "items": {
+      "passport_title": "Ważny paszport biometryczny",
+      "passport_desc": "Musi pochodzić z kwalifikującego się kraju i być ważny przez cały okres Twojego pobytu.",
+      "photo_title": "Fotografia cyfrowa",
+      "photo_desc": "Wyraźne, aktualne zdjęcie cyfrowe zgodne z oficjalnymi specyfikacjami.",
+      "email_title": "Aktywny adres e-mail",
+      "email_desc": "Niezbędne do otrzymania statusu wniosku i zatwierdzonej ETA.",
+      "payment_title": "metoda płatności",
+      "payment_desc": "Karta kredytowa lub debetowa do uiszczenia obowiązkowej opłaty za wniosek."
+    }
+  },
+  "faq": {
+    "badge": "Czy masz pytania?",
+    "title": "Pytania",
+    "title_highlight": "Najczęściej",
+    "subtitle": "Znajdź szybkie odpowiedzi na najczęściej zadawane pytania dotyczące brytyjskiej eTA.",
+    "cta_title": "Czy jesteś gotowy na wizytę w Wielkiej Brytanii?",
+    "cta_desc": "Już dziś zdobądź eTA dla Wielkiej Brytanii. Proces jest szybki, prosty i odbywa się całkowicie online.",
+    "cta_btn": "Zacznij aplikować już teraz",
+    "questions": {
+      "q1": "Kto potrzebuje ETA do Wielkiej Brytanii?",
+      "a1": "Brytyjska ETA jest wymagana w przypadku obywateli krajów, które obecnie nie potrzebują wizy, aby wjechać do Wielkiej Brytanii na krótkie pobyty (do 6 miesięcy), w tym w celach turystycznych, odwiedzając rodzinę lub pracę.",
+      "q2": "Jak długo ważna jest ETA?",
+      "a2": "Zatwierdzona ETA jest ważna przez dwa lata od daty wydania lub do momentu wygaśnięcia ważności paszportu, w zależności od tego, co nastąpi wcześniej. W tym okresie dozwolone jest wielokrotne wjazdy do Wielkiej Brytanii.",
+      "q3": "Ile czasu zajmuje realizacja zamówienia?",
+      "a3": "Większość zamówień realizowana jest w ciągu 3 dni roboczych. Zalecamy jednak złożenie wniosku co najmniej jeden lub dwa tygodnie przed planowaną datą podróży, aby uwzględnić potencjalne opóźnienia.",
+      "q4": "Czy dzieci potrzebują ETA?",
+      "a4": "Tak, każdy podróżny, w tym niemowlęta i dzieci, musi mieć w paszporcie własną datę przyjazdu do Wielkiej Brytanii, aby wjechać do Wielkiej Brytanii.",
+      "q5": "Czy ETA gwarantuje wjazd?",
+      "a5": "Nie, podobnie jak wiza, ETA nie gwarantuje wjazdu. Ostateczną decyzję o zezwoleniu na wjazd do kraju podejmą funkcjonariusze Straży Granicznej w miejscu wjazdu do Wielkiej Brytanii."
+    }
+  },
+  "about": {
+    "badge": "Niezawodny partner w podróży",
+    "title_prefix": "My",
+    "title_highlight": "DalejZatrzymaj wizę",
+    "mission_p1": "W <strong class=\"text-white\">NextStop Visa</strong> dokładamy wszelkich starań, aby upraszczać podróże międzynarodowe. Specjalizujemy się w zapewnianiu usprawnionej pomocy w zakresie składania wniosków wizowych i ETA podróżnym na całym świecie.",
+    "mission_p2": "Nasz zespół <span class=\"text-accent Font-semibold\">ekspertów ds. podróży</span> dba o to, aby każdy wniosek był dokładnie i dokładnie sprawdzany, minimalizując błędy i opóźnienia.",
+    "mission_disclaimer": "Jesteśmy prywatnym konsultantem ds. podróży i nie jesteśmy powiązani z żadną agencją rządową.",
+    "mission_p3": "Dzięki naszemu doświadczeniu możesz bezpiecznie zaplanować podróż do Wielkiej Brytanii, wiedząc, że Twoje pozwolenie na podróż jest w kompetentnych rękach.",
+    "stats": {
+      "travelers": "Podróżnik asystował",
+      "support": "Dostępne wsparcie",
+      "approval": "Wskaźnik akceptacji"
+    },
+    "features": {
+      "global_title": "Globalne rozprzestrzenienie",
+      "global_desc": "Obsługujemy podróżnych na całym świecie",
+      "secure_title": "Bezpieczna obsługa",
+      "secure_desc": "Gwarantowana ochrona danych",
+      "expert_title": "Wsparcie ekspertów",
+      "expert_desc": "Pomoc całodobowa"
+    },
+    "cta": "Rozpocznij składanie zamówienia już teraz",
+    "alt_london": "London Eye nocą"
+  }
+}

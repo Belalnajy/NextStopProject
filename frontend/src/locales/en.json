@@ -12,7 +12,8 @@
     "title2": "United Kingdom",
     "subtitle": "Get your Electronic Travel Authorization quickly and securely. The standard requirement for visitors to the UK.",
     "cta_apply": "Apply Now",
-    "cta_check": "Check Eligibility"
+    "cta_check": "Check Eligibility",
+    "alt_landmark": "UK Landmark"
   },
   "info": {
     "title": "What is UK ETA?",
@@ -26,12 +27,55 @@
   },
   "how_to_apply": {
     "title": "How to Apply",
+    "quick_easy": "Quick & Easy",
     "step1_title": "Fill Form",
     "step1_desc": "Complete our simple online application form with your details.",
     "step2_title": "Review & Pay",
     "step2_desc": "Securely pay the processing fee and review your information.",
     "step3_title": "Receive ETA",
     "step3_desc": "Get your approved ETA sent directly to your email."
+  },
+  "requirements": {
+    "badge": "What You'll Need",
+    "title": "Requirements",
+    "subtitle": "Checklist",
+    "description": "Ensure you have the following documents and details ready before starting your application for a smooth and successful process.",
+    "cta_apply": "Apply Now",
+    "alt_travel": "UK Travel",
+    "eligibility_title": "Instant Eligibility Check",
+    "eligibility_desc": "Not sure if you need an ETA? Use our interactive checker to find out in seconds.",
+    "cta_check": "Check Now",
+    "items": {
+      "passport_title": "Valid Biometric Passport",
+      "passport_desc": "Must be from an eligible country and valid for your entire stay.",
+      "photo_title": "Digital Photograph",
+      "photo_desc": "A clear, recent digital photo according to official specifications.",
+      "email_title": "Active Email Address",
+      "email_desc": "Necessary to receive your application status and approved ETA.",
+      "payment_title": "Method of Payment",
+      "payment_desc": "Credit or debit card to pay the mandatory application fee."
+    }
+  },
+  "faq": {
+    "badge": "Got Questions?",
+    "title": "Frequently Asked",
+    "title_highlight": "Questions",
+    "subtitle": "Find quick answers to the most common questions about the UK Electronic Travel Authorization.",
+    "cta_title": "Ready to visit the United Kingdom?",
+    "cta_desc": "Get your UK Electronic Travel Authorization today. The process is quick, simple, and entirely online.",
+    "cta_btn": "Start Application Now",
+    "questions": {
+      "q1": "Who needs a UK ETA?",
+      "a1": "The UK ETA is required for nationals of countries who do not currently need a visa to enter the UK for short stays (up to 6 months), including for tourism, visiting family, or business.",
+      "q2": "How long is the ETA valid for?",
+      "a2": "An approved UK ETA is valid for two years from the date of issue, or until your passport expires, whichever comes first. It allows for multiple entries into the UK during this period.",
+      "q3": "How long does the application take to process?",
+      "a3": "Most applications are processed within 3 working days. However, we recommend applying at least 1-2 weeks before your planned travel date to account for any potential delays.",
+      "q4": "Do children need an ETA?",
+      "a4": "Yes, every traveler, including babies and children, must have their own individual ETA linked to their passport to enter the United Kingdom.",
+      "q5": "Is the ETA a guarantee of entry?",
+      "a5": "No, like a visa, an ETA does not guarantee entry. Border Force officers at the UK port of entry will make the final decision on whether to allow you into the country."
+    }
   },
   "form": {
     "common": {
@@ -313,13 +357,47 @@
   "footer": {
     "brand_desc": "Empowering global travelers with seamless digital authorization services for the United Kingdom.",
     "quick_links": "Quick Links",
-    "legal": "Legal & Support",
+    "legal_support": "Legal & Support",
     "legal_links": {
       "terms": "Terms and Conditions",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "cookie": "Cookie Policy",
+      "refund": "Refund Policy",
+      "support": "Contact Support"
     },
     "contact": "Contact Us",
-    "disclaimer": "Disclaimer: This website is a private informational guide. We are not affiliated with the UK Government."
+    "email_support": "Email Support",
+    "office_location": "Office Location",
+    "address": "123 Premier Way, London\nUnited Kingdom, EC1A 1BB",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer": "This website is a private informational guide. We are not affiliated with the UK Government.",
+    "copyright": "© {{year}} NextStop Visa. All rights reserved.",
+    "admin": "Admin",
+    "system_status": "System Status"
+  },
+  "about": {
+    "badge": "Trusted Travel Partner",
+    "title_prefix": "We Are",
+    "title_highlight": "NextStop Visa",
+    "mission_p1": "At <strong class=\"text-white\">NextStop Visa</strong>, we are dedicated to simplifying international travel. We specialize in providing streamlined visa and ETA application assistance for travelers worldwide.",
+    "mission_p2": "Our team of <span class=\"text-accent font-semibold\">Travel Experts</span> ensures that every application is reviewed with precision and care, minimizing errors and delays.",
+    "mission_disclaimer": "We are a private travel consultancy and are not affiliated with any government.",
+    "mission_p3": "With our expertise, you can confidently plan your journey to the UK, knowing that your travel authorization is in capable hands.",
+    "stats": {
+      "travelers": "Travelers Assisted",
+      "support": "Support Available",
+      "approval": "Approval Rate"
+    },
+    "features": {
+      "global_title": "Global Reach",
+      "global_desc": "Serving Travelers Everywhere",
+      "secure_title": "Secure Process",
+      "secure_desc": "Data Protection Guaranteed",
+      "expert_title": "Expert Support",
+      "expert_desc": "24/7 Assistance"
+    },
+    "cta": "Start Your Application",
+    "alt_london": "London Eye at Night"
   },
   "validation": {
     "required": "This field is required",

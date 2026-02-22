@@ -1,0 +1,486 @@
+{
+  "nav": {
+    "home": "Laman Utama",
+    "about": "Tentang Kami",
+    "apply": "Mohon Sekarang",
+    "contact": "Hubungi Kami",
+    "eligibility": "Semak Kelayakan"
+  },
+  "hero": {
+    "badge": "Perkhidmatan ETA Rasmi UK",
+    "title1": "Pintu Masuk Anda ke",
+    "title2": "United Kingdom",
+    "subtitle": "Dapatkan Kebenaran Perjalanan Elektronik anda dengan cepat dan selamat. Keperluan standard untuk pelawat United Kingdom.",
+    "cta_apply": "Mohon Sekarang",
+    "cta_check": "Semak Kelayakan",
+    "alt_landmark": "Tarikan pelancong di United Kingdom"
+  },
+  "info": {
+    "title": "Apakah itu UK ETA?",
+    "subtitle": "Kebenaran Perjalanan Elektronik (ETA) adalah keperluan baharu bagi orang yang tidak memerlukan visa untuk datang ke United Kingdom. Ia dikaitkan secara elektronik dengan pasport anda.",
+    "card1_title": "Pemprosesan Pantas",
+    "card1_desc": "Kebanyakan permohonan diproses dalam masa 3 hari bekerja.",
+    "card2_title": "Sah Selama 2 Tahun",
+    "card2_desc": "Sah untuk berbilang perjalanan sepanjang tempoh 2 tahun.",
+    "card3_title": "Digital Sepenuhnya",
+    "card3_desc": "Tidak perlu mengunjungi kedutaan atau menyerahkan dokumen kertas."
+  },
+  "how_to_apply": {
+    "title": "Cara Memohon",
+    "step1_title": "Isi Borang",
+    "step1_desc": "Lengkapkan borang permohonan dalam talian yang ringkas dengan butiran anda.",
+    "step2_title": "Semakan dan Pembayaran",
+    "step2_desc": "Bayar yuran pemprosesan dengan selamat dan semak maklumat anda.",
+    "step3_title": "Terima ETA",
+    "step3_desc": "Terima kebenaran ETA yang diluluskan terus ke e-mel anda.",
+    "quick_easy": "Cepat dan mudah"
+  },
+  "form": {
+    "common": {
+      "nextStep": "Langkah Seterusnya",
+      "back": "Kembali",
+      "yes": "Ya",
+      "no": "Tidak",
+      "upload": "Pilih Fail",
+      "chooseFile": "Pilih Fail",
+      "example": "Contoh",
+      "guidelines": "Garis Panduan",
+      "step": "Langkah",
+      "clickToEnlarge": "Klik untuk besarkan",
+      "ifApplicable": "Jika berkenaan",
+      "optional": "Pilihan",
+      "englishRequirement": "Semua medan mesti diisi dalam bahasa Inggeris",
+      "proceedToPayment": "Teruskan ke Pembayaran"
+    },
+    "step1": {
+      "title": "Maklumat Perjalanan",
+      "subtitle": "Masukkan butiran perjalanan dan pasport",
+      "labels": {
+        "nationality": "Kewarganegaraan Semasa",
+        "otherNationalities": "Adakah anda mempunyai kewarganegaraan lain?",
+        "arrivalDate": "Tarikh Ketibaan di United Kingdom",
+        "passportNumber": "Nombor Pasport",
+        "passportCopy": "Salinan Pasport"
+      },
+      "subtexts": {
+        "otherNationalities": "Senaraikan sebarang kewarganegaraan yang anda miliki pada masa lalu.",
+        "passportCopy": "Imej mestilah jelas, tidak diubah dan menunjukkan keempat-empat penjuru.",
+        "passportGuideline": "Imej mestilah jelas, tidak diubah dan menunjukkan keempat-empat penjuru.",
+        "uploadFormats": "Format yang diterima: JPG, PNG, PDF (maksimum 10MB)"
+      },
+      "placeholders": {
+        "nationality": "Cari negara...",
+        "passportNumber": "Masukkan nombor pasport"
+      }
+    },
+    "step2": {
+      "title": "Data Peribadi",
+      "subtitle": "Masukkan maklumat peribadi anda",
+      "labels": {
+        "fullName": "Nama Penuh",
+        "dob": "Tarikh Lahir",
+        "phone": "Nombor Telefon",
+        "email": "E-mel",
+        "photo": "Foto Peribadi",
+        "personalPhoto": "Foto Peribadi",
+        "guidelines": "Garis Panduan Foto"
+      },
+      "subtexts": {
+        "email": "E-mel di mana anda ingin menerima keputusan ETA anda",
+        "photo": "Foto mestilah tidak diubah, dengan latar belakang warna rata yang cerah, dan diambil baru-baru ini.",
+        "photoGuideline": "Foto mestilah tidak diubah, with latar belakang warna rata yang cerah, dan diambil baru-baru ini."
+      },
+      "placeholders": {
+        "fullName": "Masukkan nama penuh anda",
+        "phone": "000 000 0000",
+        "email": "contoh@email.com"
+      },
+      "photoGuidelines": {
+        "title": "Garis Panduan Foto",
+        "item1": "Latar belakang warna cerah yang rata",
+        "item2": "Tiada penutup kepala (kecuali atas sebab agama/perubatan)",
+        "item3": "Ekspresi muka neutral, mata kelihatan",
+        "item4": "Pencahayaan yang baik tanpa bayang-bayang"
+      },
+      "phone_codes": {
+        "search": "Cari negara..."
+      }
+    },
+    "step3": {
+      "title": "Alamat",
+      "subtitle": "Berikan butiran alamat tempat tinggal anda",
+      "labels": {
+        "street": "Nama Jalan",
+        "building": "Nombor/Nama Bangunan",
+        "apartment": "Apartmen/Unit (pilihan)",
+        "area": "Kawasan/Kejiranan",
+        "postalCode": "Poskod",
+        "additional": "Maklumat Tambahan (pilihan)",
+        "city": "Bandar",
+        "country": "Negara",
+        "additionalInfo": "Maklumat Tambahan"
+      },
+      "placeholders": {
+        "street": "Masukkan nama jalan",
+        "building": "Masukkan nombor bangunan",
+        "apartment": "Masukkan nombor apartmen",
+        "area": "Masukkan kawasan",
+        "postalCode": "Masukkan poskod",
+        "additional": "Cth: di sebelah pasar raya",
+        "additionalInfo": "Cth: di sebelah pasar raya",
+        "city": "Masukkan bandar",
+        "country": "Cari negara..."
+      }
+    },
+    "step4": {
+      "title": "Maklumat Tambahan",
+      "subtitle": "Konteks pekerjaan dan sejarah",
+      "labels": {
+        "employmentStatus": "Status Pekerjaan",
+        "jobTitle": "Jawatan Pekerjaan",
+        "criminalConvictions": "Adakah anda mempunyai sebarang sabitan jenayah?",
+        "terrorismQuestion": "Pernahkah anda mengambil bahagian dalam atau disyaki dalam mana-mana yang berikut?",
+        "hasJob": "Adakah anda bekerja sekarang?",
+        "hasCriminalRecord": "Adakah anda mempunyai sebarang sabitan jenayah?",
+        "checklist": {
+          "item1": "Jenayah perang, pembunuhan beramai-ramai atau jenayah terhadap kemanusiaan",
+          "item2": "Keganasan termasuk sokongan atau keahlian kumpulan pengganas",
+          "item3": "Sokongan kepada kumpulan pelampau",
+          "item4": "Menyuarakan pandangan pelampau"
+        }
+      },
+      "subtexts": {
+        "criminalGuideline": "Senaraikan sebarang sabitan, walaupun ia berlaku bertahun-tahun yang lalu atau di negara lain."
+      },
+      "placeholders": {
+        "jobTitle": "Masukkan jawatan anda",
+        "details": "Sila berikan butiran"
+      },
+      "options": {
+        "employed": "Bekerja",
+        "selfEmployed": "Bekerja Sendiri",
+        "student": "Pelajar",
+        "unemployed": "Tidak Bekerja",
+        "retired": "Pesara"
+      }
+    },
+    "step5": {
+      "title": "Pengisytiharan",
+      "subtitle": "Sila sahkan data berikut",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Pengesahan Maklumat",
+          "text": "Dengan menghantar permohonan ini, anda mengesahkan bahawa, sepanjang pengetahuan anda, maklumat yang anda berikan adalah betul.",
+          "warning": "Jika anda memberikan sebarang maklumat palsu: permohonan anda mungkin ditolak, anda mungkin didakwa, atau anda mungkin dilarang masuk ke United Kingdom. Jika anda memohon bagi pihak orang lain, anda mesti mengesahkan dengan mereka bahawa permohonan itu lengkap dan betul."
+        },
+        "acceptTerms": {
+          "title": "Terma dan Syarat",
+          "text": "Saya telah membaca dan memahami Terma dan Syarat serta Dasar Privasi. Harga termasuk yuran kerajaan (£16) dan yuran pemprosesan (£81)."
+        },
+        "confirmProcessingTime": {
+          "title": "Masa Pemprosesan",
+          "text": "Saya faham bahawa pemprosesan boleh mengambil masa sehingga 3 hari bekerja dan saya mengesahkan bahawa tarikh ketibaan saya di United Kingdom tidak akan sebelum 3 hari bekerja dari hari ini."
+        }
+      }
+    },
+    "step6": {
+      "title": "Pembayaran",
+      "subtitle": "Lengkapkan pembayaran yuran permohonan",
+      "labels": {
+        "summary": {
+          "title": "Ringkasan Permohonan",
+          "applicant": "Pemohon"
+        },
+        "pricing": {
+          "title": "Yuran Pemprosesan",
+          "govFee": "Yuran Kerajaan",
+          "serviceFee": "Yuran Perkhidmatan dan Pemprosesan",
+          "total": "Jumlah Keseluruhan"
+        },
+        "card": {
+          "title": "Butiran Kad",
+          "holder": "Nama Pemegang Kad",
+          "number": "Nombor Kad",
+          "expiry": "Tarikh Tamat Tempoh",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Nama seperti yang tertera pada kad"
+      },
+      "subtexts": {
+        "securePayment": "Pembayaran selamat disulitkan dengan SSL 256-bit",
+        "recaptcha": {
+          "text": "Tapak ini dilindungi oleh reCAPTCHA dan",
+          "and": "dan",
+          "apply": "Google digunakan."
+        }
+      },
+      "status": {
+        "processing": "Sedang memproses pembayaran..."
+      }
+    },
+    "step7": {
+      "title": "Permohonan Berjaya Dihantar!",
+      "subtitle": "Terima kasih atas permohonan anda. Kami telah menghantar e-mel pengesahan ke alamat yang diberikan. Keputusan ETA biasanya diproses dalam masa 3 hari bekerja.",
+      "labels": {
+        "reference": "Nombor Rujukan Permohonan",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "Apa yang Berlaku Selepas Ini?",
+          "step1": "Semak e-mel pengesahan anda",
+          "step2": "Kami akan menyemak permohonan anda dalam masa 3 hari bekerja",
+          "step3": "Terima keputusan ETA yang diluluskan melalui e-mel"
+        },
+        "returnHome": "Kembali ke Laman Utama"
+      },
+      "status": {
+        "copied": "Disalin ke papan keratan!"
+      }
+    },
+    "countries": {
+      "Dutch": "Belanda",
+      "Belgian": "Belgium",
+      "Swiss": "Switzerland",
+      "Austrian": "Austria",
+      "Swedish": "Sweden",
+      "Norwegian": "Norway",
+      "Danish": "Denmark",
+      "Finnish": "Finland",
+      "Irish": "Ireland",
+      "Portuguese": "Portugal",
+      "Greek": "Greek",
+      "Polish": "Poland",
+      "Czech": "Czech",
+      "Hungarian": "Hungary",
+      "Romanian": "Romania",
+      "Bulgarian": "Bulgaria",
+      "Croatian": "Croatia",
+      "Serbian": "Serbia",
+      "Turkish": "Turki",
+      "Russian": "Rusia",
+      "Ukrainian": "Ukraine",
+      "Chinese": "Cina",
+      "Japanese": "Jepun",
+      "Korean": "Korea",
+      "Indian": "India",
+      "Pakistani": "Pakistan",
+      "Bangladeshi": "Bangladesh",
+      "Malaysian": "Malaysia",
+      "Singaporean": "Singapura",
+      "Indonesian": "Indonesia",
+      "Thai": "Thailand",
+      "Vietnamese": "Vietnam",
+      "Filipino": "Filipina",
+      "Brazilian": "Brazil",
+      "Mexican": "Mexico",
+      "Argentine": "Argentina",
+      "Colombian": "Colombia",
+      "Chilean": "Chile",
+      "Peruvian": "Peru",
+      "Venezuelan": "Venezuela",
+      "South African": "Afrika Selatan",
+      "Nigerian": "Nigeria",
+      "Kenyan": "Kenya",
+      "Ghanaian": "Ghana",
+      "Ethiopian": "Ethiopia",
+      "Other": "Lain-lain",
+      "Egypt": "Mesir",
+      "SaudiArabia": "Arab Saudi",
+      "UAE": "UAE",
+      "Qatar": "Qatar",
+      "Kuwait": "Kuwait",
+      "Bahrain": "Bahrain",
+      "Oman": "Oman",
+      "Jordan": "Jordan",
+      "Lebanon": "Lubnan",
+      "USA/Canada": "AS / Kanada",
+      "UK": "United Kingdom",
+      "Germany": "Jerman",
+      "France": "Perancis",
+      "Italy": "Itali",
+      "Spain": "Sepanyol",
+      "Netherlands": "Belanda",
+      "SouthAfrica": "Afrika Selatan",
+      "India": "India",
+      "Pakistan": "Pakistan",
+      "China": "China",
+      "Brazil": "Brazil",
+      "Mexico": "Mexico",
+      "Nigeria": "Nigeria",
+      "Japan": "Jepun",
+      "South Korea": "Korea Selatan"
+    }
+  },
+  "footer": {
+    "brand_desc": "Memperkasakan pengembara global melalui perkhidmatan kebenaran digital yang lancar untuk United Kingdom.",
+    "quick_links": "Pautan Pantas",
+    "legal_links": {
+      "terms": "Terma dan Syarat",
+      "privacy": "Dasar Privasi",
+      "cookie": "Dasar Kuki",
+      "refund": "Polisi Bayaran Balik",
+      "support": "Hubungi sokongan"
+    },
+    "contact": "Hubungi Kami",
+    "disclaimer": "Penafian: Laman web ini adalah panduan maklumat peribadi. Kami tidak bergabung dengan kerajaan United Kingdom.",
+    "legal_support": "Undang-undang dan sokongan",
+    "email_support": "Sokongan e-mel",
+    "office_location": "Lokasi pejabat",
+    "address": "123 Premier Road, London\nUnited Kingdom, EC1A 1BB",
+    "disclaimer_title": "Penafian",
+    "copyright": "© {{year}} NextStop Visa. Semua hak terpelihara.",
+    "admin": "Panel kawalan",
+    "system_status": "Status sistem"
+  },
+  "validation": {
+    "required": "Medan ini diperlukan",
+    "invalidEmail": "Sila masukkan alamat e-mel yang sah",
+    "invalidPassport": "Sila masukkan nombor pasport yang sah",
+    "invalidDate": "Sila masukkan tarikh yang sah",
+    "futureDateRequired": "Tarikh ketibaan mestilah sekurang-kurangnya 3 hari bekerja selepas hari ini",
+    "fileRequired": "Fail ini diperlukan",
+    "maxFileSize": "Saiz fail mestilah kurang daripada 10MB",
+    "invalidFormat": "Hanya format JPG, PNG dan PDF sahaja dibenarkan"
+  },
+  "countries": {
+    "Dutch": "Belanda",
+    "Belgian": "Belgium",
+    "Swiss": "Switzerland",
+    "Austrian": "Austria",
+    "Swedish": "Sweden",
+    "Norwegian": "Norway",
+    "Danish": "Denmark",
+    "Finnish": "Finland",
+    "Irish": "Ireland",
+    "Portuguese": "Portugis",
+    "Greek": "Greek",
+    "Polish": "Poland",
+    "Czech": "Czech",
+    "Hungarian": "Hungary",
+    "Romanian": "Romania",
+    "Bulgarian": "Bulgaria",
+    "Croatian": "Croatia",
+    "Serbian": "Serbia",
+    "Turkish": "Turki",
+    "Russian": "Rusia",
+    "Ukrainian": "Ukraine",
+    "Chinese": "Cina",
+    "Japanese": "Jepun",
+    "Korean": "Korea",
+    "Indian": "India",
+    "Pakistani": "Pakistan",
+    "Bangladeshi": "Bangladesh",
+    "Malaysian": "Melayu",
+    "Singaporean": "Singapura",
+    "Indonesian": "Indonesia",
+    "Thai": "Thailand",
+    "Vietnamese": "Vietnam",
+    "Filipino": "Filipina",
+    "Brazilian": "Brazil",
+    "Mexican": "Mexico",
+    "Argentine": "Argentina",
+    "Colombian": "Colombia",
+    "Chilean": "Chile",
+    "Peruvian": "Peru",
+    "Venezuelan": "Venezuela",
+    "South African": "Afrika Selatan",
+    "Nigerian": "Nigeria",
+    "Kenyan": "Kenya",
+    "Ghanaian": "Ghana",
+    "Ethiopian": "Ethiopia",
+    "Other": "Lain-lain",
+    "Egypt": "Mesir",
+    "SaudiArabia": "Arab Saudi",
+    "UAE": "UAE",
+    "Qatar": "Qatar",
+    "Kuwait": "Kuwait",
+    "Bahrain": "Bahrain",
+    "Oman": "Oman",
+    "Jordan": "Jordan",
+    "Lebanon": "Lubnan",
+    "USA/Canada": "AS / Kanada",
+    "UK": "United Kingdom",
+    "Germany": "Jerman",
+    "France": "Perancis",
+    "Italy": "Itali",
+    "Spain": "Sepanyol",
+    "Netherlands": "Belanda",
+    "SouthKorea": "Korea Selatan",
+    "Australia": "Australia",
+    "SouthAfrica": "Afrika Selatan",
+    "India": "India",
+    "Pakistan": "Pakistan",
+    "China": "China",
+    "Japan": "Jepun",
+    "South Korea": "Korea Selatan",
+    "Brazil": "Brazil",
+    "Nigeria": "Nigeria"
+  },
+  "requirements": {
+    "badge": "Apa yang anda perlukan",
+    "title": "Keperluan",
+    "subtitle": "Senarai semak",
+    "description": "Pastikan anda menyediakan dokumen dan butiran berikut sebelum memulakan permohonan anda untuk memastikan proses yang lancar dan berjaya.",
+    "cta_apply": "Mohon sekarang",
+    "alt_travel": "Melancong ke United Kingdom",
+    "eligibility_title": "Pengesahan kelayakan segera",
+    "eligibility_desc": "Tidak pasti jika anda memerlukan ETA? Gunakan penyemak interaktif kami untuk mengetahui dalam beberapa saat.",
+    "cta_check": "Semak sekarang",
+    "items": {
+      "passport_title": "Pasport biometrik yang sah",
+      "passport_desc": "Mestilah dari negara yang layak dan sah sepanjang tempoh penginapan anda.",
+      "photo_title": "Gambar digital",
+      "photo_desc": "Foto digital terkini yang jelas mengikut spesifikasi rasmi.",
+      "email_title": "Alamat e-mel aktif",
+      "email_desc": "Diperlukan untuk menerima status permohonan anda dan ETA yang diluluskan.",
+      "payment_title": "kaedah pembayaran",
+      "payment_desc": "Kad kredit atau debit untuk membayar yuran permohonan mandatori."
+    }
+  },
+  "faq": {
+    "badge": "Adakah anda mempunyai soalan?",
+    "title": "Soalan",
+    "title_highlight": "Paling biasa",
+    "subtitle": "Dapatkan jawapan pantas kepada soalan yang paling kerap ditanya tentang eTA UK.",
+    "cta_title": "Adakah anda bersedia untuk melawat UK?",
+    "cta_desc": "Dapatkan eTA anda untuk UK hari ini. Prosesnya cepat, mudah dan dilakukan sepenuhnya dalam talian.",
+    "cta_btn": "Mula memohon sekarang",
+    "questions": {
+      "q1": "Siapa yang memerlukan ETA untuk UK?",
+      "a1": "ETA UK diperlukan untuk warga negara dari negara yang pada masa ini tidak memerlukan visa untuk memasuki UK untuk penginapan singkat (sehingga 6 bulan), termasuk pelancongan, melawat keluarga atau bekerja.",
+      "q2": "Berapa lama tempoh ETA sah?",
+      "a2": "ETA yang diluluskan adalah sah selama dua tahun dari tarikh dikeluarkan, atau sehingga pasport anda tamat tempoh, yang mana terdahulu. Berbilang penyertaan ke UK dibenarkan dalam tempoh ini.",
+      "q3": "Berapa lama masa yang diambil untuk memproses pesanan?",
+      "a3": "Kebanyakan pesanan diproses dalam masa 3 hari perniagaan. Walau bagaimanapun, kami mengesyorkan memohon sekurang-kurangnya satu atau dua minggu sebelum tarikh perjalanan anda yang dirancang untuk mengambil kira sebarang kemungkinan kelewatan.",
+      "q4": "Adakah kanak-kanak memerlukan ETA?",
+      "a4": "Ya, setiap pengembara, termasuk bayi dan kanak-kanak, mesti mempunyai ETA mereka sendiri yang diatur dalam pasport mereka untuk memasuki UK.",
+      "q5": "Adakah ETA menjamin kemasukan?",
+      "a5": "Tidak, seperti visa, ETA tidak menjamin kemasukan. Pegawai Pasukan Sempadan di tempat kemasukan ke UK akan membuat keputusan muktamad untuk membenarkan anda memasuki negara itu."
+    }
+  },
+  "about": {
+    "badge": "Rakan kongsi perjalanan yang boleh dipercayai",
+    "title_prefix": "kita",
+    "title_highlight": "Visa NextStop",
+    "mission_p1": "Di <strong class=\"text-white\">NextStop Visa</strong>, kami berdedikasi untuk memudahkan perjalanan antarabangsa. Kami pakar dalam menyediakan bantuan permohonan visa dan ETA yang diperkemas kepada pelancong di seluruh dunia.",
+    "mission_p2": "Pasukan kami yang terdiri daripada <span class=\"text-accent font-semilold\">pakar perjalanan</span> memastikan setiap aplikasi disemak dengan teliti dan teliti, meminimumkan ralat dan kelewatan.",
+    "mission_disclaimer": "Kami adalah perunding perjalanan persendirian dan tidak bergabung dengan mana-mana agensi kerajaan.",
+    "mission_p3": "Dengan pengalaman kami, anda boleh merancang perjalanan anda ke UK dengan yakin, mengetahui bahawa permit perjalanan anda berada di tangan yang mampu.",
+    "stats": {
+      "travelers": "Pengembara dibantu",
+      "support": "Sokongan tersedia",
+      "approval": "Kadar penerimaan"
+    },
+    "features": {
+      "global_title": "Penyebaran global",
+      "global_desc": "Melayan pelancong di mana-mana",
+      "secure_title": "Operasi selamat",
+      "secure_desc": "Perlindungan data dijamin",
+      "expert_title": "Sokongan pakar",
+      "expert_desc": "Sepanjang masa membantu"
+    },
+    "cta": "Mulakan pesanan anda sekarang",
+    "alt_london": "London Eye pada waktu malam"
+  }
+}

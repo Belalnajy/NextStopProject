@@ -152,7 +152,7 @@ const HowToApply = () => {
               variants={cardVariants}
               className="relative group">
               {/* Glow Effect */}
-              <motion.div className="absolute -inset-1 bg-linear-to-r from-accent/30 via-primary/20 to-accent/30 rounded-[2rem] opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+              <motion.div className="absolute -inset-1 bg-linear-to-r from-accent/30 via-primary/20 to-accent/30 rounded-4xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
 
               {/* Card */}
               <motion.div
@@ -180,14 +180,14 @@ const HowToApply = () => {
                 <h3 className="text-2xl font-bold text-primary mb-4 z-10">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed z-10 flex-grow">
+                <p className="text-gray-600 leading-relaxed z-10 grow">
                   {step.description}
                 </p>
 
                 {/* Check Mark */}
                 <div className="mt-6 pt-4 border-t border-slate-100 w-full flex items-center gap-2 text-sm text-accent font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                   <CheckCircle size={16} />
-                  Quick & Easy
+                  {t('how_to_apply.quick_easy')}
                 </div>
               </motion.div>
             </motion.div>

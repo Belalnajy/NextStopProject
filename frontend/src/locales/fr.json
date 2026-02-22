@@ -2,36 +2,38 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "apply": "Postuler maintenant",
+    "apply": "Postuler",
     "contact": "Contact",
     "eligibility": "Vérifier l'éligibilité"
   },
   "hero": {
-    "badge": "Service officiel de l'AVE au Royaume-Uni",
+    "badge": "Service officiel de l'ETA au Royaume-Uni",
     "title1": "Votre porte d'entrée vers le",
     "title2": "Royaume-Uni",
-    "subtitle": "Obtenez votre autorisation de voyage électronique rapidement et en toute sécurité. L'exigence standard pour les visiteurs au Royaume-Uni.",
+    "subtitle": "Obtenez votre autorisation de voyage électronique rapidement et en toute sécurité. L'exigence standard pour les visiteurs du Royaume-Uni.",
     "cta_apply": "Postuler maintenant",
-    "cta_check": "Vérifier l'éligibilité"
+    "cta_check": "Vérifier l'éligibilité",
+    "alt_landmark": "Attraction touristique au Royaume-Uni"
   },
   "info": {
-    "title": "Qu'est-ce que l'AVE du Royaume-Uni ?",
-    "subtitle": "L'Autorisation de voyage électronique (AVE) est une nouvelle exigence pour les personnes qui n'ont pas besoin de visa pour venir au Royaume-Uni. Elle est liée électroniquement à votre passeport.",
-    "card1_title": "Traitement rapide",
+    "title": "Qu'est-ce que l'ETA UK ?",
+    "subtitle": "L'Autorisation de Voyage Électronique (ETA) est une nouvelle exigence pour les personnes n'ayant pas besoin de visa pour venir au Royaume-Uni. Elle est liée numériquement à votre passeport.",
+    "card1_title": "Traitement Rapide",
     "card1_desc": "La plupart des demandes sont traitées dans un délai de 3 jours ouvrables.",
-    "card2_title": "Validité de 2 ans",
+    "card2_title": "Validité de 2 Ans",
     "card2_desc": "Valable pour plusieurs voyages sur une période de 2 ans.",
-    "card3_title": "Entièrement numérique",
-    "card3_desc": "Pas besoin de se rendre dans une ambassade ou de fournir des documents physiques."
+    "card3_title": "Entièrement Numérique",
+    "card3_desc": "Pas besoin de visiter une ambassade ou de soumettre des documents papier."
   },
   "how_to_apply": {
-    "title": "Comment postuler",
-    "step1_title": "Remplir le formulaire",
-    "step1_desc": "Remplissez notre formulaire de demande en ligne simple avec vos coordonnées.",
-    "step2_title": "Réviser et payer",
-    "step2_desc": "Payez en toute sécurité les frais de traitement et vérifiez vos informations.",
-    "step3_title": "Recevoir l'AVE",
-    "step3_desc": "Recevez votre AVE approuvée directement dans votre boîte e-mail."
+    "title": "Comment Postuler",
+    "step1_title": "Remplir le Formulaire",
+    "step1_desc": "Complétez le formulaire de demande en ligne simple avec vos coordonnées.",
+    "step2_title": "Révision et Paiement",
+    "step2_desc": "Payez les frais de traitement en toute sécurité et révisez vos informations.",
+    "step3_title": "Recevoir l'ETA",
+    "step3_desc": "Recevez votre autorisation ETA approuvée directement par e-mail.",
+    "quick_easy": "Rapide et facile"
   },
   "form": {
     "common": {
@@ -40,15 +42,19 @@
       "yes": "Oui",
       "no": "Non",
       "upload": "Choisir un fichier",
+      "chooseFile": "Choisir un fichier",
       "example": "Exemple",
       "guidelines": "Directives",
       "step": "Étape",
+      "clickToEnlarge": "Cliquer pour agrandir",
+      "ifApplicable": "Si applicable",
+      "optional": "Optionnel",
       "englishRequirement": "Tous les champs doivent être remplis en anglais",
       "proceedToPayment": "Procéder au paiement"
     },
     "step1": {
-      "title": "Informations de voyage",
-      "subtitle": "Saisissez vos informations de voyage et de passeport",
+      "title": "Informations de Voyage",
+      "subtitle": "Saisissez les détails de voyage et de passeport",
       "labels": {
         "nationality": "Nationalité actuelle",
         "otherNationalities": "Avez-vous d'autres nationalités ?",
@@ -57,8 +63,10 @@
         "passportCopy": "Copie du passeport"
       },
       "subtexts": {
-        "otherNationalities": "Incluez toutes les nationalités que vous avez eues par le passé.",
-        "passportCopy": "La photo doit être non altérée, claire, sans reflet et montrer les 4 coins."
+        "otherNationalities": "Listez toutes les nationalités que vous avez eues par le passé.",
+        "passportCopy": "L'image doit être claire, non retouchée et montrer les quatre coins.",
+        "passportGuideline": "L'image doit être claire, non retouchée et montrer les quatre coins.",
+        "uploadFormats": "Formats acceptés : JPG, PNG, PDF (max 10 Mo)"
       },
       "placeholders": {
         "nationality": "Rechercher des pays...",
@@ -66,30 +74,33 @@
       }
     },
     "step2": {
-      "title": "Détails personnels",
+      "title": "Données Personnelles",
       "subtitle": "Saisissez vos informations personnelles",
       "labels": {
         "fullName": "Nom complet",
         "dob": "Date de naissance",
         "phone": "Numéro de téléphone",
-        "email": "Adresse e-mail",
-        "photo": "Photo personnelle"
+        "email": "E-mail",
+        "photo": "Photo d'identité",
+        "personalPhoto": "Photo d'identité",
+        "guidelines": "Directives pour la photo"
       },
       "subtexts": {
-        "email": "L'adresse e-mail où vous souhaitez recevoir votre décision AVE",
-        "photo": "La photo doit être non altérée, prise récemment, avec un fond clair uni."
+        "email": "L'e-mail où vous souhaitez recevoir la décision de l'ETA",
+        "photo": "La photo doit être non retouchée, sur un fond clair uni et prise récemment.",
+        "photoGuideline": "La photo doit être non retouchée, sur un fond clair uni et prise récemment."
       },
       "placeholders": {
-        "fullName": "Saisissez votre nom complet",
+        "fullName": "Entrez votre nom complet",
         "phone": "000 000 0000",
         "email": "exemple@email.com"
       },
       "photoGuidelines": {
         "title": "Directives pour la photo",
-        "item1": "Fond uni de couleur claire",
-        "item2": "Pas de couvre-chef (sauf religieux/médical)",
-        "item3": "Expression neutre, yeux visibles",
-        "item4": "Bon éclairage, sans ombre"
+        "item1": "Fond de couleur claire unie",
+        "item2": "Pas de couvre-chef (sauf raisons religieuses/médicales)",
+        "item3": "Expression faciale neutre, yeux visibles",
+        "item4": "Bon éclairage sans ombres"
       },
       "phone_codes": {
         "search": "Rechercher des pays..."
@@ -97,36 +108,40 @@
     },
     "step3": {
       "title": "Adresse",
-      "subtitle": "Fournissez les détails de votre adresse personnelle",
+      "subtitle": "Fournissez les détails de votre adresse résidentielle",
       "labels": {
         "street": "Nom de la rue",
-        "building": "Numéro/Nom du bâtiment",
-        "apartment": "Appartement/Unité (Facultatif)",
-        "area": "Zone/Quartier",
+        "building": "Numéro/Nom de l'immeuble",
+        "apartment": "Appartement/Unité (optionnel)",
+        "area": "Quartier/Zone",
         "postalCode": "Code postal",
-        "additional": "Info suppl. (Facultatif)",
+        "additional": "Informations supplémentaires (optionnel)",
         "city": "Ville",
-        "country": "Pays"
+        "country": "Pays",
+        "additionalInfo": "Informations supplémentaires"
       },
       "placeholders": {
-        "street": "Saisissez le nom de la rue",
-        "building": "Saisissez le numéro du bâtiment",
-        "apartment": "Saisissez le numéro d'appartement",
-        "area": "Saisissez la zone",
-        "postalCode": "Saisissez le code postal",
-        "additional": "ex. Près du supermarché",
-        "city": "Saisissez la ville",
+        "street": "Entrez le nom de la rue",
+        "building": "Entrez le numéro de l'immeuble",
+        "apartment": "Entrez le numéro d'appartement",
+        "area": "Entrez le quartier",
+        "postalCode": "Entrez le code postal",
+        "additional": "Ex : à côté du supermarché",
+        "additionalInfo": "Ex : à côté du supermarché",
+        "city": "Entrez la ville",
         "country": "Rechercher des pays..."
       }
     },
     "step4": {
-      "title": "Informations additionnelles",
-      "subtitle": "Contexte professionnel et antécédents",
+      "title": "Informations supplémentaires",
+      "subtitle": "Contexte professionnel et historique",
       "labels": {
         "employmentStatus": "Statut professionnel",
         "jobTitle": "Titre du poste",
-        "criminalConvictions": "Avez-vous des condamnations pénales ?",
-        "terrorismQuestion": "Avez-vous déjà été impliqué ou soupçonné de l'un des faits suivants ?",
+        "criminalConvictions": "Avez-vous des antécédents criminels ?",
+        "terrorismQuestion": "Avez-vous déjà participé ou été soupçonné de l'un des cas suivants ?",
+        "hasJob": "Êtes-vous actuellement employé ?",
+        "hasCriminalRecord": "Avez-vous des antécédents criminels ?",
         "checklist": {
           "item1": "Crimes de guerre, génocide ou crimes contre l'humanité",
           "item2": "Terrorisme, y compris le soutien ou l'appartenance à des groupes terroristes",
@@ -134,8 +149,11 @@
           "item4": "Expression de points de vue extrémistes"
         }
       },
+      "subtexts": {
+        "criminalGuideline": "Listez toutes les condamnations, même si elles ont eu lieu il y a plusieurs années ou dans un autre pays."
+      },
       "placeholders": {
-        "jobTitle": "Saisissez votre titre de poste",
+        "jobTitle": "Entrez votre titre de poste",
         "details": "Veuillez fournir des détails"
       },
       "options": {
@@ -148,47 +166,47 @@
     },
     "step5": {
       "title": "Déclarations",
-      "subtitle": "Veuillez confirmer les déclarations suivantes",
+      "subtitle": "Veuillez confirmer les données suivantes",
       "declarations": {
         "confirmInfo": {
           "title": "Confirmation des informations",
-          "text": "En envoyant cette demande, vous confirmez qu'à votre connaissance, les informations que vous avez fournies sont exactes.",
-          "warning": "Si vous avez fourni de fausses informations : votre demande peut être refusée, vous pouvez être poursuivi, vous pouvez être interdit d'entrée au Royaume-Uni. Si vous postulez au nom d'une autre personne, vous devez avoir confirmé avec elle que la demande est complète et exacte."
+          "text": "En soumettant cette demande, vous confirmez qu'à votre connaissance, les informations fournies sont exactes.",
+          "warning": "Si vous fournissez de fausses informations : votre demande peut être refusée, vous pourriez être poursuivi ou interdit d'entrer au Royaume-Uni. Si vous postulez pour quelqu'un d'autre, vous devez confirmer avec cette personne que la demande est complète et exacte."
         },
         "acceptTerms": {
-          "title": "Termes et Conditions",
-          "text": "J'ai lu et compris les Termes et Conditions et la Politique de Confidentialité. Le prix comprend les frais gouvernementaux (£16) et les frais de traitement (£81)."
+          "title": "Conditions générales",
+          "text": "J'ai lu et compris les conditions générales et la politique de confidentialité. Le prix comprend les frais gouvernementaux (16 £) et les frais de traitement (81 £)."
         },
         "confirmProcessingTime": {
-          "title": "Temps de traitement",
-          "text": "Je comprends que le traitement peut prendre JUSQU'À 3 JOURS OUVRABLES et je confirme que ma date d'arrivée au Royaume-Uni ne sera pas antérieure à 3 JOURS OUVRABLES À PARTIR D'AUJOURD'HUI."
+          "title": "Délai de traitement",
+          "text": "Je comprends que le traitement peut prendre jusqu'à 3 jours ouvrables et je confirme que ma date d'arrivée au Royaume-Uni ne sera pas avant 3 jours ouvrables à compter d'aujourd'hui."
         }
       }
     },
     "step6": {
       "title": "Paiement",
-      "subtitle": "Finalisez le paiement de votre demande",
+      "subtitle": "Complétez le paiement des frais de demande",
       "labels": {
         "summary": {
           "title": "Résumé de la demande",
-          "applicant": "Candidat"
+          "applicant": "Demandeur"
         },
         "pricing": {
           "title": "Frais de traitement",
           "govFee": "Frais gouvernementaux",
-          "serviceFee": "Frais de service et de traitement",
+          "serviceFee": "Frais de service et traitement",
           "total": "Montant total"
         },
         "card": {
           "title": "Détails de la carte",
-          "holder": "Nom du titulaire",
+          "holder": "Nom du titulaire de la carte",
           "number": "Numéro de carte",
           "expiry": "Date d'expiration",
           "cvc": "CVC"
         }
       },
       "placeholders": {
-        "holder": "Nom sur la carte"
+        "holder": "Nom tel qu'il apparaît sur la carte"
       },
       "subtexts": {
         "securePayment": "Paiement sécurisé crypté SSL 256 bits",
@@ -199,65 +217,270 @@
         }
       },
       "status": {
-        "processing": "Traitement du paiement..."
+        "processing": "Paiement en cours de traitement..."
       }
     },
     "step7": {
-      "title": "Demande soumise !",
-      "subtitle": "Merci pour votre demande. Nous avons envoyé un e-mail de confirmation à l'adresse fournie. Votre décision AVE est généralement traitée dans un délai de 3 jours ouvrables.",
+      "title": "Demande soumise avec succès !",
+      "subtitle": "Merci pour votre demande. Nous avons envoyé un e-mail de confirmation à l'adresse fournie. La décision concernant l'ETA est généralement traitée dans un délai de 3 jours ouvrables.",
       "labels": {
         "reference": "Référence de la demande",
         "refPrefix": "UK-ETA-",
         "whatsNext": {
           "title": "Que se passe-t-il ensuite ?",
-          "step1": "Vérifiez votre boîte e-mail pour la confirmation",
-          "step2": "Nous examinerons votre demande dans un délai de 3 jours ouvrables",
-          "step3": "Recevez votre AVE approuvée par e-mail"
+          "step1": "Vérifiez votre e-mail de confirmation",
+          "step2": "Nous examinerons votre demande sous 3 jours ouvrables",
+          "step3": "Recevez votre décision ETA approuvée par e-mail"
         },
         "returnHome": "Retour à l'accueil"
       },
       "status": {
-        "copied": "Copié dans le presse-papiers !"
+        "copied": "Copié dans le presse-papier !"
       }
     },
     "countries": {
+      "Dutch": "Néerlandais",
+      "Belgian": "Belge",
+      "Swiss": "Suisse",
+      "Austrian": "Autrichien",
+      "Swedish": "Suédois",
+      "Norwegian": "Norvégien",
+      "Danish": "Danois",
+      "Finnish": "Finlandais",
+      "Irish": "Irlandais",
+      "Portuguese": "Portugais",
+      "Greek": "Grec",
+      "Polish": "Polonais",
+      "Czech": "Tchèque",
+      "Hungarian": "Hongrois",
+      "Romanian": "Roumain",
+      "Bulgarian": "Bulgare",
+      "Croatian": "Croate",
+      "Serbian": "Serbe",
+      "Turkish": "Turc",
+      "Russian": "Russe",
+      "Ukrainian": "Ukrainien",
+      "Chinese": "Chinois",
+      "Japanese": "Japonais",
+      "Korean": "Coréen",
+      "Indian": "Indien",
+      "Pakistani": "Pakistanais",
+      "Bangladeshi": "Bangladais",
+      "Malaysian": "Malaisien",
+      "Singaporean": "Singapourien",
+      "Indonesian": "Indonésien",
+      "Thai": "Thaïlandais",
+      "Vietnamese": "Vietnamien",
+      "Filipino": "Philippin",
+      "Brazilian": "Brésilien",
+      "Mexican": "Mexicain",
+      "Argentine": "Argentin",
+      "Colombian": "Colombien",
+      "Chilean": "Chilien",
+      "Peruvian": "Péruvien",
+      "Venezuelan": "Vénézuélien",
+      "South African": "Sud-africain",
+      "Nigerian": "Nigérian",
+      "Kenyan": "Kényan",
+      "Ghanaian": "Ghanéen",
+      "Ethiopian": "Éthiopien",
+      "Other": "Autre",
       "Egypt": "Égypte",
       "SaudiArabia": "Arabie Saoudite",
-      "UAE": "ÉAU",
+      "UAE": "Émirats Arabes Unis",
       "Qatar": "Qatar",
       "Kuwait": "Koweït",
       "Bahrain": "Bahreïn",
       "Oman": "Oman",
       "Jordan": "Jordanie",
       "Lebanon": "Liban",
-      "USA/Canada": "États-Unis/Canada",
+      "USA/Canada": "États-Unis / Canada",
       "UK": "Royaume-Uni",
       "Germany": "Allemagne",
       "France": "France",
       "Italy": "Italie",
       "Spain": "Espagne",
       "Netherlands": "Pays-Bas",
+      "SouthAfrica": "Afrique du Sud",
       "India": "Inde",
       "Pakistan": "Pakistan",
       "China": "Chine",
       "Japan": "Japon",
-      "SouthKorea": "Corée du Sud",
-      "Australia": "Australie",
+      "South Korea": "Corée du Sud",
       "Brazil": "Brésil",
       "Mexico": "Mexique",
-      "SouthAfrica": "Afrique du Sud",
-      "Nigeria": "Nigeria"
+      "Nigeria": "Nigéria"
     }
   },
   "footer": {
-    "brand_desc": "Donner aux voyageurs du monde entier les moyens d'agir grâce à des services d'autorisation numérique fluides pour le Royaume-Uni.",
+    "brand_desc": "Accompagner les voyageurs du monde entier grâce à des services d'autorisation numérique fluides pour le Royaume-Uni.",
     "quick_links": "Liens rapides",
-    "legal": "Juridique et support",
     "legal_links": {
-      "terms": "Termes et Conditions",
-      "privacy": "Politique de Confidentialité"
+      "terms": "Conditions générales",
+      "privacy": "Politique de confidentialité",
+      "cookie": "Politique en matière de cookies",
+      "refund": "Politique de remboursement",
+      "support": "Contacter l'assistance"
     },
     "contact": "Contactez-nous",
-    "disclaimer": "Avertissement : Ce site Web est un guide d'information privé. Nous ne sommes pas affiliés au gouvernement britannique."
+    "disclaimer": "Avertissement : Ce site est un guide d'information privé. Nous ne sommes pas affiliés au gouvernement du Royaume-Uni.",
+    "legal_support": "Juridique et assistance",
+    "email_support": "Assistance par e-mail",
+    "office_location": "Emplacement du bureau",
+    "address": "123 Premier Road, Londres\nRoyaume-Uni, EC1A 1BB",
+    "disclaimer_title": "Clause de non-responsabilité",
+    "copyright": "© {{year}} NextStop Visa. Tous droits réservés.",
+    "admin": "Panneau de contrôle",
+    "system_status": "État du système"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+    "invalidPassport": "Veuillez entrer un numéro de passeport valide",
+    "invalidDate": "Veuillez entrer une date valide",
+    "futureDateRequired": "La date d'arrivée doit être au moins 3 jours ouvrables après aujourd'hui",
+    "fileRequired": "Ce fichier est obligatoire",
+    "maxFileSize": "La taille du fichier doit être inférieure à 10 Mo",
+    "invalidFormat": "Seuls les formats JPG, PNG et PDF sont autorisés"
+  },
+  "countries": {
+    "Dutch": "Néerlandais",
+    "Belgian": "Belge",
+    "Swiss": "Suisse",
+    "Austrian": "Autrichien",
+    "Swedish": "Suédois",
+    "Norwegian": "Norvégien",
+    "Danish": "Danois",
+    "Finnish": "Finlandais",
+    "Irish": "Irlandais",
+    "Portuguese": "Portugais",
+    "Greek": "Grec",
+    "Polish": "Polonais",
+    "Czech": "Tchèque",
+    "Hungarian": "Hongrois",
+    "Romanian": "Roumain",
+    "Bulgarian": "Bulgare",
+    "Croatian": "Croate",
+    "Serbian": "Serbe",
+    "Turkish": "Turc",
+    "Russian": "Russe",
+    "Ukrainian": "Ukrainien",
+    "Chinese": "Chinois",
+    "Japanese": "Japonais",
+    "Korean": "Coréen",
+    "Indian": "Indien",
+    "Pakistani": "Pakistanais",
+    "Bangladeshi": "Bangladais",
+    "Malaysian": "Malaisien",
+    "Singaporean": "Singapourien",
+    "Indonesian": "Indonésien",
+    "Thai": "Thaïlandais",
+    "Vietnamese": "Vietnamien",
+    "Filipino": "Philippin",
+    "Brazilian": "Brésilien",
+    "Mexican": "Mexicain",
+    "Argentine": "Argentin",
+    "Colombian": "Colombien",
+    "Chilean": "Chilien",
+    "Peruvian": "Péruvien",
+    "Venezuelan": "Vénézuélien",
+    "South African": "Sud-africain",
+    "Nigerian": "Nigérian",
+    "Kenyan": "Kényan",
+    "Ghanaian": "Ghanéen",
+    "Ethiopian": "Éthiopien",
+    "Other": "Autre",
+    "Egypt": "Égypte",
+    "SaudiArabia": "Arabie Saoudite",
+    "UAE": "Émirats Arabes Unis",
+    "Qatar": "Qatar",
+    "Kuwait": "Koweït",
+    "Bahrain": "Bahreïn",
+    "Oman": "Oman",
+    "Jordan": "Jordanie",
+    "Lebanon": "Liban",
+    "USA/Canada": "États-Unis / Canada",
+    "UK": "Royaume-Uni",
+    "Germany": "Allemagne",
+    "France": "France",
+    "Italy": "Italie",
+    "Spain": "Espagne",
+    "Netherlands": "Pays-Bas",
+    "SouthKorea": "Corée du Sud",
+    "Australia": "Australie",
+    "SouthAfrica": "Afrique du Sud",
+    "India": "Inde",
+    "Pakistan": "Pakistan",
+    "China": "Chine",
+    "Japan": "Japon",
+    "South Korea": "Corée du Sud",
+    "Brazil": "Brésil",
+    "Nigeria": "Nigéria"
+  },
+  "requirements": {
+    "badge": "Ce dont vous aurez besoin",
+    "title": "Exigences",
+    "subtitle": "Liste de contrôle",
+    "description": "Assurez-vous d'avoir les documents et détails suivants prêts avant de commencer votre candidature pour garantir un processus fluide et réussi.",
+    "cta_apply": "Postulez maintenant",
+    "alt_travel": "Voyager au Royaume-Uni",
+    "eligibility_title": "Vérification instantanée de l'éligibilité",
+    "eligibility_desc": "Vous ne savez pas si vous avez besoin d'une ETA ? Utilisez notre vérificateur interactif pour le savoir en quelques secondes.",
+    "cta_check": "Vérifiez maintenant",
+    "items": {
+      "passport_title": "Passeport biométrique valide",
+      "passport_desc": "Doit provenir d’un pays éligible et être valable pour la durée de votre séjour.",
+      "photo_title": "Photographie numérique",
+      "photo_desc": "Une photo numérique claire et récente selon les spécifications officielles.",
+      "email_title": "Adresse e-mail active",
+      "email_desc": "Nécessaire pour recevoir le statut de votre candidature et l’ETA approuvé.",
+      "payment_title": "mode de paiement",
+      "payment_desc": "Une carte de crédit ou de débit pour payer les frais de dossier obligatoires."
+    }
+  },
+  "faq": {
+    "badge": "Avez-vous des questions?",
+    "title": "Questions",
+    "title_highlight": "Le plus courant",
+    "subtitle": "Trouvez des réponses rapides aux questions les plus fréquemment posées sur l’AVE britannique.",
+    "cta_title": "Êtes-vous prêt à visiter le Royaume-Uni ?",
+    "cta_desc": "Obtenez votre AVE pour le Royaume-Uni dès aujourd'hui. Le processus est rapide, simple et se déroule entièrement en ligne.",
+    "cta_btn": "Commencez à postuler maintenant",
+    "questions": {
+      "q1": "Qui a besoin d’une ETA pour le Royaume-Uni ?",
+      "a1": "Un ETA britannique est requis pour les ressortissants de pays qui n'ont actuellement pas besoin de visa pour entrer au Royaume-Uni pour de courts séjours (jusqu'à 6 mois), y compris le tourisme, les visites familiales ou le travail.",
+      "q2": "Quelle est la durée de validité de l'ETA ?",
+      "a2": "Une ETA approuvée est valable deux ans à compter de la date de délivrance ou jusqu'à l'expiration de votre passeport, selon la première éventualité. Plusieurs entrées au Royaume-Uni sont autorisées pendant cette période.",
+      "q3": "Combien de temps faut-il pour traiter une commande ?",
+      "a3": "La plupart des commandes sont traitées dans les 3 jours ouvrables. Cependant, nous vous recommandons de postuler au moins une ou deux semaines avant la date prévue de votre voyage afin de tenir compte de tout retard potentiel.",
+      "q4": "Les enfants ont-ils besoin d’une ETA ?",
+      "a4": "Oui, chaque voyageur, y compris les nourrissons et les enfants, doit avoir sa propre ETA indiquée dans son passeport pour entrer au Royaume-Uni.",
+      "q5": "Un ETA garantit-il l’entrée ?",
+      "a5": "Non, comme un visa, une ETA ne garantit pas l’entrée. Les agents des forces frontalières au point d'entrée au Royaume-Uni prendront la décision finale de vous autoriser à entrer dans le pays."
+    }
+  },
+  "about": {
+    "badge": "Un partenaire de voyage fiable",
+    "title_prefix": "nous",
+    "title_highlight": "Visa NextStop",
+    "mission_p1": "Chez <strong class=\"text-white\">NextStop Visa</strong>, nous nous engageons à simplifier les voyages internationaux. Nous sommes spécialisés dans la fourniture d’une assistance simplifiée aux demandes de visa et d’ETA aux voyageurs du monde entier.",
+    "mission_p2": "Notre équipe d'<span class=\"text-accent font-semibold\">experts en voyages</span> veille à ce que chaque demande soit examinée de manière approfondie et minutieuse, minimisant ainsi les erreurs et les retards.",
+    "mission_disclaimer": "Nous sommes un consultant en voyages privés et ne sommes affiliés à aucune agence gouvernementale.",
+    "mission_p3": "Grâce à notre expérience, vous pouvez planifier votre voyage au Royaume-Uni en toute confiance, sachant que votre permis de voyage est entre de bonnes mains.",
+    "stats": {
+      "travelers": "Voyageur assisté",
+      "support": "Assistance disponible",
+      "approval": "Taux d'acceptation"
+    },
+    "features": {
+      "global_title": "Propagation mondiale",
+      "global_desc": "Au service des voyageurs partout",
+      "secure_title": "Fonctionnement sûr",
+      "secure_desc": "Protection des données garantie",
+      "expert_title": "Assistance d'experts",
+      "expert_desc": "Aide 24 heures sur 24"
+    },
+    "cta": "Commencez votre commande maintenant",
+    "alt_london": "London Eye la nuit"
   }
 }

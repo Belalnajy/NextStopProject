@@ -4,34 +4,36 @@
     "about": "关于我们",
     "apply": "立即申请",
     "contact": "联系我们",
-    "eligibility": "查询资格"
+    "eligibility": "资格检查"
   },
   "hero": {
     "badge": "英国官方 ETA 服务",
-    "title1": "您前往",
-    "title2": "联合王国的门户",
-    "subtitle": "快速安全地获取您的电子旅行授权。访问联合王国的标准要求。",
+    "title1": "您的通往",
+    "title2": "英国",
+    "subtitle": "快速、安全地获取您的电子旅行授权。英国访客的标准要求。",
     "cta_apply": "立即申请",
-    "cta_check": "查询资格"
+    "cta_check": "资格检查",
+    "alt_landmark": "英国的旅游胜地"
   },
   "info": {
     "title": "什么是英国 ETA？",
-    "subtitle": "电子旅行授权 (ETA) 是针对无需签证即可前往英国的人士的一项新要求。它与您的护照进行电子绑定。",
-    "card1_title": "快速受理",
-    "card1_desc": "大多数申请在 3 个工作日内即可受理完毕。",
-    "card2_title": "2 年有效期",
-    "card2_desc": "在 2 年有效期内可多次往返。",
+    "subtitle": "电子旅行授权 (ETA) 是针对不需要签证进入英国的人员的一项新要求。它与您的护照进行电子链接。",
+    "card1_title": "快速处理",
+    "card1_desc": "大多数申请在 3 个工作日内处理完成。",
+    "card2_title": "两年有效期",
+    "card2_desc": "在两年内可多次旅行。",
     "card3_title": "全数字化",
-    "card3_desc": "无需前往大使馆或提供纸质文件。"
+    "card3_desc": "无需进入使馆或提交纸质文件。"
   },
   "how_to_apply": {
     "title": "如何申请",
     "step1_title": "填写表格",
-    "step1_desc": "点击在线申请表，填写您的详细信息。",
-    "step2_title": "核对并支付",
-    "step2_desc": "安全地支付处理费并核对您的信息。",
+    "step1_desc": "使用您的详细信息完成简单的在线申请表。",
+    "step2_title": "审核与付款",
+    "step2_desc": "安全地支付处理费并审核您的信息。",
     "step3_title": "接收 ETA",
-    "step3_desc": "获取直接发送到您邮箱的已批准 ETA。"
+    "step3_desc": "直接在您的电子邮箱中接收核准的 ETA 授权。",
+    "quick_easy": "快速又简单"
   },
   "form": {
     "common": {
@@ -40,25 +42,31 @@
       "yes": "是",
       "no": "否",
       "upload": "选择文件",
+      "chooseFile": "选择文件",
       "example": "示例",
       "guidelines": "指南",
       "step": "步骤",
-      "englishRequirement": "所有字段必须用英语填写",
-      "proceedToPayment": "继续支付"
+      "clickToEnlarge": "点击放大",
+      "ifApplicable": "如果适用",
+      "optional": "可选",
+      "englishRequirement": "所有字段必须用英文填写",
+      "proceedToPayment": "继续付款"
     },
     "step1": {
       "title": "旅行信息",
-      "subtitle": "输入您的旅行和护照详细信息",
+      "subtitle": "输入旅行和护照详情",
       "labels": {
         "nationality": "当前国籍",
-        "otherNationalities": "您是否拥有其他国籍？",
-        "arrivalDate": "抵达英国的日期",
+        "otherNationalities": "您是否有其他国籍？",
+        "arrivalDate": "抵达英国日期",
         "passportNumber": "护照号码",
         "passportCopy": "护照复印件"
       },
       "subtexts": {
-        "otherNationalities": "包括您过去拥有的任何国籍。",
-        "passportCopy": "照片必须保持原状、清晰、无反光，并显示全部 4 个角。"
+        "otherNationalities": "列出您过去拥有的任何国籍。",
+        "passportCopy": "图像必须清晰、未经修改且显示所有四个角。",
+        "passportGuideline": "图像必须清晰、未经修改且显示所有四个角。",
+        "uploadFormats": "接受的格式：JPG, PNG, PDF (最大 10MB)"
       },
       "placeholders": {
         "nationality": "搜索国家...",
@@ -66,30 +74,33 @@
       }
     },
     "step2": {
-      "title": "个人详情",
+      "title": "个人资料",
       "subtitle": "输入您的个人信息",
       "labels": {
-        "fullName": "姓名全称",
+        "fullName": "全名",
         "dob": "出生日期",
         "phone": "电话号码",
-        "email": "电子邮箱",
-        "photo": "个人照片"
+        "email": "电子邮件",
+        "photo": "个人照片",
+        "personalPhoto": "个人照片",
+        "guidelines": "照片指南"
       },
       "subtexts": {
-        "email": "您希望接收 ETA 结果的电子邮箱",
-        "photo": "照片必须保持原状，近期拍摄，背景为纯浅色。"
+        "email": "您希望接收 ETA 决定的电子邮件地址",
+        "photo": "照片必须经过修改，背景为纯色、浅色，且为近期拍摄。",
+        "photoGuideline": "照片必须经过修改，背景为纯色、浅色，且为近期拍摄。"
       },
       "placeholders": {
-        "fullName": "输入您的姓名全称",
+        "fullName": "输入您的全名",
         "phone": "000 000 0000",
         "email": "example@email.com"
       },
       "photoGuidelines": {
         "title": "照片指南",
         "item1": "纯浅色背景",
-        "item2": "不戴头饰（除非出于宗教/医疗原因）",
-        "item3": "表情自然，眼睛可见",
-        "item4": "光线充足，无阴影"
+        "item2": "不得佩戴头饰（除非出于宗教/医疗原因）",
+        "item3": "表情自然，双眼可见",
+        "item4": "光线充足且无阴影"
       },
       "phone_codes": {
         "search": "搜索国家..."
@@ -97,77 +108,84 @@
     },
     "step3": {
       "title": "地址",
-      "subtitle": "提供您的家庭地址详细信息",
+      "subtitle": "提供您的居住地址详情",
       "labels": {
         "street": "街道名称",
-        "building": "门牌号/建筑名称",
-        "apartment": "公寓/单元（选填）",
-        "area": "地区/区",
+        "building": "大楼号码/名称",
+        "apartment": "公寓/单元（可选）",
+        "area": "地区/地段",
         "postalCode": "邮政编码",
-        "additional": "补充信息（选填）",
-        "city": "城镇/城市",
-        "country": "国家"
+        "additional": "补充信息（可选）",
+        "city": "城市",
+        "country": "国家",
+        "additionalInfo": "补充信息"
       },
       "placeholders": {
         "street": "输入街道名称",
-        "building": "输入门牌号",
+        "building": "输入大楼号码",
         "apartment": "输入公寓号码",
         "area": "输入地区",
         "postalCode": "输入邮政编码",
-        "additional": "例如：超市附近",
+        "additional": "例如：超市旁边",
+        "additionalInfo": "例如：超市旁边",
         "city": "输入城市",
         "country": "搜索国家..."
       }
     },
     "step4": {
       "title": "补充信息",
-      "subtitle": "就业情况与历史背景",
+      "subtitle": "就业背景与历史记录",
       "labels": {
         "employmentStatus": "就业状态",
         "jobTitle": "职位名称",
-        "criminalConvictions": "是否有任何刑事犯罪记录？",
-        "terrorismQuestion": "您是否曾参与过或被怀疑参与过以下任何行为？",
+        "criminalConvictions": "您是否有刑事犯罪记录？",
+        "terrorismQuestion": "您是否曾参与或被怀疑参与以下任何活动？",
+        "hasJob": "您目前是否有工作？",
+        "hasCriminalRecord": "您是否有刑事犯罪记录？",
         "checklist": {
-          "item1": "战争罪、种族灭绝罪或危害人类罪",
+          "item1": "战争罪、灭绝种族罪或危害人类罪",
           "item2": "恐怖主义，包括支持或加入恐怖组织",
           "item3": "支持极端组织",
-          "item4": "发表极端观点"
+          "item4": "表达极端主义观点"
         }
       },
+      "subtexts": {
+        "criminalGuideline": "列出所有定罪记录，即使发生在多年前或其他国家。"
+      },
       "placeholders": {
-        "jobTitle": "输入您的职位名称",
+        "jobTitle": "输入您的职衔",
         "details": "请提供详细信息"
       },
       "options": {
-        "employed": "受雇",
+        "employed": "在职",
         "selfEmployed": "自雇",
         "student": "学生",
-        "unemployed": "失业",
+        "unemployed": "待业",
         "retired": "退休"
       }
     },
     "step5": {
       "title": "声明",
-      "subtitle": "请确认以下声明",
+      "subtitle": "请确认以下数据",
       "declarations": {
         "confirmInfo": {
-          "title": "信息确认",
-          "text": "发送此申请即表示您确认，据您所知，您所提供的信息是正确的。",
-          "warning": "如果您提供了任何虚假信息：您的申请可能会被拒绝，您可能会被起诉，您可能会被禁止进入英国。如果您是代表他人申请，您必须已与他们确认申请内容完整且正确。"
+          "title": "确认信息",
+          "text": "提交此申请即表示您确认所提供的信息在您所知范围内是正确的。",
+          "warning": "如果您提供任何虚假信息：您的申请可能会被拒绝，您可能会面临起诉，或您可能会被禁止进入英国。如果您代表他人申请，您必须与该人确认申请内容完整且正确。"
         },
         "acceptTerms": {
-          "title": "条款与条件",
-          "text": "我已阅读并理解《条款与条件》和《隐私政策》。价格包含政府费用（16 英镑）和处理费（81 英镑）。"
+          "title": "条款和条件",
+          "text": "我已阅读并理解条款和条件以及隐私政策。价格包含政府收费（16 英镑）和处理费（81 英镑）。"
         },
         "confirmProcessingTime": {
-          "title": "受理时间",
-          "text": "我理解受理可能需要长达 3 个工作日，并确认我的抵达英国日期不会早于即日起 3 个工作日。"
+          "title": "处理时间",
+          "text": "我明白处理可能需要长达 3 个工作日，并确认我的英国抵达日期不早于从今天起算的 3 个工作日。"
         }
       }
     },
     "step6": {
-      "title": "支付",
-      "subtitle": "完成您的申请支付",
+      "title": "付款",
+      "subtitle": "完成申请费支付",
       "labels": {
         "summary": {
           "title": "申请摘要",
@@ -175,44 +193,44 @@
         },
         "pricing": {
           "title": "处理费",
-          "govFee": "政府费用",
-          "serviceFee": "服务及处理费",
+          "govFee": "政府收费",
+          "serviceFee": "服务和处理费",
           "total": "总金额"
         },
         "card": {
-          "title": "卡片详情",
+          "title": "卡详情",
           "holder": "持卡人姓名",
           "number": "卡号",
-          "expiry": "有效期",
+          "expiry": "到期日期",
           "cvc": "CVC"
         }
       },
       "placeholders": {
-        "holder": "卡面上的姓名"
+        "holder": "卡上显示的姓名"
       },
       "subtexts": {
-        "securePayment": "安全的 256 位 SSL 加密支付",
+        "securePayment": "256位 SSL 加密安全支付",
         "recaptcha": {
-          "text": "本网站受 reCAPTCHA 保护，Google 的",
+          "text": "此网站受 reCAPTCHA 保护，并适用 Google 的",
           "and": "和",
-          "apply": "适用。"
+          "apply": ""
         }
       },
       "status": {
-        "processing": "正在处理支付..."
+        "processing": "正在处理付款..."
       }
     },
     "step7": {
-      "title": "申请已提交！",
-      "subtitle": "感谢您的申请。我们已向您提供的地址发送了确认邮件。您的 ETA 决定通常在 3 个工作日内受理完毕。",
+      "title": "申请提交成功！",
+      "subtitle": "感谢您的申请。我们已向您提供的地址发送了确认邮件。ETA 决定通常在 3 个工作日内处理完成。",
       "labels": {
         "reference": "申请参考号",
         "refPrefix": "UK-ETA-",
         "whatsNext": {
-          "title": "后续流程？",
-          "step1": "检查您的邮箱获取确认函",
+          "title": "接下来的流程？",
+          "step1": "检查您的确认电子邮件",
           "step2": "我们将在 3 个工作日内审核您的申请",
-          "step3": "通过邮箱接收您的已批准 ETA"
+          "step3": "通过电子邮件接收核准的 ETA 决定"
         },
         "returnHome": "返回首页"
       },
@@ -221,9 +239,55 @@
       }
     },
     "countries": {
+      "Dutch": "荷兰语",
+      "Belgian": "比利时",
+      "Swiss": "瑞士",
+      "Austrian": "奥地利",
+      "Swedish": "瑞典",
+      "Norwegian": "挪威",
+      "Danish": "丹麦",
+      "Finnish": "芬兰",
+      "Irish": "爱尔兰",
+      "Portuguese": "葡萄牙",
+      "Greek": "希腊",
+      "Polish": "波兰",
+      "Czech": "捷克",
+      "Hungarian": "匈牙利",
+      "Romanian": "罗马尼亚",
+      "Bulgarian": "保加利亚",
+      "Croatian": "克罗地亚",
+      "Serbian": "塞尔维亚",
+      "Turkish": "土耳其",
+      "Russian": "俄罗斯",
+      "Ukrainian": "乌克兰",
+      "Chinese": "中文",
+      "Japanese": "日本",
+      "Korean": "韩国",
+      "Indian": "印度",
+      "Pakistani": "巴基斯坦",
+      "Bangladeshi": "孟加拉国",
+      "Malaysian": "马来西亚",
+      "Singaporean": "新加坡",
+      "Indonesian": "印度尼西亚",
+      "Thai": "泰国",
+      "Vietnamese": "越南",
+      "Filipino": "菲律宾",
+      "Brazilian": "巴西",
+      "Mexican": "墨西哥",
+      "Argentine": "阿根廷",
+      "Colombian": "哥伦比亚",
+      "Chilean": "智利",
+      "Peruvian": "秘鲁",
+      "Venezuelan": "委内瑞拉",
+      "South African": "南非",
+      "Nigerian": "尼日利亚",
+      "Kenyan": "肯尼亚",
+      "Ghanaian": "加纳",
+      "Ethiopian": "埃塞俄比亚",
+      "Other": "其他",
       "Egypt": "埃及",
       "SaudiArabia": "沙特阿拉伯",
-      "UAE": "阿联酋",
+      "UAE": "阿拉伯联合酋长国",
       "Qatar": "卡塔尔",
       "Kuwait": "科威特",
       "Bahrain": "巴林",
@@ -237,27 +301,186 @@
       "Italy": "意大利",
       "Spain": "西班牙",
       "Netherlands": "荷兰",
+      "SouthAfrica": "南非",
       "India": "印度",
       "Pakistan": "巴基斯坦",
       "China": "中国",
       "Japan": "日本",
-      "SouthKorea": "韩国",
-      "Australia": "澳大利亚",
+      "South Korea": "韩国",
       "Brazil": "巴西",
       "Mexico": "墨西哥",
-      "SouthAfrica": "南非",
       "Nigeria": "尼日利亚"
     }
   },
   "footer": {
-    "brand_desc": "为全球旅行者提供顺畅的联合王国数字授权服务。",
+    "brand_desc": "通过为英国提供无缝的数字化授权服务，助力全球旅行者。",
     "quick_links": "快速链接",
-    "legal": "法律与支持",
     "legal_links": {
-      "terms": "条款与条件",
-      "privacy": "隐私政策"
+      "terms": "条款和条件",
+      "privacy": "隐私政策",
+      "cookie": "Cookie 政策",
+      "refund": "退款政策",
+      "support": "联系支持人员"
     },
     "contact": "联系我们",
-    "disclaimer": "免责声明：本网站为一个私人信息指南。我们不隶属于英国政府。"
+    "disclaimer": "免责声明：本网站为一个私人信息指南。我们不隶属于英国政府。",
+    "legal_support": "法律和支持",
+    "email_support": "电子邮件支持",
+    "office_location": "办公地点",
+    "address": "123 普瑞米尔路, 伦敦\n英国，EC1A 1BB",
+    "disclaimer_title": "免责声明",
+    "copyright": "© {{year}} NextStop 签证。版权所有。",
+    "admin": "控制面板",
+    "system_status": "系统状态"
+  },
+  "validation": {
+    "required": "此字段必填",
+    "invalidEmail": "请输入有效的电子邮件地址",
+    "invalidPassport": "请输入有效的护照号码",
+    "invalidDate": "请输入有效的日期",
+    "futureDateRequired": "抵达日期必须在今天之后的至少 3 个工作日",
+    "fileRequired": "此文件必填",
+    "maxFileSize": "文件大小必须小于 10MB",
+    "invalidFormat": "仅允许 JPG、PNG 和 PDF 格式"
+  },
+  "countries": {
+    "Dutch": "荷兰语",
+    "Belgian": "比利时",
+    "Swiss": "瑞士",
+    "Austrian": "奥地利",
+    "Swedish": "瑞典",
+    "Norwegian": "挪威",
+    "Danish": "丹麦",
+    "Finnish": "芬兰",
+    "Irish": "爱尔兰",
+    "Portuguese": "葡萄牙",
+    "Greek": "希腊",
+    "Polish": "波兰",
+    "Czech": "捷克",
+    "Hungarian": "匈牙利",
+    "Romanian": "罗马尼亚",
+    "Bulgarian": "保加利亚",
+    "Croatian": "克罗地亚",
+    "Serbian": "塞尔维亚",
+    "Turkish": "土耳其",
+    "Russian": "俄罗斯",
+    "Ukrainian": "乌克兰",
+    "Chinese": "中文",
+    "Japanese": "日本",
+    "Korean": "韩国",
+    "Indian": "印度",
+    "Pakistani": "巴基斯坦",
+    "Bangladeshi": "孟加拉国",
+    "Malaysian": "马来西亚",
+    "Singaporean": "新加坡",
+    "Indonesian": "印度尼西亚",
+    "Thai": "泰国",
+    "Vietnamese": "越南",
+    "Filipino": "菲律宾",
+    "Brazilian": "巴西",
+    "Mexican": "墨西哥",
+    "Argentine": "阿根廷",
+    "Colombian": "哥伦比亚",
+    "Chilean": "智利",
+    "Peruvian": "秘鲁",
+    "Venezuelan": "委内瑞拉",
+    "South African": "南非",
+    "Nigerian": "尼日利亚",
+    "Kenyan": "肯尼亚",
+    "Ghanaian": "加纳",
+    "Ethiopian": "埃塞俄比亚",
+    "Other": "其他",
+    "Egypt": "埃及",
+    "SaudiArabia": "沙特阿拉伯",
+    "UAE": "阿拉伯联合酋长国",
+    "Qatar": "卡塔尔",
+    "Kuwait": "科威特",
+    "Bahrain": "巴林",
+    "Oman": "阿曼",
+    "Jordan": "约旦",
+    "Lebanon": "黎巴嫩",
+    "USA/Canada": "美国/加拿大",
+    "UK": "英国",
+    "Germany": "德国",
+    "France": "法国",
+    "Italy": "意大利",
+    "Spain": "西班牙",
+    "Netherlands": "荷兰",
+    "SouthKorea": "韩国",
+    "Australia": "澳大利亚",
+    "SouthAfrica": "南非",
+    "India": "印度",
+    "Pakistan": "巴基斯坦",
+    "China": "中国",
+    "Japan": "日本",
+    "South Korea": "韩国",
+    "Brazil": "巴西",
+    "Nigeria": "尼日利亚"
+  },
+  "requirements": {
+    "badge": "你需要什么",
+    "title": "要求",
+    "subtitle": "清单",
+    "description": "在开始申请之前，请确保准备好以下文件和详细信息，以确保流程顺利成功。",
+    "cta_apply": "立即申请",
+    "alt_travel": "前往英国",
+    "eligibility_title": "即时验证资格",
+    "eligibility_desc": "不确定您是否需要预计到达时间？使用我们的交互式检查器可以在几秒钟内找到答案。",
+    "cta_check": "立即查看",
+    "items": {
+      "passport_title": "有效的生物识别护照",
+      "passport_desc": "必须来自符合条件的国家/地区，并且在您的逗留期间有效。",
+      "photo_title": "数码照片",
+      "photo_desc": "根据官方规格的清晰的近期数码照片。",
+      "email_title": "有效的电子邮件地址",
+      "email_desc": "需要接收您的申请状态和批准的预计到达时间。",
+      "payment_title": "付款方式",
+      "payment_desc": "用于支付强制性申请费的信用卡或借记卡。"
+    }
+  },
+  "faq": {
+    "badge": "您有疑问吗？",
+    "title": "问题",
+    "title_highlight": "最常见",
+    "subtitle": "查找有关英国 eTA 的最常见问题的快速解答。",
+    "cta_title": "你准备好去英国旅游了吗？",
+    "cta_desc": "立即获取前往英国的 eTA。该过程快速、简单，并且完全在线完成。",
+    "cta_btn": "立即开始申请",
+    "questions": {
+      "q1": "谁需要前往英国的预计到达时间？",
+      "a1": "目前不需要签证即可进入英国短期停留（最多 6 个月）（包括旅游、探亲或工作）的国家的国民需要英国 ETA。",
+      "q2": "预计到达时间的有效期是多长？",
+      "a2": "经批准的预计到达时间自签发之日起两年内有效，或直至您的护照到期为止，以先到者为准。在此期间允许多次进入英国。",
+      "q3": "处理订单需要多长时间？",
+      "a3": "大多数订单会在 3 个工作日内得到处理。但是，我们建议您至少在计划旅行日期前一到两周提出申请，以应对任何潜在的延误。",
+      "q4": "儿童需要预计到达时间吗？",
+      "a4": "是的，每位旅客，包括婴儿和儿童，都必须在护照上注明自己的预计到达时间才能进入英国。",
+      "q5": "ETA 能保证入场吗？",
+      "a5": "不，就像签证一样，预计到达时间并不能保证入境。英国入境口岸的边防官员将做出是否允许您入境的最终决定。"
+    }
+  },
+  "about": {
+    "badge": "值得信赖的旅行合作伙伴",
+    "title_prefix": "我们",
+    "title_highlight": "下一站签证",
+    "mission_p1": "在 <strong class=\"text-white\">NextStop Visa</strong>，我们致力于简化国际旅行。我们专注于为世界各地的旅行者提供简化的签证和预计到达时间申请协助。",
+    "mission_p2": "我们的<span class=\"text-accent font-semibold\">旅行专家</span>团队确保每一份申请都经过彻底、仔细的审核，最大限度地减少错误和延误。",
+    "mission_disclaimer": "我们是一家私人旅行顾问，不隶属于任何政府机构。",
+    "mission_p3": "凭借我们的经验，您可以放心地计划您的英国之旅，因为您知道您的旅行许可证掌握在有能力的人手中。",
+    "stats": {
+      "travelers": "旅客协助",
+      "support": "提供支持",
+      "approval": "录取率"
+    },
+    "features": {
+      "global_title": "全球传播",
+      "global_desc": "为各地旅客提供服务",
+      "secure_title": "安全操作",
+      "secure_desc": "数据保护有保障",
+      "expert_title": "专家支持",
+      "expert_desc": "全天候帮助"
+    },
+    "cta": "立即开始订购",
+    "alt_london": "伦敦眼在晚上"
   }
 }

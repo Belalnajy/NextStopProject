@@ -9,6 +9,7 @@ export const SettingsProvider = ({ children }) => {
     logo_url: '',
     hero_title: '',
     hero_subtitle: '',
+    hero_images: [],
     about_title: '',
     about_mission: '',
     stats_travelers: '',
@@ -17,7 +18,12 @@ export const SettingsProvider = ({ children }) => {
     contact_email: '',
     contact_phone: '',
     contact_address: '',
+    map_lat: '',
+    map_lng: '',
     copyright_text: '',
+    quick_links: [],
+    maintenance_mode: false,
+    registration_closed: false,
   });
   const [loading, setLoading] = useState(true);
 

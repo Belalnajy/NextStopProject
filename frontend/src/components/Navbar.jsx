@@ -50,6 +50,10 @@ const Navbar = () => {
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
     { code: 'ja', name: '日本語', flag: '🇯🇵' },
     { code: 'ko', name: '한국어', flag: '🇰🇷' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
+    { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+    { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾' },
   ];
 
   const navVariants = {

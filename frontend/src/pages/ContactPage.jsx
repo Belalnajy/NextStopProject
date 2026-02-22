@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { useSettings } from '../context/SettingsContext';
 
 export default function ContactPage() {
+  const { settings } = useSettings();
+
   return (
     <div className="pt-28 pb-20 min-h-screen bg-slate-50 relative overflow-hidden">
       {/* Background Decorations */}
@@ -44,11 +47,34 @@ export default function ContactPage() {
                 For general inquiries and application support.
               </p>
               <a
-                href="mailto:support@nextstopvisa.com"
+                href={`mailto:${settings?.contact_email || 'support@nextstopvisa.com'}`}
                 className="text-primary font-semibold hover:text-accent transition-colors">
-                support@nextstopvisa.com
+                {settings?.contact_email || 'support@nextstopvisa.com'}
               </a>
             </motion.div>
+
+            {settings?.contact_phone && (
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.25 }}
+                className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                  <Phone size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  Call Us
+                </h3>
+                <p className="text-slate-500 mb-4">
+                  Speak directly with our support team.
+                </p>
+                <a
+                  href={`tel:${settings.contact_phone}`}
+                  className="text-primary font-semibold hover:text-accent transition-colors">
+                  {settings.contact_phone}
+                </a>
+              </motion.div>
+            )}
 
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -62,12 +88,9 @@ export default function ContactPage() {
               <p className="text-slate-500 mb-4">
                 Come visit our friendly office.
               </p>
-              <p className="text-slate-900 font-medium">
-                123 Premier Way
-                <br />
-                London, EC1A 1BB
-                <br />
-                United Kingdom
+              <p className="text-slate-900 font-medium whitespace-pre-line">
+                {settings?.contact_address ||
+                  '123 Premier Way\nLondon, EC1A 1BB\nUnited Kingdom'}
               </p>
             </motion.div>
           </div>

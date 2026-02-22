@@ -9,28 +9,30 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Requirements = () => {
+  const { t } = useTranslation();
   const reqs = [
     {
       icon: BookOpen,
-      title: 'Valid Biometric Passport',
-      desc: 'Must be from an eligible country and valid for your entire stay.',
+      title: t('requirements.items.passport_title'),
+      desc: t('requirements.items.passport_desc'),
     },
     {
       icon: Camera,
-      title: 'Digital Photograph',
-      desc: 'A clear, recent digital photo according to official specifications.',
+      title: t('requirements.items.photo_title'),
+      desc: t('requirements.items.photo_desc'),
     },
     {
       icon: Mail,
-      title: 'Active Email Address',
-      desc: 'Necessary to receive your application status and approved ETA.',
+      title: t('requirements.items.email_title'),
+      desc: t('requirements.items.email_desc'),
     },
     {
       icon: CreditCard,
-      title: 'Method of Payment',
-      desc: 'Credit or debit card to pay the mandatory application fee.',
+      title: t('requirements.items.payment_title'),
+      desc: t('requirements.items.payment_desc'),
     },
   ];
 
@@ -68,7 +70,7 @@ const Requirements = () => {
           {/* Animated Background Pattern */}
           <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
             <motion.div
-              className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#D4AF6E_2px,transparent_2px)] bg-[length:40px_40px]"
+              className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#D4AF6E_2px,transparent_2px)] bg-size-[40px_40px]"
               animate={{
                 backgroundPosition: ['0px 0px', '40px 40px'],
               }}
@@ -103,7 +105,7 @@ const Requirements = () => {
                 viewport={{ once: true }}
                 className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-accent/20 border border-accent/30 text-accent text-sm font-semibold mb-8">
                 <Sparkles size={14} />
-                What You'll Need
+                {t('requirements.badge')}
               </motion.div>
 
               <motion.h2
@@ -112,9 +114,9 @@ const Requirements = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-5xl font-display font-bold text-white mb-6 leading-tight">
-                Requirements <br />
+                {t('requirements.title')} <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light">
-                  Checklist
+                  {t('requirements.subtitle')}
                 </span>
               </motion.h2>
 
@@ -124,8 +126,7 @@ const Requirements = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
                 className="text-blue-100/70 text-lg mb-12 leading-relaxed max-w-lg">
-                Ensure you have the following documents and details ready before
-                starting your application for a smooth and successful process.
+                {t('requirements.description')}
               </motion.p>
 
               <motion.div
@@ -168,7 +169,7 @@ const Requirements = () => {
                     className="w-full bg-linear-to-r from-accent to-accent-light text-primary py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-2"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}>
-                    Apply Now
+                    {t('requirements.cta_apply')}
                     <ArrowRight size={18} />
                   </motion.button>
                 </Link>
@@ -179,7 +180,7 @@ const Requirements = () => {
             <div className="relative hidden lg:block overflow-hidden">
               <motion.img
                 src="/hero.png"
-                alt="UK Travel"
+                alt={t('requirements.alt_travel')}
                 className="absolute inset-0 w-full h-full object-cover opacity-50"
                 initial={{ scale: 1.1 }}
                 whileInView={{ scale: 1 }}
@@ -210,19 +211,18 @@ const Requirements = () => {
                     <CheckCircle2 size={28} />
                   </motion.div>
                   <h5 className="text-white font-bold text-lg">
-                    Instant Eligibility Check
+                    {t('requirements.eligibility_title')}
                   </h5>
                 </div>
                 <p className="text-white/70 text-sm mb-6 leading-relaxed">
-                  Not sure if you need an ETA? Use our interactive checker to
-                  find out in seconds.
+                  {t('requirements.eligibility_desc')}
                 </p>
                 <Link to="/apply">
                   <motion.button
                     className="w-full bg-linear-to-r from-accent to-accent-light text-primary py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2 group"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}>
-                    Check Now
+                    {t('requirements.cta_check')}
                     <ArrowRight
                       size={16}
                       className="group-hover:translate-x-1 transition-transform"

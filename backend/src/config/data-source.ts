@@ -16,10 +16,7 @@ export const AppDataSource = new DataSource({
   password: process.env.POSTGRES_PASSWORD || process.env.DB_PASSWORD,
   database: process.env.POSTGRES_DATABASE || process.env.DB_NAME,
   synchronize: process.env.NODE_ENV === 'development', // Auto-create tables in dev
-  ssl:
-    process.env.NODE_ENV === 'production'
-      ? { rejectUnauthorized: false }
-      : false,
+  ssl: { rejectUnauthorized: false },
   logging: false,
   entities: [User, Application, Attachment, Settings, EmailTemplate],
   // ... rest of the config

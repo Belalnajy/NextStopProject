@@ -1,0 +1,486 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "apply": "Hemen Başvur",
+    "contact": "İletişim",
+    "eligibility": "Uygunluk Kontrolü"
+  },
+  "hero": {
+    "badge": "Resmi Birleşik Krallık ETA Servisi",
+    "title1": "Giriş Kapınız",
+    "title2": "Birleşik Krallık",
+    "subtitle": "Elektronik Seyahat Yetkinizi hızlı ve güvenli bir şekilde alın. Birleşik Krallık ziyaretçileri için standart gereklilik.",
+    "cta_apply": "Hemen Başvur",
+    "cta_check": "Uygunluk Kontrolü",
+    "alt_landmark": "Birleşik Krallık'taki turistik cazibe"
+  },
+  "info": {
+    "title": "UK ETA Nedir?",
+    "subtitle": "Elektronik Seyahat Yetkisi (ETA), Birleşik Krallık'a gelmek için vizeye ihtiyacı olmayan kişiler için yeni bir gerekliliktir. Pasaportunuzla elektronik olarak eşleştirilir.",
+    "card1_title": "Hızlı İşlem",
+    "card1_desc": "Başvuruların çoğu 3 iş günü içinde sonuçlandırılır.",
+    "card2_title": "2 Yıllık Geçerlilik",
+    "card2_desc": "2 yıl boyunca birden fazla seyahat için geçerlidir.",
+    "card3_title": "Tamamen Dijital",
+    "card3_desc": "Elçilik ziyareti yapmanıza veya kağıt belge sunmanıza gerek yoktur."
+  },
+  "how_to_apply": {
+    "title": "Nasıl Başvurulur",
+    "step1_title": "Formu Doldur",
+    "step1_desc": "Bilgilerinizle basit çevrimiçi başvuru formunu tamamlayın.",
+    "step2_title": "Kontrol ve Ödeme",
+    "step2_desc": "İşlem ücretini güvenli bir şekilde ödeyin ve bilgilerinizi kontrol edin.",
+    "step3_title": "ETA'nızı Alın",
+    "step3_desc": "Onaylanmış ETA yetkinizi doğrudan e-posta adresinize alın.",
+    "quick_easy": "Hızlı ve kolay"
+  },
+  "form": {
+    "common": {
+      "nextStep": "Sonraki Adım",
+      "back": "Geri",
+      "yes": "Evet",
+      "no": "Hayır",
+      "upload": "Dosya Seç",
+      "chooseFile": "Dosya Seç",
+      "example": "Örnek",
+      "guidelines": "Yönergeler",
+      "step": "Adım",
+      "clickToEnlarge": "Büyütmek için tıkla",
+      "ifApplicable": "Varsa",
+      "optional": "İsteğe bağlı",
+      "englishRequirement": "Tüm alanlar İngilizce olarak doldurulmalıdır",
+      "proceedToPayment": "Ödemeye Devam Et"
+    },
+    "step1": {
+      "title": "Seyahat Bilgileri",
+      "subtitle": "Seyahat ve pasaport bilgilerini girin",
+      "labels": {
+        "nationality": "Güncel Uyruk",
+        "otherNationalities": "Başka bir uyruğunuz var mı?",
+        "arrivalDate": "Birleşik Krallık'a Varış Tarihi",
+        "passportNumber": "Pasaport Numarası",
+        "passportCopy": "Pasaport Fotokopisi"
+      },
+      "subtexts": {
+        "otherNationalities": "Geçmişte sahip olduğunuz tüm uyrukları listeleyin.",
+        "passportCopy": "Görsel net olmalı, üzerinde oynama yapılmamalı ve dört köşe de görünmelidir.",
+        "passportGuideline": "Görsel net olmalı, üzerinde oynama yapılmamalı ve dört köşe de görünmelidir.",
+        "uploadFormats": "Desteklenen formatlar: JPG, PNG, PDF (maks. 10MB)"
+      },
+      "placeholders": {
+        "nationality": "Ülke ara...",
+        "passportNumber": "Pasaport numarasını girin"
+      }
+    },
+    "step2": {
+      "title": "Kişisel Bilgiler",
+      "subtitle": "Kişisel bilgilerinizi girin",
+      "labels": {
+        "fullName": "Tam İsim",
+        "dob": "Doğum Tarihi",
+        "phone": "Telefon Numarası",
+        "email": "E-posta",
+        "photo": "Kişisel Fotoğraf",
+        "personalPhoto": "Kişisel Fotoğraf",
+        "guidelines": "Fotoğraf Yönergeleri"
+      },
+      "subtexts": {
+        "email": "ETA sonucunu almak istediğiniz e-posta adresi",
+        "photo": "Fotoğraf üzerinde oynama yapılmamış, düz açık renkli arka plan üzerinde ve yeni çekilmiş olmalıdır.",
+        "photoGuideline": "Fotoğraf üzerinde oynama yapılmamış, düz açık renkli arka plan üzerinde ve yeni çekilmiş olmalıdır."
+      },
+      "placeholders": {
+        "fullName": "Tam isminizi girin",
+        "phone": "000 000 0000",
+        "email": "ornek@eposta.com"
+      },
+      "photoGuidelines": {
+        "title": "Fotoğraf Yönergeleri",
+        "item1": "Düz açık renkli arka plan",
+        "item2": "Başörtüsü takılmamalı (dini/tıbbi nedenler hariç)",
+        "item3": "Nötr yüz ifadesi, gözler görünür",
+        "item4": "Gölgelerden arınmış iyi aydınlatma"
+      },
+      "phone_codes": {
+        "search": "Ülke ara..."
+      }
+    },
+    "step3": {
+      "title": "Adres",
+      "subtitle": "İkametgah adresi bilgilerinizi sağlayın",
+      "labels": {
+        "street": "Cadde/Sokak Adı",
+        "building": "Bina No/Adı",
+        "apartment": "Daire/No (İsteğe bağlı)",
+        "area": "Bölge/Mahalle",
+        "postalCode": "Posta Kodu",
+        "additional": "Ek Bilgi (İsteğe bağlı)",
+        "city": "Şehir",
+        "country": "Ülke",
+        "additionalInfo": "Ek Bilgi"
+      },
+      "placeholders": {
+        "street": "Sokak adını girin",
+        "building": "Bina numarasını girin",
+        "apartment": "Daire numarasını girin",
+        "area": "Bölgeyi girin",
+        "postalCode": "Posta kodunu girin",
+        "additional": "Örn: Süpermarketin yanında",
+        "additionalInfo": "Örn: Süpermarketin yanında",
+        "city": "Şehri girin",
+        "country": "Ülke ara..."
+      }
+    },
+    "step4": {
+      "title": "Ek Bilgiler",
+      "subtitle": "İstihdam bağlamı ve geçmişi",
+      "labels": {
+        "employmentStatus": "İstihdam Durumu",
+        "jobTitle": "Meslek Unvanı",
+        "criminalConvictions": "Herhangi bir sabıka kaydınız var mı?",
+        "terrorismQuestion": "Aşağıdakilerden herhangi birine katıldınız mı veya şüphelenildiniz mi?",
+        "hasJob": "Şu anda çalışıyor musunuz?",
+        "hasCriminalRecord": "Herhangi bir sabıka kaydınız var mı?",
+        "checklist": {
+          "item1": "Savaş suçları, soykırım veya insanlığa karşı suçlar",
+          "item2": "Terör örgütlerine destek veya üyelik dahil terörizm",
+          "item3": "Aşırılık yanlısı gruplara destek",
+          "item4": "Aşırı görüşlerin ifade edilmesi"
+        }
+      },
+      "subtexts": {
+        "criminalGuideline": "Uzun yıllar önce veya başka bir ülkede olsa bile, tüm mahkumiyetleri listeleyin."
+      },
+      "placeholders": {
+        "jobTitle": "Meslek unvanınızı girin",
+        "details": "Lütfen detayları belirtin"
+      },
+      "options": {
+        "employed": "Çalışan",
+        "selfEmployed": "Kendi İşinde Çalışan",
+        "student": "Öğrenci",
+        "unemployed": "İşsiz",
+        "retired": "Emekli"
+      }
+    },
+    "step5": {
+      "title": "Beyanlar",
+      "subtitle": "Lütfen aşağıdaki bilgileri onaylayın",
+      "declarations": {
+        "confirmInfo": {
+          "title": "Bilgi Onayı",
+          "text": "Bu başvuruyu göndererek, verdiğiniz bilgilerin bildiğiniz kadarıyla doğru olduğunu onaylamış olursunuz.",
+          "warning": "Yanlış bilgi verirseniz: Başvurunuz reddedilebilir, kovuşturmaya tabi tutulabilir veya Birleşik Krallık'a girişiniz yasaklanabilir. Başkası adına başvuruyorsanız, başvurunun tam ve doğru olduğunu o kişiyle onaylamalısınız."
+        },
+        "acceptTerms": {
+          "title": "Şartlar ve Koşullar",
+          "text": "Şartlar ve Koşulları ve Gizlilik Politikasını okudum ve anladım. Ücrete hükümet harcı (£16) ve işlem ücreti (£81) dahildir."
+        },
+        "confirmProcessingTime": {
+          "title": "İşlem Süresi",
+          "text": "İşlemin 3 iş gününe kadar sürebileceğini anlıyorum ve Birleşik Krallık'a varış tarihimin bu günden itibaren en az 3 iş günü sonrası olacağını onaylıyorum."
+        }
+      }
+    },
+    "step6": {
+      "title": "Ödeme",
+      "subtitle": "Başvuru ücreti ödemesini tamamlayın",
+      "labels": {
+        "summary": {
+          "title": "Başvuru Özeti",
+          "applicant": "Başvuru Sahibi"
+        },
+        "pricing": {
+          "title": "İşlem Ücretleri",
+          "govFee": "Hükümet Harcı",
+          "serviceFee": "Servis ve İşlem Ücreti",
+          "total": "Toplam Tutar"
+        },
+        "card": {
+          "title": "Kart Bilgileri",
+          "holder": "Kart Sahibi Adı",
+          "number": "Kart Numarası",
+          "expiry": "Son Kullanma Tarihi",
+          "cvc": "CVC"
+        }
+      },
+      "placeholders": {
+        "holder": "Kartın üzerindeki isim"
+      },
+      "subtexts": {
+        "securePayment": "SSL 256-bit şifreli güvenli ödeme",
+        "recaptcha": {
+          "text": "Bu site reCAPTCHA ile korunmaktadır ve Google",
+          "and": "ve",
+          "apply": "geçerlidir."
+        }
+      },
+      "status": {
+        "processing": "Ödeme işleniyor..."
+      }
+    },
+    "step7": {
+      "title": "Başvuru Başarıyla Gönderildi!",
+      "subtitle": "Başvurunuz için teşekkürler. Belirttiğiniz adrese onay e-postası gönderdik. ETA kararı genellikle 3 iş günü içinde sonuçlanır.",
+      "labels": {
+        "reference": "Başvuru Referans Numarası",
+        "refPrefix": "UK-ETA-",
+        "whatsNext": {
+          "title": "Sırada Ne Var?",
+          "step1": "Onay e-postanızı kontrol edin",
+          "step2": "Başvurunuzu 3 iş günü içinde inceleyeceğiz",
+          "step3": "Onaylanmış ETA sonucunuzu e-posta ile alın"
+        },
+        "returnHome": "Ana Sayfaya Dön"
+      },
+      "status": {
+        "copied": "Panoya kopyalandı!"
+      }
+    },
+    "countries": {
+      "Dutch": "Hollanda",
+      "Belgian": "Belçika",
+      "Swiss": "İsviçre",
+      "Austrian": "Avusturya",
+      "Swedish": "İsveç",
+      "Norwegian": "Norveç",
+      "Danish": "Danimarka",
+      "Finnish": "Finlandiya",
+      "Irish": "İrlanda",
+      "Portuguese": "Portekiz",
+      "Greek": "Yunan",
+      "Polish": "Polonya",
+      "Czech": "Çek",
+      "Hungarian": "Macar",
+      "Romanian": "Romen",
+      "Bulgarian": "Bulgar",
+      "Croatian": "Hırvat",
+      "Serbian": "Sırp",
+      "Turkish": "Türk",
+      "Russian": "Rus",
+      "Ukrainian": "Ukrayna",
+      "Chinese": "Çin",
+      "Japanese": "Japon",
+      "Korean": "Kore",
+      "Indian": "Hint",
+      "Pakistani": "Pakistan",
+      "Bangladeshi": "Bangladeş",
+      "Malaysian": "Malezya",
+      "Singaporean": "Singapur",
+      "Indonesian": "Endonezya",
+      "Thai": "Tayland",
+      "Vietnamese": "Vietnam",
+      "Filipino": "Filipin",
+      "Brazilian": "Brezilya",
+      "Mexican": "Meksika",
+      "Argentine": "Arjantin",
+      "Colombian": "Kolombiya",
+      "Chilean": "Şili",
+      "Peruvian": "Peru",
+      "Venezuelan": "Venezuela",
+      "South African": "Güney Afrika",
+      "Nigerian": "Nijerya",
+      "Kenyan": "Kenya",
+      "Ghanaian": "Gana",
+      "Ethiopian": "Etiyopya",
+      "Other": "Diğer",
+      "Egypt": "Mısır",
+      "SaudiArabia": "Suudi Arabistan",
+      "UAE": "BAE",
+      "Qatar": "Katar",
+      "Kuwait": "Kuveyt",
+      "Bahrain": "Bahreyn",
+      "Oman": "Umman",
+      "Jordan": "Ürdün",
+      "Lebanon": "Lübnan",
+      "USA/Canada": "ABD / Kanada",
+      "UK": "Birleşik Krallık",
+      "Germany": "Almanya",
+      "France": "Fransa",
+      "Italy": "İtalya",
+      "Spain": "İspanya",
+      "Netherlands": "Hollanda",
+      "SouthAfrica": "Güney Afrika",
+      "India": "Hindistan",
+      "Pakistan": "Pakistan",
+      "China": "Çin",
+      "Brazil": "Brezilya",
+      "Mexico": "Meksika",
+      "Nigeria": "Nijerya",
+      "Japan": "Japonya",
+      "South Korea": "Güney Kore"
+    }
+  },
+  "footer": {
+    "brand_desc": "Birleşik Krallık için kesintisiz dijital yetkilendirme hizmetleri sunarak küresel gezginleri destekliyoruz.",
+    "quick_links": "Hızlı Linkler",
+    "legal_links": {
+      "terms": "Şartlar ve Koşullar",
+      "privacy": "Gizlilik Politikası",
+      "cookie": "Çerez Politikası",
+      "refund": "Geri Ödeme Politikası",
+      "support": "Desteğe başvurun"
+    },
+    "contact": "Bize Ulaşın",
+    "disclaimer": "Feragatname: Bu web sitesi özel bir bilgi rehberidir. Birleşik Krallık hükümetine bağlı değiliz.",
+    "legal_support": "Yasal ve destek",
+    "email_support": "E-posta desteği",
+    "office_location": "Ofis konumu",
+    "address": "123 Premier Yolu, Londra\nBirleşik Krallık, EC1A 1BB",
+    "disclaimer_title": "Sorumluluk reddi beyanı",
+    "copyright": "© {{year}} NextStop Vizesi. Her hakkı saklıdır.",
+    "admin": "Kontrol Paneli",
+    "system_status": "Sistem durumu"
+  },
+  "validation": {
+    "required": "Bu alan gereklidir",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+    "invalidPassport": "Lütfen geçerli bir pasaport numarası girin",
+    "invalidDate": "Lütfen geçerli bir tarih girin",
+    "futureDateRequired": "Varış tarihi bugünden en az 3 iş günü sonrası olmalıdır",
+    "fileRequired": "Bu dosya gereklidir",
+    "maxFileSize": "Dosya boyutu 10MB'tan az olmalıdır",
+    "invalidFormat": "Yalnızca JPG, PNG ve PDF formatlarına izin verilir"
+  },
+  "countries": {
+    "Dutch": "Hollanda",
+    "Belgian": "Belçika",
+    "Swiss": "İsviçre",
+    "Austrian": "Avusturya",
+    "Swedish": "İsveç",
+    "Norwegian": "Norveç",
+    "Danish": "Danimarka",
+    "Finnish": "Finlandiya",
+    "Irish": "İrlanda",
+    "Portuguese": "Portekiz",
+    "Greek": "Yunan",
+    "Polish": "Polonya",
+    "Czech": "Çek",
+    "Hungarian": "Macar",
+    "Romanian": "Romen",
+    "Bulgarian": "Bulgar",
+    "Croatian": "Hırvat",
+    "Serbian": "Sırp",
+    "Turkish": "Türk",
+    "Russian": "Rus",
+    "Ukrainian": "Ukrayna",
+    "Chinese": "Çin",
+    "Japanese": "Japon",
+    "Korean": "Kore",
+    "Indian": "Hint",
+    "Pakistani": "Pakistan",
+    "Bangladeshi": "Bangladeş",
+    "Malaysian": "Malezya",
+    "Singaporean": "Singapur",
+    "Indonesian": "Endonezya",
+    "Thai": "Tayland",
+    "Vietnamese": "Vietnam",
+    "Filipino": "Filipin",
+    "Brazilian": "Brezilya",
+    "Mexican": "Meksika",
+    "Argentine": "Arjantin",
+    "Colombian": "Kolombiya",
+    "Chilean": "Şili",
+    "Peruvian": "Peru",
+    "Venezuelan": "Venezuela",
+    "South African": "Güney Afrika",
+    "Nigerian": "Nijerya",
+    "Kenyan": "Kenya",
+    "Ghanaian": "Gana",
+    "Ethiopian": "Etiyopya",
+    "Other": "Diğer",
+    "Egypt": "Mısır",
+    "SaudiArabia": "Suudi Arabistan",
+    "UAE": "BAE",
+    "Qatar": "Katar",
+    "Kuwait": "Kuveyt",
+    "Bahrain": "Bahreyn",
+    "Oman": "Umman",
+    "Jordan": "Ürdün",
+    "Lebanon": "Lübnan",
+    "USA/Canada": "ABD / Kanada",
+    "UK": "Birleşik Krallık",
+    "Germany": "Almanya",
+    "France": "Fransa",
+    "Italy": "İtalya",
+    "Spain": "İspanya",
+    "Netherlands": "Hollanda",
+    "SouthKorea": "Güney Kore",
+    "Australia": "Avustralya",
+    "SouthAfrica": "Güney Afrika",
+    "India": "Hindistan",
+    "Pakistan": "Pakistan",
+    "China": "Çin",
+    "Japan": "Japon",
+    "South Korea": "Güney Kore",
+    "Brazil": "Brezilya",
+    "Nigeria": "Nijerya"
+  },
+  "requirements": {
+    "badge": "İhtiyacınız olan şey",
+    "title": "Gereksinimler",
+    "subtitle": "Kontrol listesi",
+    "description": "Sürecin sorunsuz ve başarılı geçmesi için başvurunuza başlamadan önce aşağıdaki belge ve detayların hazır olduğundan emin olun.",
+    "cta_apply": "Şimdi başvur",
+    "alt_travel": "Birleşik Krallık'a Seyahat",
+    "eligibility_title": "Uygunluğun anında doğrulanması",
+    "eligibility_desc": "ETA'ya ihtiyacınız olup olmadığından emin değil misiniz? Saniyeler içinde öğrenmek için etkileşimli denetleyicimizi kullanın.",
+    "cta_check": "Şimdi kontrol et",
+    "items": {
+      "passport_title": "Geçerli biyometrik pasaport",
+      "passport_desc": "Uygun bir ülkeden olmalı ve kaldığınız süre boyunca geçerli olmalıdır.",
+      "photo_title": "Dijital fotoğraf",
+      "photo_desc": "Resmi spesifikasyonlara göre net ve güncel bir dijital fotoğraf.",
+      "email_title": "Aktif e-posta adresi",
+      "email_desc": "Başvuru durumunuzu ve onaylanmış ETA'yı almak için gereklidir.",
+      "payment_title": "ödeme yöntemi",
+      "payment_desc": "Zorunlu başvuru ücretini ödemek için kredi veya banka kartı."
+    }
+  },
+  "faq": {
+    "badge": "Sorularınız mı var?",
+    "title": "Sorular",
+    "title_highlight": "En yaygın",
+    "subtitle": "Birleşik Krallık eTA'sı hakkında en sık sorulan soruların hızlı yanıtlarını bulun.",
+    "cta_title": "Birleşik Krallık'ı ziyaret etmeye hazır mısınız?",
+    "cta_desc": "Birleşik Krallık için eTA'nızı bugün alın. İşlem hızlı, basit ve tamamen çevrimiçi olarak gerçekleştirilir.",
+    "cta_btn": "Şimdi başvurmaya başlayın",
+    "questions": {
+      "q1": "Birleşik Krallık için kimin ETA'ya ihtiyacı var?",
+      "a1": "Turizm, aile ziyareti veya iş ziyareti de dahil olmak üzere kısa süreli (6 aya kadar) kalışlar için Birleşik Krallık'a girmek üzere halihazırda vizeye ihtiyaç duymayan ülkelerin vatandaşları için Birleşik Krallık ETA'sı gerekmektedir.",
+      "q2": "ETA ne kadar süreyle geçerlidir?",
+      "a2": "Onaylanmış bir ETA, düzenlendiği tarihten itibaren iki yıl süreyle veya pasaportunuzun süresi dolana kadar (hangisi önce gelirse) geçerlidir. Bu dönemde Birleşik Krallık'a birden fazla girişe izin verilmektedir.",
+      "q3": "Siparişin işlenmesi ne kadar sürer?",
+      "a3": "Çoğu sipariş 3 iş günü içinde işleme alınır. Ancak olası gecikmeleri hesaba katarak planladığınız seyahat tarihinden en az bir veya iki hafta önce başvurmanızı öneririz.",
+      "q4": "Çocukların ETA'ya ihtiyacı var mı?",
+      "a4": "Evet, bebekler ve çocuklar dahil her yolcunun Birleşik Krallık'a giriş için pasaportunda kendi ETA'sı düzenlenmiş olmalıdır.",
+      "q5": "ETA girişi garanti ediyor mu?",
+      "a5": "Hayır, vize gibi ETA da girişi garanti etmez. Birleşik Krallık'a giriş noktasındaki Sınır Kuvvetleri görevlileri, ülkeye girmenize izin verilmesi konusunda nihai kararı vereceklerdir."
+    }
+  },
+  "about": {
+    "badge": "Güvenilir bir seyahat ortağı",
+    "title_prefix": "Biz",
+    "title_highlight": "SonrakiVizeyi Durdurun",
+    "mission_p1": "<strong class=\"text-white\">NextStop Visa</strong> olarak kendimizi uluslararası seyahati basitleştirmeye adadık. Dünyanın dört bir yanındaki yolculara kolaylaştırılmış vize ve ETA başvuru yardımı sağlama konusunda uzmanız.",
+    "mission_p2": "<span class=\"text-accent font-semibold\">Seyahat uzmanlarından</span> oluşan ekibimiz, her başvurunun kapsamlı ve dikkatli bir şekilde incelenmesini sağlayarak hataları ve gecikmeleri en aza indirir.",
+    "mission_disclaimer": "Biz özel bir seyahat danışmanıyız ve herhangi bir devlet kurumuna bağlı değiliz.",
+    "mission_p3": "Deneyimimiz sayesinde, seyahat izninizin yetenekli ellerde olduğunu bilerek Birleşik Krallık seyahatinizi güvenle planlayabilirsiniz.",
+    "stats": {
+      "travelers": "Gezgin destekli",
+      "support": "Destek mevcut",
+      "approval": "Kabul oranı"
+    },
+    "features": {
+      "global_title": "Küresel yayılma",
+      "global_desc": "Gezginlere her yerde hizmet veriyoruz",
+      "secure_title": "Güvenli çalışma",
+      "secure_desc": "Veri koruma garantili",
+      "expert_title": "Uzman desteği",
+      "expert_desc": "24 saat yardım"
+    },
+    "cta": "Siparişinizi şimdi başlatın",
+    "alt_london": "London Eye'ın geceleri"
+  }
+}

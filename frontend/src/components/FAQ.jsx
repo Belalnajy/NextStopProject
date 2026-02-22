@@ -2,35 +2,32 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, HelpCircle, ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
     {
-      question: 'Who needs a UK ETA?',
-      answer:
-        'The UK ETA is required for nationals of countries who do not currently need a visa to enter the UK for short stays (up to 6 months), including for tourism, visiting family, or business.',
+      question: t('faq.questions.q1'),
+      answer: t('faq.questions.a1'),
     },
     {
-      question: 'How long is the ETA valid for?',
-      answer:
-        'An approved UK ETA is valid for two years from the date of issue, or until your passport expires, whichever comes first. It allows for multiple entries into the UK during this period.',
+      question: t('faq.questions.q2'),
+      answer: t('faq.questions.a2'),
     },
     {
-      question: 'How long does the application take to process?',
-      answer:
-        'Most applications are processed within 3 working days. However, we recommend applying at least 1-2 weeks before your planned travel date to account for any potential delays.',
+      question: t('faq.questions.q3'),
+      answer: t('faq.questions.a3'),
     },
     {
-      question: 'Do children need an ETA?',
-      answer:
-        'Yes, every traveler, including babies and children, must have their own individual ETA linked to their passport to enter the United Kingdom.',
+      question: t('faq.questions.q4'),
+      answer: t('faq.questions.a4'),
     },
     {
-      question: 'Is the ETA a guarantee of entry?',
-      answer:
-        'No, like a visa, an ETA does not guarantee entry. Border Force officers at the UK port of entry will make the final decision on whether to allow you into the country.',
+      question: t('faq.questions.q5'),
+      answer: t('faq.questions.a5'),
     },
   ];
 
@@ -73,7 +70,7 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-primary/5 text-primary text-sm font-semibold mb-4">
             <HelpCircle size={16} />
-            Got Questions?
+            {t('faq.badge')}
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -81,9 +78,9 @@ const FAQ = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
-            Frequently Asked{' '}
+            {t('faq.title')}{' '}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light">
-              Questions
+              {t('faq.title_highlight')}
             </span>
           </motion.h2>
           <motion.p
@@ -92,8 +89,7 @@ const FAQ = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Find quick answers to the most common questions about the UK
-            Electronic Travel Authorization.
+            {t('faq.subtitle')}
           </motion.p>
         </div>
 
@@ -135,7 +131,7 @@ const FAQ = () => {
                     </span>
                   </div>
                   <motion.div
-                    className={`p-2 rounded-full transition-colors flex-shrink-0 ${
+                    className={`p-2 rounded-full transition-colors shrink-0 ${
                       openIndex === index
                         ? 'bg-accent/20 text-accent'
                         : 'bg-slate-50 text-gray-400'
@@ -206,7 +202,7 @@ const FAQ = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}>
-                Ready to visit the United Kingdom?
+                {t('faq.cta_title')}
               </motion.h3>
               <motion.p
                 className="text-blue-100/80 text-lg mb-8 max-w-2xl mx-auto"
@@ -214,8 +210,7 @@ const FAQ = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}>
-                Get your UK Electronic Travel Authorization today. The process
-                is quick, simple, and entirely online.
+                {t('faq.cta_desc')}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -231,7 +226,7 @@ const FAQ = () => {
                     whileTap={{ scale: 0.95 }}
                     className="relative overflow-hidden bg-linear-to-r from-accent to-accent-light text-primary px-10 py-4 rounded-full text-lg font-bold shadow-xl group">
                     <span className="relative z-10 flex items-center gap-2">
-                      Start Application Now
+                      {t('faq.cta_btn')}
                       <ArrowRight
                         className="group-hover:translate-x-1 transition-transform"
                         size={20}
