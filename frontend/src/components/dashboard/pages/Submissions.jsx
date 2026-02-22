@@ -45,6 +45,8 @@ export default function Submissions() {
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [statusFilter, setStatusFilter] = useState('all');
+  const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
     fetchApplications();
@@ -64,12 +66,80 @@ export default function Submissions() {
     }
   };
 
-  const filteredData = applications.filter(
-    (item) =>
+  const handleSendEmail = async (item) => {
+    if (item.status === 'pending') {
+      toast.error(
+        'Please approve or reject the application first before sending an email.',
+      );
+      return;
+    }
+
+    const toastId = toast.loading('Sending email...');
+    try {
+      await api.post(`/applications/${item.id}/send-email`);
+      toast.success('Email sent successfully!', { id: toastId });
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Failed to send email', {
+        id: toastId,
+      });
+    }
+  };
+
+  const filteredData = applications.filter((item) => {
+    const matchesSearch =
       item.full_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       item.passport_number?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.email?.toLowerCase().includes(searchQuery.toLowerCase()),
-  );
+      item.email?.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesStatus =
+      statusFilter === 'all' || item.status === statusFilter;
+    return matchesSearch && matchesStatus;
+  });
+
+  const exportCSV = () => {
+    if (filteredData.length === 0) {
+      toast.error('No data to export');
+      return;
+    }
+    const headers = [
+      'Full Name',
+      'Email',
+      'Phone',
+      'Passport',
+      'Nationality',
+      'Arrival Date',
+      'Status',
+      'App No',
+      'Submitted',
+    ];
+    const rows = filteredData.map((item) => [
+      item.full_name,
+      item.email,
+      item.phone_number,
+      item.passport_number,
+      item.nationality,
+      item.arrival_date,
+      item.status,
+      item.application_no,
+      new Date(item.created_at).toLocaleDateString(),
+    ]);
+    const csvContent = [headers, ...rows]
+      .map((row) =>
+        row
+          .map((cell) => `"${(cell || '').toString().replace(/"/g, '""')}"`)
+          .join(','),
+      )
+      .join('\n');
+    const blob = new Blob([`\uFEFF${csvContent}`], {
+      type: 'text/csv;charset=utf-8;',
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `applications_${new Date().toISOString().split('T')[0]}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+    toast.success(`Exported ${filteredData.length} applications`);
+  };
 
   if (loading)
     return (
@@ -95,7 +165,9 @@ export default function Submissions() {
           </p>
         </div>
         <div className="flex gap-3">
-          <button className="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors flex items-center gap-2">
+          <button
+            onClick={exportCSV}
+            className="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors flex items-center gap-2">
             <Download size={16} />
             Export CSV
           </button>
@@ -117,10 +189,37 @@ export default function Submissions() {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
-        <button className="px-4 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors flex items-center gap-2">
-          <Filter size={18} />
-          Filter
-        </button>
+        <div className="relative">
+          <button
+            onClick={() => setShowFilter(!showFilter)}
+            className={`px-4 py-2.5 border rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${statusFilter !== 'all' ? 'bg-primary/5 border-primary text-primary' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'}`}>
+            <Filter size={18} />
+            {statusFilter === 'all'
+              ? 'Filter'
+              : statusFilter.charAt(0).toUpperCase() + statusFilter.slice(1)}
+          </button>
+          {showFilter && (
+            <div className="absolute right-0 top-full mt-2 w-44 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden">
+              {['all', 'pending', 'approved', 'rejected'].map((s) => (
+                <button
+                  key={s}
+                  onClick={() => {
+                    setStatusFilter(s);
+                    setShowFilter(false);
+                  }}
+                  className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 ${statusFilter === s ? 'bg-primary/5 text-primary font-medium' : 'text-slate-700 hover:bg-slate-50'}`}>
+                  {s === 'all'
+                    ? '🔍 All'
+                    : s === 'pending'
+                      ? '⏳ Pending'
+                      : s === 'approved'
+                        ? '✅ Approved'
+                        : '❌ Rejected'}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Data Table */}
@@ -195,12 +294,10 @@ export default function Submissions() {
                         <Eye size={18} />
                       </Link>
                       <button
+                        onClick={() => handleSendEmail(item)}
                         className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                        title="Send Email">
+                        title="Send Result Email">
                         <Mail size={18} />
-                      </button>
-                      <button className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors">
-                        <MoreVertical size={18} />
                       </button>
                     </div>
                   </td>

@@ -5,6 +5,7 @@ import {
   getApplicationById,
   updateApplicationStatus,
   downloadAttachment,
+  sendApplicationEmail,
 } from '../controllers/applicationController';
 import { upload } from '../middlewares/uploadMiddleware';
 import { authenticate } from '../middlewares/authMiddleware';
@@ -38,5 +39,8 @@ router.get('/:id', authenticate, getApplicationById as any);
 
 // Admin: Update Status
 router.patch('/:id/status', authenticate, updateApplicationStatus as any);
+
+// Admin: Send Result Email
+router.post('/:id/send-email', authenticate, sendApplicationEmail as any);
 
 export default router;

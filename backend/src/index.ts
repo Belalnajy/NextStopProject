@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import dotenv from 'dotenv';
 import app from './app';
 import { AppDataSource } from './config/data-source';
+import { initializeTemplates } from './services/emailService';
 
 dotenv.config();
 
@@ -16,6 +17,8 @@ if (process.env.NODE_ENV !== 'production') {
     try {
       await AppDataSource.initialize();
       console.log('Database connected successfully');
+
+      await initializeTemplates();
 
       app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);

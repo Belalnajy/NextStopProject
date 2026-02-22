@@ -94,24 +94,9 @@ const GeneralTab = ({ settings, updateSettings }) => (
       <div className="space-y-4">
         {[
           {
-            key: 'maintenance_mode',
-            label: 'Maintenance Mode',
-            desc: 'Show maintenance screen to visitors',
-          },
-          {
             key: 'registration_closed',
             label: 'Close Registrations',
             desc: 'Disable new applications',
-          },
-          {
-            key: 'email_notifs',
-            label: 'Email Notifications',
-            desc: 'Receive updates on new applications',
-          },
-          {
-            key: 'seo_indexing',
-            label: 'SEO Indexing',
-            desc: 'Allow search engines to index site',
           },
         ].map((item) => (
           <div
@@ -148,37 +133,6 @@ const HomePageTab = ({
   onRemoveHero,
 }) => (
   <div className="space-y-8">
-    <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-      <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-        <Type size={20} className="text-slate-400" />
-        Hero Section Content
-      </h3>
-      <div className="space-y-6">
-        <div>
-          <label className="block text-sm font-medium text-slate-700 mb-2">
-            Main Headline
-          </label>
-          <input
-            type="text"
-            value={settings.hero_title || ''}
-            onChange={(e) => updateSettings('hero_title', e.target.value)}
-            className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-slate-700 mb-2">
-            Subtitle
-          </label>
-          <textarea
-            rows="3"
-            value={settings.hero_subtitle || ''}
-            onChange={(e) => updateSettings('hero_subtitle', e.target.value)}
-            className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none resize-none"
-          />
-        </div>
-      </div>
-    </div>
-
     <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
@@ -233,37 +187,6 @@ const HomePageTab = ({
 
 const AboutTab = ({ settings, updateSettings }) => (
   <div className="space-y-8">
-    <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-      <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-        <Info size={20} className="text-slate-400" />
-        About Us Content
-      </h3>
-      <div className="space-y-6">
-        <div>
-          <label className="block text-sm font-medium text-slate-700 mb-2">
-            Headline / Title
-          </label>
-          <input
-            type="text"
-            value={settings.about_title}
-            onChange={(e) => updateSettings('about_title', e.target.value)}
-            className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-slate-700 mb-2">
-            Mission Statement / Content
-          </label>
-          <textarea
-            rows="6"
-            value={settings.about_mission}
-            onChange={(e) => updateSettings('about_mission', e.target.value)}
-            className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none resize-none"
-          />
-        </div>
-      </div>
-    </div>
-
     <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
       <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
         <Type size={20} className="text-slate-400" />
@@ -368,88 +291,6 @@ const ContactTab = ({ settings, updateSettings }) => (
     </div>
   </div>
 );
-
-const FooterTab = ({ settings, updateSettings }) => {
-  const handleLinkChange = (index, field, value) => {
-    const newLinks = [...(settings.quick_links || [])];
-    newLinks[index] = { ...newLinks[index], [field]: value };
-    updateSettings('quick_links', newLinks);
-  };
-
-  const addLink = () => {
-    updateSettings('quick_links', [
-      ...(settings.quick_links || []),
-      { label: '', url: '' },
-    ]);
-  };
-
-  const removeLink = (index) => {
-    const newLinks = (settings.quick_links || []).filter((_, i) => i !== index);
-    updateSettings('quick_links', newLinks);
-  };
-
-  return (
-    <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-      <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-        <Layout size={20} className="text-slate-400" />
-        Footer Content
-      </h3>
-
-      <div className="space-y-6">
-        <div>
-          <label className="block text-sm font-medium text-slate-700 mb-2">
-            Copyright Text
-          </label>
-          <input
-            type="text"
-            value={settings.copyright_text || ''}
-            onChange={(e) => updateSettings('copyright_text', e.target.value)}
-            className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none"
-          />
-        </div>
-
-        <div className="pt-6 border-t border-slate-100">
-          <h4 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
-            <LinkIcon size={16} className="text-slate-400" /> Quick Links
-          </h4>
-          <div className="space-y-3">
-            {settings.quick_links &&
-              settings.quick_links.map((link, i) => (
-                <div key={i} className="flex gap-3">
-                  <input
-                    type="text"
-                    placeholder="Label (e.g. About Us)"
-                    value={link.label}
-                    onChange={(e) =>
-                      handleLinkChange(i, 'label', e.target.value)
-                    }
-                    className="flex-1 px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm outline-none focus:border-primary"
-                  />
-                  <input
-                    type="text"
-                    placeholder="URL (e.g. /about)"
-                    value={link.url}
-                    onChange={(e) => handleLinkChange(i, 'url', e.target.value)}
-                    className="flex-1 px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm outline-none focus:border-primary"
-                  />
-                  <button
-                    onClick={() => removeLink(i)}
-                    className="p-2 text-red-400 hover:text-red-500 hover:bg-red-50 rounded-lg">
-                    <Trash2 size={18} />
-                  </button>
-                </div>
-              ))}
-            <button
-              onClick={addLink}
-              className="w-full py-2 border border-dashed border-slate-300 rounded-lg text-slate-500 text-sm hover:border-primary hover:text-primary transition-colors">
-              + Add Link
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 // ... (Tabs and Tab Components)
 
@@ -607,7 +448,6 @@ export default function Settings() {
     { id: 'home', label: 'Home Page', icon: Layout },
     { id: 'about', label: 'About Us', icon: Info },
     { id: 'contact', label: 'Contact', icon: Phone },
-    { id: 'footer', label: 'Footer', icon: LinkIcon },
   ];
 
   return (
@@ -678,12 +518,6 @@ export default function Settings() {
               )}
               {activeTab === 'contact' && (
                 <ContactTab
-                  settings={settings}
-                  updateSettings={updateSettings}
-                />
-              )}
-              {activeTab === 'footer' && (
-                <FooterTab
                   settings={settings}
                   updateSettings={updateSettings}
                 />

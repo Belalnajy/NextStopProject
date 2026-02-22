@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useSettings } from '../context/SettingsContext';
 import Step1_Travel from '../components/form/Step1_Travel';
 import Step2_Personal from '../components/form/Step2_Personal';
 import Step3_Address from '../components/form/Step3_Address';
@@ -12,6 +13,7 @@ import Step7_Success from '../components/form/Step7_Success';
 
 const ApplyPage = () => {
   const { t } = useTranslation();
+  const { settings } = useSettings();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     // Travel Information
@@ -182,72 +184,102 @@ const ApplyPage = () => {
           </motion.div>
         )}
 
-        {/* Form Container */}
-        <motion.div
-          className="bg-white rounded-3xl p-6 md:p-10 lg:p-12 shadow-xl shadow-primary/5 border border-slate-100 relative overflow-hidden"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}>
-          {/* Decorative Corner */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-bl from-accent/5 to-transparent rounded-bl-full" />
+        {settings?.registration_closed ? (
+          <motion.div
+            className="bg-white rounded-3xl p-10 md:p-16 shadow-xl shadow-primary/5 border border-slate-100 text-center max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}>
+            <div className="w-20 h-20 bg-amber-100 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
+                <path d="M12 2v20" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <h2 className="text-3xl font-display font-bold text-slate-800 mb-4">
+              Registrations are Currently Closed
+            </h2>
+            <p className="text-slate-600 text-lg">
+              We are not accepting new applications at this time. Please check
+              back later.
+            </p>
+          </motion.div>
+        ) : (
+          <motion.div
+            className="bg-white rounded-3xl p-6 md:p-10 lg:p-12 shadow-xl shadow-primary/5 border border-slate-100 relative overflow-hidden"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}>
+            {/* Decorative Corner */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-bl from-accent/5 to-transparent rounded-bl-full" />
 
-          <AnimatePresence mode="wait">
-            {step === 1 && (
-              <Step1_Travel
-                key="step1"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-              />
-            )}
-            {step === 2 && (
-              <Step2_Personal
-                key="step2"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 3 && (
-              <Step3_Address
-                key="step3"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 4 && (
-              <Step4_Additional
-                key="step4"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 5 && (
-              <Step5_Declarations
-                key="step5"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 6 && (
-              <Step6_Payment
-                key="step6"
-                formData={formData}
-                updateFormData={updateFormData}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 7 && <Step7_Success key="step7" />}
-          </AnimatePresence>
-        </motion.div>
+            <AnimatePresence mode="wait">
+              {step === 1 && (
+                <Step1_Travel
+                  key="step1"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                />
+              )}
+              {step === 2 && (
+                <Step2_Personal
+                  key="step2"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                  prevStep={prevStep}
+                />
+              )}
+              {step === 3 && (
+                <Step3_Address
+                  key="step3"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                  prevStep={prevStep}
+                />
+              )}
+              {step === 4 && (
+                <Step4_Additional
+                  key="step4"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                  prevStep={prevStep}
+                />
+              )}
+              {step === 5 && (
+                <Step5_Declarations
+                  key="step5"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                  prevStep={prevStep}
+                />
+              )}
+              {step === 6 && (
+                <Step6_Payment
+                  key="step6"
+                  formData={formData}
+                  updateFormData={updateFormData}
+                  nextStep={nextStep}
+                  prevStep={prevStep}
+                />
+              )}
+              {step === 7 && <Step7_Success key="step7" />}
+            </AnimatePresence>
+          </motion.div>
+        )}
       </div>
     </div>
   );

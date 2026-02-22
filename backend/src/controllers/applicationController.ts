@@ -264,3 +264,35 @@ export const downloadAttachment = async (req: Request, res: Response) => {
     res.status(500).json({ message: 'Server error' });
   }
 };
+
+export const sendApplicationEmail = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+
+    const application = await appRepo.findOneBy({ id: id as any });
+    if (!application) {
+      return res.status(404).json({ message: 'Application not found' });
+    }
+
+    if (application.status === ApplicationStatus.PENDING) {
+      return res.status(400).json({
+        message: 'Application is pending. Please approve or reject it first.',
+      });
+    }
+
+    const emailType =
+      application.status === ApplicationStatus.APPROVED
+        ? EmailType.APPLICATION_APPROVED
+        : EmailType.APPLICATION_REJECTED;
+
+    await sendEmail(application.email, emailType, {
+      name: application.full_name,
+      appNo: application.application_no,
+    });
+
+    res.json({ message: 'Email sent successfully' });
+  } catch (error) {
+    console.error('Error sending application email:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+};

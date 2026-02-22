@@ -5,6 +5,7 @@ import { Application } from '../entities/Application';
 import { Attachment } from '../entities/Attachment';
 import { Settings } from '../entities/Settings';
 import { EmailTemplate } from '../entities/EmailTemplate';
+import { initializeTemplates } from '../services/emailService';
 
 dotenv.config();
 
@@ -30,6 +31,9 @@ export const initializeDatabase = async () => {
   if (!AppDataSource.isInitialized) {
     await AppDataSource.initialize();
     console.log('Database connected successfully');
+
+    // Initialize default email templates if they don't exist
+    await initializeTemplates();
   }
   return AppDataSource;
 };

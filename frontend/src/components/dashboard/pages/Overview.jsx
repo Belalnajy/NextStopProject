@@ -11,6 +11,7 @@ import {
   MoreVertical,
   ArrowRight,
   Loader2,
+  Download,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import api from '../../../api';
@@ -106,6 +107,37 @@ export default function DashboardOverview() {
     }
   };
 
+  const downloadReport = () => {
+    if (!data) {
+      toast.error('No data to download');
+      return;
+    }
+    const lines = [
+      'NextStop Visa - Dashboard Report',
+      `Generated: ${new Date().toLocaleString()}`,
+      '',
+      '--- Statistics ---',
+      ...(data.stats || []).map((s) => `${s.title}: ${s.value} (${s.change})`),
+      '',
+      '--- Recent Applications ---',
+      'Name,Email,Status,App No,Date',
+      ...(data.recentApplications || []).map(
+        (a) =>
+          `"${a.full_name}","${a.email}","${a.status}","${a.application_no}","${new Date(a.created_at).toLocaleDateString()}"`,
+      ),
+    ];
+    const blob = new Blob([`\uFEFF${lines.join('\n')}`], {
+      type: 'text/csv;charset=utf-8;',
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `dashboard_report_${new Date().toISOString().split('T')[0]}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+    toast.success('Report downloaded!');
+  };
+
   const statusColors = {
     total: 'bg-blue-500',
     pending: 'bg-amber-500',
@@ -132,7 +164,10 @@ export default function DashboardOverview() {
           </p>
         </div>
         <div className="flex gap-3">
-          <button className="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors">
+          <button
+            onClick={downloadReport}
+            className="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors flex items-center gap-2">
+            <Download size={16} />
             Download Report
           </button>
           <Link
