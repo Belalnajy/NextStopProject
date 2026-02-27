@@ -99,14 +99,13 @@ const Requirements = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Left Content */}
             <div className="p-10 lg:p-16 xl:p-20 relative z-10">
-              <motion.div
+              <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-accent/20 border border-accent/30 text-accent text-sm font-semibold mb-8">
-                <Sparkles size={14} />
+                className="text-sm font-semibold tracking-widest text-accent/80 uppercase mb-4">
                 {t('requirements.badge')}
-              </motion.div>
+              </motion.h3>
 
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -158,22 +157,7 @@ const Requirements = () => {
                 ))}
               </motion.div>
 
-              {/* Mobile CTA */}
-              <motion.div
-                className="lg:hidden mt-10"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}>
-                <Link to="/eligibility">
-                  <motion.button
-                    className="w-full bg-linear-to-r from-accent to-accent-light text-primary py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-2"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}>
-                    {t('requirements.cta_apply')}
-                    <ArrowRight size={18} />
-                  </motion.button>
-                </Link>
-              </motion.div>
+              {/* Mobile CTA changed to primary apply action elsewhere to avoid extra eligibility button */}
             </div>
 
             {/* Right Visual Section - Desktop */}

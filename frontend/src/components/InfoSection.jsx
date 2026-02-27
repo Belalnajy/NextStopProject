@@ -140,37 +140,7 @@ const InfoSection = () => {
           ))}
         </motion.div>
 
-        {/* CTA Button */}
-        <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}>
-          <Link to="/eligibility">
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: '0 15px 40px rgba(26, 47, 107, 0.25)',
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="relative overflow-hidden bg-linear-to-r from-primary to-primary-light text-white px-10 py-4 rounded-full font-bold shadow-xl group">
-              <span className="relative z-10 flex items-center gap-2">
-                {t('nav.eligibility')}
-                <ArrowRight
-                  className="group-hover:translate-x-1 transition-transform"
-                  size={18}
-                />
-              </span>
-              <motion.div
-                className="absolute inset-0 bg-linear-to-r from-primary-light to-primary"
-                initial={{ x: '-100%' }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.button>
-          </Link>
-        </motion.div>
+        {/* CTA Button removed to reduce duplicate eligibility actions */}
       </div>
     </section>
   );

@@ -56,12 +56,6 @@ const Hero = () => {
     }
   };
 
-  const featureCards = [
-    { icon: Clock, label: t('info.card1_title'), delay: 0 },
-    { icon: Shield, label: t('hero.cta_check'), delay: 0.1 },
-    { icon: Globe, label: t('info.card3_title'), delay: 0.2 }
-  ];
-
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Image Slider with Overlay */}
@@ -206,27 +200,6 @@ const Hero = () => {
             </motion.button>
           </motion.div>
 
-          {/* Feature Cards */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {featureCards.map((card, index) => (
-              <motion.div
-                key={card.label}
-                className="flex items-center gap-4 bg-white/5 backdrop-blur-sm p-5 rounded-2xl border border-white/10 cursor-default group hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 + card.delay, duration: 0.5 }}
-                whileHover={{ y: -5 }}>
-                <motion.div
-                  className="p-3 bg-accent/20 rounded-xl group-hover:bg-accent/30 transition-colors"
-                  whileHover={{ rotate: 10, scale: 1.1 }}>
-                  <card.icon className="text-accent" size={24} />
-                </motion.div>
-                <span className="text-white font-medium">{card.label}</span>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
 

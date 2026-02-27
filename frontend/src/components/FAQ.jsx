@@ -64,33 +64,17 @@ const FAQ = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-primary/5 text-primary text-sm font-semibold mb-4">
-            <HelpCircle size={16} />
-            {t('faq.badge')}
-          </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
+            className="text-4xl md:text-5xl font-display font-bold text-primary">
             {t('faq.title')}{' '}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light">
               {t('faq.title_highlight')}
             </span>
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-600 text-lg max-w-2xl mx-auto">
-            {t('faq.subtitle')}
-          </motion.p>
         </div>
 
         {/* FAQ Items */}

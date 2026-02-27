@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronRight, Globe, ChevronDown } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSettings } from '../context/SettingsContext';
 
@@ -11,7 +11,6 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +27,6 @@ const Navbar = () => {
     document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = lng;
   };
-
-  // Use dark header style if scrolled OR if not on home page
-  const isDarkHeader = isScrolled || location.pathname !== '/';
 
   const navLinks = [
     { name: t('nav.home'), href: '/' },
@@ -113,9 +109,9 @@ const Navbar = () => {
       animate="visible"
       variants={navVariants}
       className={`fixed w-full z-50 transition-all duration-500 ${
-        isDarkHeader
-          ? 'bg-white/80 backdrop-blur-xl py-3 shadow-lg shadow-primary/5'
-          : 'bg-transparent py-6'
+        isScrolled
+          ? 'bg-white/90 backdrop-blur-xl py-3 shadow-lg shadow-primary/5'
+          : 'bg-white/70 backdrop-blur-xl py-5'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -125,19 +121,17 @@ const Navbar = () => {
               <motion.img
                 src={settings.logo_url}
                 alt={settings?.site_name || 'NextStop Visa'}
-                className="h-14 w-auto"
+                className="h-16 w-auto"
                 whileHover={{ scale: 1.05, rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               />
             ) : (
-              <div className="w-10 h-10 rounded-xl bg-linear-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg shadow-primary/20">
+              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg shadow-primary/20">
                 <span className="text-white font-bold text-xl">N</span>
               </div>
             )}
             <motion.span
-              className={`font-display font-bold text-2xl transition-colors duration-300 ${
-                isDarkHeader ? 'text-primary' : 'text-white'
-              }`}
+              className="font-display font-bold text-2xl transition-colors duration-300 text-primary"
               whileHover={{ scale: 1.02 }}>
               {settings?.site_name || 'NextStop Visa'}
             </motion.span>
@@ -151,11 +145,7 @@ const Navbar = () => {
                 href={link.href}
                 variants={linkVariants}
                 whileHover="hover"
-                className={`relative px-4 py-2 text-sm font-medium transition-colors group ${
-                  isDarkHeader
-                    ? 'text-gray-700 hover:text-primary'
-                    : 'text-white/90 hover:text-white'
-                }`}>
+                className="relative px-4 py-2 text-sm font-medium transition-colors group text-gray-700 hover:text-primary">
                 {link.name}
                 <span
                   className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-3/4 rounded-full`}
@@ -169,11 +159,7 @@ const Navbar = () => {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex items-center gap-2 px-3 py-2 rounded-xl border transition-all ${
-                  isDarkHeader
-                    ? 'border-gray-200 text-gray-700 hover:bg-gray-50'
-                    : 'border-white/20 text-white hover:bg-white/10'
-                }`}>
+                className="flex items-center gap-2 px-3 py-2 rounded-xl border transition-all border-gray-200 text-gray-700 hover:bg-gray-50">
                 <Globe size={18} />
                 <span className="text-xs font-bold uppercase">
                   {i18n.language.split('-')[0]}
@@ -239,11 +225,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <motion.button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-xl transition-colors ${
-              isDarkHeader
-                ? 'text-primary hover:bg-primary/10'
-                : 'text-white hover:bg-white/10'
-            }`}
+            className="md:hidden p-2 rounded-xl transition-colors text-primary hover:bg-primary/10"
             whileTap={{ scale: 0.9 }}>
             <AnimatePresence mode="wait">
               {isMobileMenuOpen ? (

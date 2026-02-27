@@ -96,14 +96,7 @@ const HowToApply = () => {
               className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
               {t('how_to_apply.step1_title')}
             </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="text-gray-600 text-lg">
-              {t('how_to_apply.step1_desc')}
-            </motion.p>
+          {/* Removed duplicate description; kept detailed text inside the step card below */}
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,15 +107,17 @@ const HowToApply = () => {
               <motion.button
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: '0 15px 40px rgba(26, 47, 107, 0.25)',
+                  boxShadow: '0 20px 40px rgba(212, 175, 110, 0.4)',
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-linear-to-r from-primary to-primary-light text-white px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-2 group">
-                {t('hero.cta_apply')}
-                <ArrowRight
-                  className="group-hover:translate-x-1 transition-transform"
-                  size={18}
-                />
+                className="relative overflow-hidden bg-linear-to-r from-accent to-accent-light text-primary px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-2 group">
+                <span className="relative z-10 flex items-center gap-2">
+                  {t('hero.cta_apply')}
+                  <ArrowRight
+                    className="group-hover:translate-x-1 transition-transform"
+                    size={18}
+                  />
+                </span>
               </motion.button>
             </Link>
           </motion.div>

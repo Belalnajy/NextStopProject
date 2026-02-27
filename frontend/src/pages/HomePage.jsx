@@ -8,7 +8,6 @@ const HomePage = () => {
   return (
     <div className="bg-white">
       <Hero />
-      <InfoSection />
       <HowToApply />
       <Requirements />
       <FAQ />

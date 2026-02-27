@@ -7,7 +7,7 @@
     "eligibility": "Check Eligibility"
   },
   "hero": {
-    "badge": "Official UK ETA Service",
+    "badge": "UK ETA application assistance",
     "title1": "Your Gateway to the",
     "title2": "United Kingdom",
     "subtitle": "Get your Electronic Travel Authorization quickly and securely. The standard requirement for visitors to the UK.",
@@ -57,7 +57,7 @@
     }
   },
   "faq": {
-    "badge": "Got Questions?",
+  "badge": "",
     "title": "Frequently Asked",
     "title_highlight": "Questions",
     "subtitle": "Find quick answers to the most common questions about the UK Electronic Travel Authorization.",
