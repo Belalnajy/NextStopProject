@@ -309,7 +309,11 @@
       "Mexico": "Mexico",
       "Nigeria": "Nigeria",
       "Japan": "Jepun",
-      "South Korea": "Korea Selatan"
+      "South Korea": "Korea Selatan",
+      "German": "Jerman",
+      "French": "Perancis",
+      "Italian": "Itali",
+      "Spanish": "Sepanyol"
     }
   },
   "footer": {

@@ -217,7 +217,7 @@
         },
         "acceptTerms": {
           "title": "Terms and Conditions",
-          "text": "I have read and understood the Terms and Conditions and the Privacy Policy. The price includes government fee (£16) and processing fee (£81)."
+          "text": "I have read and understood the Terms and Conditions and the Privacy Policy. The price includes processing fee (£81)."
         },
         "confirmProcessingTime": {
           "title": "Processing Time",
@@ -351,7 +351,11 @@
       "South Korea": "South Korea",
       "Brazil": "Brazil",
       "Mexico": "Mexico",
-      "Nigeria": "Nigeria"
+      "Nigeria": "Nigeria",
+      "German": "German",
+      "French": "French",
+      "Italian": "Italian",
+      "Spanish": "Spanish"
     }
   },
   "footer": {

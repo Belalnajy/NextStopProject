@@ -164,7 +164,7 @@ const Requirements = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}>
-                <Link to="/apply">
+                <Link to="/eligibility">
                   <motion.button
                     className="w-full bg-linear-to-r from-accent to-accent-light text-primary py-4 rounded-2xl font-bold shadow-xl flex items-center justify-center gap-2"
                     whileHover={{ scale: 1.02 }}
@@ -217,7 +217,7 @@ const Requirements = () => {
                 <p className="text-white/70 text-sm mb-6 leading-relaxed">
                   {t('requirements.eligibility_desc')}
                 </p>
-                <Link to="/apply">
+                <Link to="/eligibility">
                   <motion.button
                     className="w-full bg-linear-to-r from-accent to-accent-light text-primary py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2 group"
                     whileHover={{ scale: 1.02 }}

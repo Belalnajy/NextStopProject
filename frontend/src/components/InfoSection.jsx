@@ -147,7 +147,7 @@ const InfoSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}>
-          <Link to="/apply">
+          <Link to="/eligibility">
             <motion.button
               whileHover={{
                 scale: 1.05,

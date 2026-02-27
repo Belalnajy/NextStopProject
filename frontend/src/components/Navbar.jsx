@@ -35,7 +35,7 @@ const Navbar = () => {
   const navLinks = [
     { name: t('nav.home'), href: '/' },
     { name: t('nav.about'), href: '/about' },
-    { name: t('nav.eligibility'), href: '/#requirements' },
+    { name: t('nav.eligibility'), href: '/eligibility' },
     { name: t('nav.contact'), href: '/#contact' },
   ];
 

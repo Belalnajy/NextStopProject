@@ -1,7 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import PublicLayout from './components/PublicLayout';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ApplyPage from './pages/ApplyPage';
+import EligibilityPage from './pages/EligibilityPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import TermsPage from './pages/TermsPage';
@@ -40,12 +42,14 @@ export default function App() {
     <AuthProvider>
       <SettingsProvider>
         <Toaster position="top-right" />
+        <ScrollToTop />
         <Routes>
           {/* Public Routes */}
           <Route element={<PublicLayout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/apply" element={<ApplyPage />} />
+            <Route path="/eligibility" element={<EligibilityPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />

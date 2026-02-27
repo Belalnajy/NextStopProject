@@ -9,7 +9,7 @@ import {
   Instagram,
   Linkedin,
   ArrowUpRight,
-  Lock, // Added Lock icon
+  Lock // Added Lock icon
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -24,15 +24,15 @@ const Footer = () => {
     { icon: Facebook, label: 'Facebook' },
     { icon: Twitter, label: 'Twitter' },
     { icon: Instagram, label: 'Instagram' },
-    { icon: Linkedin, label: 'LinkedIn' },
+    { icon: Linkedin, label: 'LinkedIn' }
   ];
 
-  const quickLinksURLs = ['/', '/about', '/#requirements', '/#contact'];
+  const quickLinksURLs = ['/', '/about', '/eligibility', '/contact'];
   const quickLinks = [
     t('nav.home'),
     t('nav.about'),
     t('nav.eligibility'),
-    t('nav.contact'),
+    t('nav.contact')
   ];
 
   const legalLinks = [
@@ -40,7 +40,7 @@ const Footer = () => {
     { label: t('footer.legal_links.privacy'), url: '/privacy' },
     { label: t('footer.legal_links.cookie'), url: '/cookie' },
     { label: t('footer.legal_links.refund'), url: '/refund' },
-    { label: t('footer.legal_links.support'), url: '/contact' },
+    { label: t('footer.legal_links.support'), url: '/contact' }
   ];
 
   const containerVariants = {
@@ -48,9 +48,9 @@ const Footer = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
-      },
-    },
+        staggerChildren: 0.05
+      }
+    }
   };
 
   const itemVariants = {
@@ -59,9 +59,9 @@ const Footer = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.4,
-      },
-    },
+        duration: 0.4
+      }
+    }
   };
 
   return (
@@ -150,14 +150,14 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-600">
               {legalLinks.map((link) => (
                 <motion.li key={link.url} variants={itemVariants}>
-                  <a
-                    href={link.url}
+                  <Link
+                    to={link.url}
                     className="hover:text-primary font-medium flex items-center gap-2 group transition-colors">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent scale-0 group-hover:scale-100 transition-transform" />
                     <span className="group-hover:translate-x-1 transition-transform">
                       {link.label}
                     </span>
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
@@ -244,13 +244,12 @@ const Footer = () => {
                 />
                 {t('footer.admin')}
               </Link>
-              <motion.a
-                href="#"
-                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors font-bold uppercase tracking-wider"
-                whileHover={{ y: -2 }}>
+              <Link
+                to="/status"
+                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors font-bold uppercase tracking-wider">
                 {t('footer.system_status')}
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              </motion.a>
+              </Link>
             </div>
           </div>
         </motion.div>

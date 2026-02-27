@@ -309,7 +309,11 @@
       "Mexico": "Meksika",
       "Nigeria": "Nijerya",
       "Japan": "Japonya",
-      "South Korea": "Güney Kore"
+      "South Korea": "Güney Kore",
+      "German": "Almanca",
+      "French": "Fransızca",
+      "Italian": "İtalyanca",
+      "Spanish": "İspanyolca"
     }
   },
   "footer": {

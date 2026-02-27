@@ -309,7 +309,11 @@
       "Mexico": "멕시코",
       "Nigeria": "나이지리아",
       "Japan": "일본",
-      "South Korea": "대한민국"
+      "South Korea": "대한민국",
+      "German": "독일어",
+      "French": "프랑스어",
+      "Italian": "이탈리아어",
+      "Spanish": "스페인어"
     }
   },
   "footer": {

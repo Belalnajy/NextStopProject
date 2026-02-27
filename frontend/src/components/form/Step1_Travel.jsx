@@ -13,6 +13,7 @@ import {
 import { useTranslation } from 'react-i18next';
 
 const nationalities = [
+  // Europe
   'Dutch',
   'Belgian',
   'Swiss',
@@ -31,21 +32,23 @@ const nationalities = [
   'Bulgarian',
   'Croatian',
   'Serbian',
-  'Turkish',
-  'Russian',
-  'Ukrainian',
-  'Chinese',
-  'Japanese',
-  'Korean',
-  'Indian',
-  'Pakistani',
-  'Bangladeshi',
-  'Malaysian',
-  'Singaporean',
-  'Indonesian',
-  'Thai',
-  'Vietnamese',
-  'Filipino',
+  'German',
+  'French',
+  'Italian',
+  'Spanish',
+  'Netherlands',
+  'UK',
+  // Middle East & North Africa
+  'Egypt',
+  'SaudiArabia',
+  'UAE',
+  'Qatar',
+  'Kuwait',
+  'Bahrain',
+  'Oman',
+  'Jordan',
+  'Lebanon',
+  // Americas
   'Brazilian',
   'Mexican',
   'Argentine',
@@ -53,11 +56,34 @@ const nationalities = [
   'Chilean',
   'Peruvian',
   'Venezuelan',
+  'USA/Canada',
+  // Africa
   'South African',
+  'SouthAfrica',
   'Nigerian',
+  'Nigeria',
   'Kenyan',
   'Ghanaian',
   'Ethiopian',
+  // Asia-Pacific
+  'Chinese',
+  'China',
+  'Japanese',
+  'Japan',
+  'Korean',
+  'South Korea',
+  'Indian',
+  'India',
+  'Pakistani',
+  'Pakistan',
+  'Bangladeshi',
+  'Malaysian',
+  'Singaporean',
+  'Indonesian',
+  'Thai',
+  'Vietnamese',
+  'Filipino',
+  // Fallback
   'Other',
 ];
 
@@ -66,6 +92,8 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [dragActive, setDragActive] = useState(false);
   const [errors, setErrors] = useState({});
+  const [isNationalityOpen, setIsNationalityOpen] = useState(false);
+  const [nationalityQuery, setNationalityQuery] = useState('');
 
   const validate = () => {
     const newErrors = {};
@@ -142,6 +170,12 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
   const selectClasses =
     'w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-light focus:border-transparent transition-all duration-200 appearance-none bg-white pr-10';
 
+  const filteredNationalities = nationalities.filter((nat) => {
+    const label = t(`form.countries.${nat}`);
+    if (!nationalityQuery) return true;
+    return label.toLowerCase().includes(nationalityQuery.toLowerCase());
+  });
+
   return (
     <>
       <motion.form
@@ -179,24 +213,64 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
               </span>
             </label>
             <div className="relative">
-              <select
-                name="nationality"
-                value={formData.nationality || ''}
-                onChange={handleChange}
-                className={`${selectClasses} ${errors.nationality ? 'border-red-500 bg-red-50' : ''}`}>
-                <option value="">
-                  {t('form.step1.placeholders.nationality')}
-                </option>
-                {nationalities.map((nat) => (
-                  <option key={nat} value={nat}>
-                    {t(`form.countries.${nat}`)}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
-                size={20}
-              />
+              <button
+                type="button"
+                onClick={() => setIsNationalityOpen((prev) => !prev)}
+                className={`${selectClasses} flex items-center justify-between ${
+                  errors.nationality ? 'border-red-500 bg-red-50' : ''
+                }`}>
+                <span className={formData.nationality ? 'text-gray-900' : 'text-gray-400'}>
+                  {formData.nationality
+                    ? t(`form.countries.${formData.nationality}`)
+                    : t('form.step1.placeholders.nationality')}
+                </span>
+                <ChevronDown
+                  className={`ml-2 text-gray-400 transition-transform ${
+                    isNationalityOpen ? 'rotate-180' : ''
+                  }`}
+                  size={20}
+                />
+              </button>
+
+              {isNationalityOpen && (
+                <div className="absolute z-20 mt-2 w-full rounded-xl bg-white border border-gray-200 shadow-lg">
+                  <div className="p-2 border-b border-gray-100">
+                    <input
+                      type="text"
+                      value={nationalityQuery}
+                      onChange={(e) => setNationalityQuery(e.target.value)}
+                      className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light focus:border-transparent"
+                      placeholder={t('form.step1.placeholders.nationality')}
+                    />
+                  </div>
+                  <div className="max-h-60 overflow-y-auto py-1">
+                    {filteredNationalities.map((nat) => (
+                      <button
+                        type="button"
+                        key={nat}
+                        onClick={() => {
+                          updateFormData({ nationality: nat });
+                          setIsNationalityOpen(false);
+                          setNationalityQuery('');
+                          if (errors.nationality) {
+                            setErrors((prev) => {
+                              const { nationality, ...rest } = prev;
+                              return rest;
+                            });
+                          }
+                        }}
+                        className="w-full text-left px-3 py-2 text-sm hover:bg-primary/5 text-gray-700">
+                        {t(`form.countries.${nat}`)}
+                      </button>
+                    ))}
+                    {filteredNationalities.length === 0 && (
+                      <p className="px-3 py-2 text-xs text-gray-400">
+                        {t('form.step1.placeholders.nationality')}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
             {errors.nationality && (
               <p className="mt-1 text-xs text-red-500 font-medium">
