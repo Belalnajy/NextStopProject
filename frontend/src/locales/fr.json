@@ -482,9 +482,42 @@
       "secure_title": "Fonctionnement sûr",
       "secure_desc": "Protection des données garantie",
       "expert_title": "Assistance d'experts",
-      "expert_desc": "Aide 24 heures sur 24"
+      "expert_desc": "Aide 24 heures sur 24",
+      "fast_title": "Traitement rapide",
+      "fast_desc": "Délai d'exécution rapide"
     },
     "cta": "Commencez votre commande maintenant",
     "alt_london": "London Eye la nuit"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Voyageurs assistés",
+      "support": "Support disponible",
+      "approval": "Taux d'approbation",
+      "countries": "Pays desservis"
+    },
+    "testimonials": {
+      "badge": "Avis clients",
+      "title": "Ce que disent nos clients",
+      "subtitle": "Approuvé par des milliers de voyageurs dans le monde."
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Des questions sur votre demande d'ETA pour le Royaume-Uni ?",
+    "email_label": "E-mail",
+    "phone_label": "Téléphone",
+    "address_label": "Bureau",
+    "form_title": "Envoyez-nous un message",
+    "form_name": "Nom complet",
+    "form_name_placeholder": "Jean Dupont",
+    "form_email": "Adresse e-mail",
+    "form_email_placeholder": "jean@example.com",
+    "form_phone": "Numéro de téléphone",
+    "form_phone_placeholder": "+33 1 23 45 67 89",
+    "form_message": "Message",
+    "form_message_placeholder": "Comment pouvons-nous vous aider ?",
+    "form_submit": "Envoyer le message",
+    "form_sent": "Message envoyé !"
   }
 }

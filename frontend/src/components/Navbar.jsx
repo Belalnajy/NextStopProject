@@ -32,7 +32,7 @@ const Navbar = () => {
     { name: t('nav.home'), href: '/' },
     { name: t('nav.about'), href: '/about' },
     { name: t('nav.eligibility'), href: '/eligibility' },
-    { name: t('nav.contact'), href: '/#contact' },
+    { name: t('nav.contact'), href: '/contact' },
   ];
 
   const languages = [

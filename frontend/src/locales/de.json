@@ -482,9 +482,42 @@
       "secure_title": "Sicherer Betrieb",
       "secure_desc": "Datenschutz garantiert",
       "expert_title": "Kompetente Unterstützung",
-      "expert_desc": "Hilfe rund um die Uhr"
+      "expert_desc": "Hilfe rund um die Uhr",
+      "fast_title": "Schnelle Bearbeitung",
+      "fast_desc": "Kurze Bearbeitungszeit"
     },
     "cta": "Starten Sie jetzt Ihre Bestellung",
     "alt_london": "London Eye bei Nacht"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Betreute Reisende",
+      "support": "Support verfügbar",
+      "approval": "Genehmigungsrate",
+      "countries": "Bediente Länder"
+    },
+    "testimonials": {
+      "badge": "Kundenbewertungen",
+      "title": "Was unsere Kunden sagen",
+      "subtitle": "Von Tausenden von Reisenden weltweit vertraut."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie Fragen zu Ihrem UK ETA-Antrag?",
+    "email_label": "E-Mail",
+    "phone_label": "Telefon",
+    "address_label": "Büro",
+    "form_title": "Senden Sie uns eine Nachricht",
+    "form_name": "Vollständiger Name",
+    "form_name_placeholder": "Max Mustermann",
+    "form_email": "E-Mail-Adresse",
+    "form_email_placeholder": "max@example.com",
+    "form_phone": "Telefonnummer",
+    "form_phone_placeholder": "+49 30 12345678",
+    "form_message": "Nachricht",
+    "form_message_placeholder": "Wie können wir Ihnen helfen?",
+    "form_submit": "Nachricht senden",
+    "form_sent": "Nachricht gesendet!"
   }
 }

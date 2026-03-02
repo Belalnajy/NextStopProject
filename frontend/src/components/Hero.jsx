@@ -27,9 +27,9 @@ const Hero = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -39,9 +39,9 @@ const Hero = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.4, 0, 0.2, 1]
-      }
-    }
+        ease: [0.4, 0, 0.2, 1],
+      },
+    },
   };
 
   const floatingVariants = {
@@ -51,9 +51,9 @@ const Hero = () => {
       transition: {
         duration: 6,
         repeat: Infinity,
-        ease: 'easeInOut'
-      }
-    }
+        ease: 'easeInOut',
+      },
+    },
   };
 
   return (
@@ -81,7 +81,7 @@ const Hero = () => {
         className="absolute top-32 right-20 w-20 h-20 rounded-full bg-accent/20 blur-2xl z-10"
         animate={{
           scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3]
+          opacity: [0.3, 0.5, 0.3],
         }}
         transition={{ duration: 4, repeat: Infinity }}
       />
@@ -89,7 +89,7 @@ const Hero = () => {
         className="absolute bottom-40 left-20 w-32 h-32 rounded-full bg-accent/10 blur-3xl z-10"
         animate={{
           scale: [1.2, 1, 1.2],
-          opacity: [0.2, 0.4, 0.2]
+          opacity: [0.2, 0.4, 0.2],
         }}
         transition={{ duration: 5, repeat: Infinity }}
       />
@@ -106,7 +106,7 @@ const Hero = () => {
         animate={{
           y: [0, -20, 0],
           rotate: [0, 180, 360],
-          opacity: [0.3, 0.6, 0.3]
+          opacity: [0.3, 0.6, 0.3],
         }}
         transition={{ duration: 8, repeat: Infinity }}>
         <Star size={24} />
@@ -120,11 +120,8 @@ const Hero = () => {
           animate="visible">
           {/* Badge */}
           <motion.div variants={itemVariants}>
-            <span className="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-accent/20 border border-accent/30 text-accent text-sm font-semibold mb-8 backdrop-blur-sm hover:bg-accent/30 transition-colors cursor-default group">
-              <Sparkles
-                size={16}
-                className="group-hover:rotate-12 transition-transform"
-              />
+            <span className="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-accent/20 border border-accent/30 text-accent text-sm font-semibold mb-8 backdrop-blur-sm">
+              <Sparkles size={16} />
               {t('hero.badge')}
             </span>
           </motion.div>
@@ -141,8 +138,8 @@ const Hero = () => {
                   textShadow: [
                     '0 0 20px rgba(212, 175, 110, 0)',
                     '0 0 40px rgba(212, 175, 110, 0.3)',
-                    '0 0 20px rgba(212, 175, 110, 0)'
-                  ]
+                    '0 0 20px rgba(212, 175, 110, 0)',
+                  ],
                 }}
                 transition={{ duration: 3, repeat: Infinity }}>
                 {t('hero.title2')}
@@ -166,7 +163,7 @@ const Hero = () => {
                 className="relative overflow-hidden bg-linear-to-r from-accent to-accent-light text-primary px-8 py-4 rounded-full text-lg font-bold shadow-xl group"
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: '0 20px 40px rgba(212, 175, 110, 0.4)'
+                  boxShadow: '0 20px 40px rgba(212, 175, 110, 0.4)',
                 }}
                 whileTap={{ scale: 0.95 }}>
                 <span className="relative z-10 flex items-center justify-center gap-2">
@@ -185,7 +182,7 @@ const Hero = () => {
               className="relative bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold overflow-hidden group"
               whileHover={{
                 scale: 1.02,
-                borderColor: 'rgba(255,255,255,0.4)'
+                borderColor: 'rgba(255,255,255,0.4)',
               }}
               whileTap={{ scale: 0.98 }}>
               <Link to="/eligibility" className="relative z-10">
@@ -199,7 +196,6 @@ const Hero = () => {
               />
             </motion.button>
           </motion.div>
-
         </motion.div>
       </div>
 
@@ -227,7 +223,7 @@ const Hero = () => {
       <motion.div
         className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-linear-to-tl from-accent/20 via-accent/5 to-transparent pointer-events-none z-10"
         animate={{
-          opacity: [0.5, 0.8, 0.5]
+          opacity: [0.5, 0.8, 0.5],
         }}
         transition={{ duration: 4, repeat: Infinity }}
       />

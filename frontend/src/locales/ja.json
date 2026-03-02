@@ -482,9 +482,42 @@
       "secure_title": "安全な操作",
       "secure_desc": "データ保護の保証",
       "expert_title": "専門家のサポート",
-      "expert_desc": "24時間体制でサポート"
+      "expert_desc": "24時間体制でサポート",
+      "fast_title": "迅速な処理",
+      "fast_desc": "短い処理時間"
     },
     "cta": "今すぐ注文を開始してください",
     "alt_london": "夜のロンドン・アイ"
+  },
+  "home": {
+    "trust": {
+      "travelers": "サポートした旅行者",
+      "support": "サポート対応",
+      "approval": "承認率",
+      "countries": "対応国数"
+    },
+    "testimonials": {
+      "badge": "お客様の声",
+      "title": "お客様の声をご紹介",
+      "subtitle": "世界中の何千人もの旅行者に信頼されています。"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "英国ETA申請についてご質問がありますか？",
+    "email_label": "メール",
+    "phone_label": "電話",
+    "address_label": "オフィス",
+    "form_title": "メッセージを送る",
+    "form_name": "氏名",
+    "form_name_placeholder": "山田太郎",
+    "form_email": "メールアドレス",
+    "form_email_placeholder": "taro@example.com",
+    "form_phone": "電話番号",
+    "form_phone_placeholder": "+81 3 1234 5678",
+    "form_message": "メッセージ",
+    "form_message_placeholder": "お手伝いできることはありますか？",
+    "form_submit": "メッセージを送信",
+    "form_sent": "メッセージ送信完了！"
   }
 }

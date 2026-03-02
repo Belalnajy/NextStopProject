@@ -482,9 +482,42 @@
       "secure_title": "Operasi selamat",
       "secure_desc": "Perlindungan data dijamin",
       "expert_title": "Sokongan pakar",
-      "expert_desc": "Sepanjang masa membantu"
+      "expert_desc": "Sepanjang masa membantu",
+      "fast_title": "Pemprosesan pantas",
+      "fast_desc": "Masa pemprosesan cepat"
     },
     "cta": "Mulakan pesanan anda sekarang",
     "alt_london": "London Eye pada waktu malam"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Pengembara dibantu",
+      "support": "Sokongan tersedia",
+      "approval": "Kadar kelulusan",
+      "countries": "Negara dilayan"
+    },
+    "testimonials": {
+      "badge": "Ulasan pelanggan",
+      "title": "Apa kata pelanggan kami",
+      "subtitle": "Dipercayai oleh ribuan pengembara di seluruh dunia."
+    }
+  },
+  "contact": {
+    "title": "Hubungi kami",
+    "subtitle": "Ada soalan tentang permohonan ETA UK anda?",
+    "email_label": "E-mel",
+    "phone_label": "Telefon",
+    "address_label": "Pejabat",
+    "form_title": "Hantar mesej kepada kami",
+    "form_name": "Nama penuh",
+    "form_name_placeholder": "Ahmad bin Ali",
+    "form_email": "Alamat e-mel",
+    "form_email_placeholder": "ahmad@example.com",
+    "form_phone": "Nombor telefon",
+    "form_phone_placeholder": "+60 12 345 6789",
+    "form_message": "Mesej",
+    "form_message_placeholder": "Bagaimana kami boleh membantu anda?",
+    "form_submit": "Hantar mesej",
+    "form_sent": "Mesej dihantar!"
   }
 }

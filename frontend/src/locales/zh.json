@@ -482,9 +482,42 @@
       "secure_title": "安全操作",
       "secure_desc": "数据保护有保障",
       "expert_title": "专家支持",
-      "expert_desc": "全天候帮助"
+      "expert_desc": "全天候帮助",
+      "fast_title": "快速处理",
+      "fast_desc": "快速周转时间"
     },
     "cta": "立即开始订购",
     "alt_london": "伦敦眼在晚上"
+  },
+  "home": {
+    "trust": {
+      "travelers": "已协助旅客",
+      "support": "全天候支持",
+      "approval": "通过率",
+      "countries": "服务国家"
+    },
+    "testimonials": {
+      "badge": "客户评价",
+      "title": "客户怎么说",
+      "subtitle": "受到全球数千名旅客的信赖。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "对您的英国ETA申请有疑问？",
+    "email_label": "邮箱",
+    "phone_label": "电话",
+    "address_label": "办公室",
+    "form_title": "发送消息",
+    "form_name": "姓名",
+    "form_name_placeholder": "张三",
+    "form_email": "电子邮箱",
+    "form_email_placeholder": "zhang@example.com",
+    "form_phone": "电话号码",
+    "form_phone_placeholder": "+86 10 1234 5678",
+    "form_message": "留言",
+    "form_message_placeholder": "我们能如何帮助您？",
+    "form_submit": "发送消息",
+    "form_sent": "消息已发送！"
   }
 }

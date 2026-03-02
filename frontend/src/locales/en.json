@@ -6,6 +6,19 @@
     "contact": "Contact",
     "eligibility": "Check Eligibility"
   },
+  "home": {
+    "trust": {
+      "travelers": "Travelers Assisted",
+      "support": "Support Available",
+      "approval": "Approval Rate",
+      "countries": "Countries Served"
+    },
+    "testimonials": {
+      "badge": "Client Reviews",
+      "title": "What Our Clients Say",
+      "subtitle": "Trusted by thousands of travelers worldwide. Here's what some of our clients have to say about their experience."
+    }
+  },
   "hero": {
     "badge": "UK ETA application assistance",
     "title1": "Your Gateway to the",
@@ -57,7 +70,7 @@
     }
   },
   "faq": {
-  "badge": "",
+    "badge": "",
     "title": "Frequently Asked",
     "title_highlight": "Questions",
     "subtitle": "Find quick answers to the most common questions about the UK Electronic Travel Authorization.",
@@ -398,10 +411,30 @@
       "secure_title": "Secure Process",
       "secure_desc": "Data Protection Guaranteed",
       "expert_title": "Expert Support",
-      "expert_desc": "24/7 Assistance"
+      "expert_desc": "24/7 Assistance",
+      "fast_title": "Fast Processing",
+      "fast_desc": "Quick Turnaround Time"
     },
     "cta": "Start Your Application",
     "alt_london": "London Eye at Night"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions about your UK ETA application? Our support team is here to help you.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "address_label": "Office",
+    "form_title": "Send Us a Message",
+    "form_name": "Full Name",
+    "form_name_placeholder": "John Doe",
+    "form_email": "Email Address",
+    "form_email_placeholder": "john@example.com",
+    "form_phone": "Phone Number",
+    "form_phone_placeholder": "+1 234 567 890",
+    "form_message": "Message",
+    "form_message_placeholder": "How can we help you today?",
+    "form_submit": "Send Message",
+    "form_sent": "Message Sent!"
   },
   "validation": {
     "required": "This field is required",

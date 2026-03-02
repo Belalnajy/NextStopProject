@@ -482,9 +482,42 @@
       "secure_title": "안전한 작동",
       "secure_desc": "데이터 보호 보장",
       "expert_title": "전문가 지원",
-      "expert_desc": "24시간 내내 도움을 받으세요"
+      "expert_desc": "24시간 내내 도움을 받으세요",
+      "fast_title": "빠른 처리",
+      "fast_desc": "빠른 처리 시간"
     },
     "cta": "지금 주문을 시작하세요",
     "alt_london": "밤에 런던 아이"
+  },
+  "home": {
+    "trust": {
+      "travelers": "지원한 여행자",
+      "support": "지원 가능",
+      "approval": "승인률",
+      "countries": "서비스 제공 국가"
+    },
+    "testimonials": {
+      "badge": "고객 리뷰",
+      "title": "고객들의 후기",
+      "subtitle": "전 세계 수천 명의 여행자들이 신뢰합니다."
+    }
+  },
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "영국 ETA 신청에 대한 질문이 있으신가요?",
+    "email_label": "이메일",
+    "phone_label": "전화",
+    "address_label": "사무실",
+    "form_title": "메시지 보내기",
+    "form_name": "성명",
+    "form_name_placeholder": "홍길동",
+    "form_email": "이메일 주소",
+    "form_email_placeholder": "hong@example.com",
+    "form_phone": "전화번호",
+    "form_phone_placeholder": "+82 2 1234 5678",
+    "form_message": "메시지",
+    "form_message_placeholder": "어떻게 도와드릴까요?",
+    "form_submit": "메시지 전송",
+    "form_sent": "메시지가 전송되었습니다!"
   }
 }

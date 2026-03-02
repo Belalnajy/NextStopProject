@@ -8,6 +8,7 @@ import {
   Clock,
   Award,
   Sparkles,
+  Zap,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -16,24 +17,6 @@ import { useSettings } from '../context/SettingsContext';
 const AboutPage = () => {
   const { t } = useTranslation();
   const { settings } = useSettings();
-
-  const stats = [
-    {
-      icon: Users,
-      value: settings?.stats_travelers || '50K+',
-      label: t('about.stats.travelers'),
-    },
-    {
-      icon: Clock,
-      value: settings?.stats_support || '24/7',
-      label: t('about.stats.support'),
-    },
-    {
-      icon: Award,
-      value: settings?.stats_approval || '99%',
-      label: t('about.stats.approval'),
-    },
-  ];
 
   const features = [
     {
@@ -50,6 +33,11 @@ const AboutPage = () => {
       icon: Star,
       title: t('about.features.expert_title'),
       desc: t('about.features.expert_desc'),
+    },
+    {
+      icon: Zap,
+      title: t('about.features.fast_title'),
+      desc: t('about.features.fast_desc'),
     },
   ];
 
@@ -181,27 +169,6 @@ const AboutPage = () => {
             </>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div
-            className="mt-12 grid grid-cols-3 gap-4"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                variants={itemVariants}
-                className="text-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
-                whileHover={{ y: -5 }}>
-                <stat.icon className="text-accent mx-auto mb-2" size={24} />
-                <div className="text-2xl font-bold text-white">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-white/60">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-
           <motion.div
             className="mt-12"
             initial={{ opacity: 0, y: 20 }}
@@ -246,23 +213,18 @@ const AboutPage = () => {
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-primary/30 to-primary lg:bg-linear-to-l lg:from-transparent lg:via-primary/40 lg:to-primary" />
 
-          {/* Feature Cards */}
+          {/* Feature Cards — 2×2 Grid */}
           <div className="absolute inset-0 flex items-center justify-center p-8">
             <motion.div
               className="grid grid-cols-2 gap-6"
               variants={containerVariants}
               initial="hidden"
               animate="visible">
-              {features.map((feature, i) => (
+              {features.map((feature) => (
                 <motion.div
                   key={feature.title}
                   variants={itemVariants}
-                  className={`flex flex-col items-center text-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl hover:bg-white/20 transition-all ${
-                    i === 2 ? 'col-span-2 md:col-span-1' : ''
-                  }`}
-                  style={{
-                    transform: `translateY(${i % 2 === 1 ? '20px' : '0'})`,
-                  }}
+                  className="flex flex-col items-center text-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl hover:bg-white/20 transition-all"
                   whileHover={{ y: -8, scale: 1.02 }}>
                   <motion.div
                     whileHover={{ rotate: 10, scale: 1.1 }}

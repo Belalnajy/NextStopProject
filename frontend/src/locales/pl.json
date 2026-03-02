@@ -482,9 +482,42 @@
       "secure_title": "Bezpieczna obsługa",
       "secure_desc": "Gwarantowana ochrona danych",
       "expert_title": "Wsparcie ekspertów",
-      "expert_desc": "Pomoc całodobowa"
+      "expert_desc": "Pomoc całodobowa",
+      "fast_title": "Szybkie przetwarzanie",
+      "fast_desc": "Krótki czas realizacji"
     },
     "cta": "Rozpocznij składanie zamówienia już teraz",
     "alt_london": "London Eye nocą"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Obsłużonych podróżnych",
+      "support": "Dostępne wsparcie",
+      "approval": "Wskaźnik akceptacji",
+      "countries": "Obsługiwanych krajów"
+    },
+    "testimonials": {
+      "badge": "Opinie klientów",
+      "title": "Co mówią nasi klienci",
+      "subtitle": "Zaufanie tysięcy podróżnych na całym świecie."
+    }
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "subtitle": "Masz pytania dotyczące wniosku o ETA do Wielkiej Brytanii?",
+    "email_label": "E-mail",
+    "phone_label": "Telefon",
+    "address_label": "Biuro",
+    "form_title": "Wyślij nam wiadomość",
+    "form_name": "Imię i nazwisko",
+    "form_name_placeholder": "Jan Kowalski",
+    "form_email": "Adres e-mail",
+    "form_email_placeholder": "jan@example.com",
+    "form_phone": "Numer telefonu",
+    "form_phone_placeholder": "+48 22 123 4567",
+    "form_message": "Wiadomość",
+    "form_message_placeholder": "Jak możemy Ci pomóc?",
+    "form_submit": "Wyślij wiadomość",
+    "form_sent": "Wiadomość wysłana!"
   }
 }

@@ -482,9 +482,42 @@
       "secure_title": "Funzionamento sicuro",
       "secure_desc": "Protezione dei dati garantita",
       "expert_title": "Supporto di esperti",
-      "expert_desc": "Aiuto 24 ore su 24"
+      "expert_desc": "Aiuto 24 ore su 24",
+      "fast_title": "Elaborazione rapida",
+      "fast_desc": "Tempi di risposta rapidi"
     },
     "cta": "Inizia subito il tuo ordine",
     "alt_london": "London Eye di notte"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Viaggiatori assistiti",
+      "support": "Supporto disponibile",
+      "approval": "Tasso di approvazione",
+      "countries": "Paesi serviti"
+    },
+    "testimonials": {
+      "badge": "Recensioni clienti",
+      "title": "Cosa dicono i nostri clienti",
+      "subtitle": "Scelto da migliaia di viaggiatori in tutto il mondo."
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai domande sulla tua domanda di ETA per il Regno Unito?",
+    "email_label": "Email",
+    "phone_label": "Telefono",
+    "address_label": "Ufficio",
+    "form_title": "Inviaci un messaggio",
+    "form_name": "Nome completo",
+    "form_name_placeholder": "Mario Rossi",
+    "form_email": "Indirizzo email",
+    "form_email_placeholder": "mario@example.com",
+    "form_phone": "Numero di telefono",
+    "form_phone_placeholder": "+39 02 1234567",
+    "form_message": "Messaggio",
+    "form_message_placeholder": "Come possiamo aiutarti?",
+    "form_submit": "Invia messaggio",
+    "form_sent": "Messaggio inviato!"
   }
 }

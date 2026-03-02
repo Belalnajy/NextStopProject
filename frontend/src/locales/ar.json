@@ -398,7 +398,9 @@
       "secure_title": "عملية آمنة",
       "secure_desc": "حماية البيانات مضمونة",
       "expert_title": "دعم الخبراء",
-      "expert_desc": "مساعدة على مدار الساعة"
+      "expert_desc": "مساعدة على مدار الساعة",
+      "fast_title": "معالجة سريعة",
+      "fast_desc": "وقت إنجاز سريع"
     },
     "cta": "ابدأ طلبك الآن",
     "alt_london": "عين لندن ليلاً"
@@ -486,5 +488,36 @@
     "South Korea": "كوريا الجنوبية",
     "Brazil": "البرازيل",
     "Nigeria": "نيجيريا"
+  },
+  "home": {
+    "trust": {
+      "travelers": "المسافرون المُساعَدون",
+      "support": "دعم متوفر",
+      "approval": "معدل الموافقة",
+      "countries": "الدول المخدومة"
+    },
+    "testimonials": {
+      "badge": "آراء العملاء",
+      "title": "ماذا يقول عملاؤنا",
+      "subtitle": "موثوق به من آلاف المسافرين حول العالم. إليك ما يقوله بعض عملائنا عن تجربتهم."
+    }
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "هل لديك أسئلة حول طلب تصريح السفر الإلكتروني للمملكة المتحدة؟ فريق الدعم لدينا هنا لمساعدتك.",
+    "email_label": "البريد الإلكتروني",
+    "phone_label": "الهاتف",
+    "address_label": "المكتب",
+    "form_title": "أرسل لنا رسالة",
+    "form_name": "الاسم الكامل",
+    "form_name_placeholder": "أدخل اسمك",
+    "form_email": "البريد الإلكتروني",
+    "form_email_placeholder": "example@email.com",
+    "form_phone": "رقم الهاتف",
+    "form_phone_placeholder": "+971 50 000 0000",
+    "form_message": "الرسالة",
+    "form_message_placeholder": "كيف يمكننا مساعدتك؟",
+    "form_submit": "إرسال الرسالة",
+    "form_sent": "تم إرسال الرسالة!"
   }
 }

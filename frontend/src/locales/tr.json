@@ -482,9 +482,42 @@
       "secure_title": "Güvenli çalışma",
       "secure_desc": "Veri koruma garantili",
       "expert_title": "Uzman desteği",
-      "expert_desc": "24 saat yardım"
+      "expert_desc": "24 saat yardım",
+      "fast_title": "Hızlı işlem",
+      "fast_desc": "Hızlı geri dönüş süresi"
     },
     "cta": "Siparişinizi şimdi başlatın",
     "alt_london": "London Eye'ın geceleri"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Yardım edilen yolcular",
+      "support": "Destek mevcut",
+      "approval": "Onay oranı",
+      "countries": "Hizmet verilen ülkeler"
+    },
+    "testimonials": {
+      "badge": "Müşteri yorumları",
+      "title": "Müşterilerimiz ne diyor",
+      "subtitle": "Dünya genelinde binlerce yolcu tarafından güvenildi."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "UK ETA başvurunuz hakkında sorularınız mı var?",
+    "email_label": "E-posta",
+    "phone_label": "Telefon",
+    "address_label": "Ofis",
+    "form_title": "Bize mesaj gönderin",
+    "form_name": "Ad Soyad",
+    "form_name_placeholder": "Ali Yılmaz",
+    "form_email": "E-posta adresi",
+    "form_email_placeholder": "ali@example.com",
+    "form_phone": "Telefon numarası",
+    "form_phone_placeholder": "+90 532 123 4567",
+    "form_message": "Mesaj",
+    "form_message_placeholder": "Size nasıl yardımcı olabiliriz?",
+    "form_submit": "Mesaj gönder",
+    "form_sent": "Mesaj gönderildi!"
   }
 }

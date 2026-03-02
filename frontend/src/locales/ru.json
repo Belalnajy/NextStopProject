@@ -482,9 +482,42 @@
       "secure_title": "Безопасная эксплуатация",
       "secure_desc": "Защита данных гарантирована",
       "expert_title": "Экспертная поддержка",
-      "expert_desc": "Круглосуточная помощь"
+      "expert_desc": "Круглосуточная помощь",
+      "fast_title": "Быстрая обработка",
+      "fast_desc": "Быстрое время выполнения"
     },
     "cta": "Начните свой заказ сейчас",
     "alt_london": "Лондонский глаз ночью"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Обслужено путешественников",
+      "support": "Поддержка доступна",
+      "approval": "Процент одобрения",
+      "countries": "Обслуживаемых стран"
+    },
+    "testimonials": {
+      "badge": "Отзывы клиентов",
+      "title": "Что говорят наши клиенты",
+      "subtitle": "Нам доверяют тысячи путешественников по всему миру."
+    }
+  },
+  "contact": {
+    "title": "Свяжитесь с нами",
+    "subtitle": "Есть вопросы о вашей заявке на ETA Великобритании?",
+    "email_label": "Эл. почта",
+    "phone_label": "Телефон",
+    "address_label": "Офис",
+    "form_title": "Отправьте нам сообщение",
+    "form_name": "Полное имя",
+    "form_name_placeholder": "Иван Иванов",
+    "form_email": "Адрес эл. почты",
+    "form_email_placeholder": "ivan@example.com",
+    "form_phone": "Номер телефона",
+    "form_phone_placeholder": "+7 495 123 4567",
+    "form_message": "Сообщение",
+    "form_message_placeholder": "Как мы можем вам помочь?",
+    "form_submit": "Отправить сообщение",
+    "form_sent": "Сообщение отправлено!"
   }
 }

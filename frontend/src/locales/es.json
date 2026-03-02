@@ -482,9 +482,42 @@
       "secure_title": "Operación segura",
       "secure_desc": "Protección de datos garantizada",
       "expert_title": "Soporte experto",
-      "expert_desc": "Ayuda las 24 horas"
+      "expert_desc": "Ayuda las 24 horas",
+      "fast_title": "Procesamiento rápido",
+      "fast_desc": "Tiempo de respuesta rápido"
     },
     "cta": "Comience su pedido ahora",
     "alt_london": "Ojo de Londres de noche"
+  },
+  "home": {
+    "trust": {
+      "travelers": "Viajeros asistidos",
+      "support": "Soporte disponible",
+      "approval": "Tasa de aprobación",
+      "countries": "Países atendidos"
+    },
+    "testimonials": {
+      "badge": "Opiniones de clientes",
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Con la confianza de miles de viajeros en todo el mundo."
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene preguntas sobre su solicitud de ETA del Reino Unido?",
+    "email_label": "Correo",
+    "phone_label": "Teléfono",
+    "address_label": "Oficina",
+    "form_title": "Envíenos un mensaje",
+    "form_name": "Nombre completo",
+    "form_name_placeholder": "Juan García",
+    "form_email": "Correo electrónico",
+    "form_email_placeholder": "juan@example.com",
+    "form_phone": "Número de teléfono",
+    "form_phone_placeholder": "+34 612 345 678",
+    "form_message": "Mensaje",
+    "form_message_placeholder": "¿Cómo podemos ayudarle?",
+    "form_submit": "Enviar mensaje",
+    "form_sent": "¡Mensaje enviado!"
   }
 }
