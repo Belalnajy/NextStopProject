@@ -129,7 +129,7 @@ export const handleWebhook = async (req: Request, res: Response) => {
 
     const rawBody = (req as any).rawBody as Buffer;
     if (!rawBody) {
-      console.error('rawBody not available - check middleware setup');
+      console.error('rawBody not available - middleware may not have run');
       return res.status(500).json({ message: 'Server configuration error' });
     }
 

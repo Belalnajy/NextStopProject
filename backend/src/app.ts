@@ -31,16 +31,15 @@ app.use((req, res, next) => {
   next();
 });
 
-// Lemon Squeezy webhook needs raw body for signature verification.
-// Must be registered BEFORE express.json() parses the body.
-app.use(
-  '/api/lemonsqueezy/webhook',
-  express.json({
-    verify: (req: any, _res, buf) => {
-      req.rawBody = buf;
-    },
-  }),
-);
+// Lemon Squeezy webhook: capture raw body as text, then parse manually.
+// This ensures signature verification works on both local and Vercel.
+app.use('/api/lemonsqueezy/webhook', express.text({ type: '*/*' }), (req: any, _res, next) => {
+  if (typeof req.body === 'string') {
+    req.rawBody = Buffer.from(req.body);
+    req.body = JSON.parse(req.body);
+  }
+  next();
+});
 
 app.use(express.json());
 
