@@ -12,6 +12,8 @@ import {
   ArrowRight,
   Loader2,
   Download,
+  DollarSign,
+  CreditCard,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import api from '../../../api';
@@ -143,6 +145,8 @@ export default function DashboardOverview() {
     pending: 'bg-amber-500',
     approved: 'bg-green-500',
     rejected: 'bg-red-500',
+    revenue: 'bg-emerald-500',
+    paid: 'bg-teal-500',
   };
 
   const iconMap = {
@@ -150,6 +154,8 @@ export default function DashboardOverview() {
     pending: Clock,
     approved: CheckCircle2,
     rejected: XCircle,
+    revenue: DollarSign,
+    paid: CreditCard,
   };
 
   return (
@@ -178,9 +184,9 @@ export default function DashboardOverview() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {loading
-          ? Array(4)
+          ? Array(6)
               .fill(0)
               .map((_, i) => (
                 <div
