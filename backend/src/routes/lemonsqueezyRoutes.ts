@@ -7,6 +7,11 @@ const router = Router();
 // Public: Create a checkout session (called from frontend after application is saved)
 router.post('/checkout', createCheckout as any);
 
+// Public: Webhook test (to verify route is reachable)
+router.get('/webhook', (_req, res) => {
+  res.json({ status: 'Webhook endpoint is reachable' });
+});
+
 // Public: Webhook endpoint (called by Lemon Squeezy)
 router.post('/webhook', handleWebhook as any);
 
