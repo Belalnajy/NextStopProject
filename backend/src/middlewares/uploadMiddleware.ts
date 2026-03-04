@@ -6,7 +6,7 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'nextstop_uploads',
-    allowed_formats: ['jpg', 'png', 'pdf'],
+    allowed_formats: ['jpg', 'jpeg', 'png', 'pdf', 'webp'],
     resource_type: 'auto',
   } as any,
 });

@@ -79,9 +79,35 @@ const Step2_Personal = ({ formData, updateFormData, nextStep, prevStep }) => {
     }
   };
 
+  const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+  const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+
+  const validateFile = (file) => {
+    if (!ALLOWED_TYPES.includes(file.type)) {
+      setErrors((prev) => ({
+        ...prev,
+        personalPhoto: t('validation.invalidFileType', {
+          defaultValue: 'Only JPG, PNG and WebP files are allowed.',
+        }),
+      }));
+      return false;
+    }
+    if (file.size > MAX_FILE_SIZE) {
+      setErrors((prev) => ({
+        ...prev,
+        personalPhoto: t('validation.fileTooLarge', {
+          defaultValue: 'File size must be less than 5MB.',
+        }),
+      }));
+      return false;
+    }
+    return true;
+  };
+
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (!validateFile(file)) return;
       updateFormData({ personalPhoto: file });
       if (errors.personalPhoto) {
         setErrors((prev) => {
@@ -279,7 +305,7 @@ const Step2_Personal = ({ formData, updateFormData, nextStep, prevStep }) => {
                 e.preventDefault();
                 setDragActive(false);
                 const file = e.dataTransfer.files[0];
-                if (file) updateFormData({ personalPhoto: file });
+                if (file && validateFile(file)) updateFormData({ personalPhoto: file });
               }}
               className={`border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer h-[180px] flex flex-col items-center justify-center transition-all duration-300 ${
                 dragActive
@@ -290,7 +316,7 @@ const Step2_Personal = ({ formData, updateFormData, nextStep, prevStep }) => {
                 type="file"
                 id="personalPhoto"
                 className="hidden"
-                accept="image/*"
+                accept=".jpg,.jpeg,.png,.webp"
                 onChange={handleFileChange}
               />
               <motion.div

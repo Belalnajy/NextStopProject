@@ -127,9 +127,35 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'application/pdf'];
+  const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+
+  const validateFile = (file) => {
+    if (!ALLOWED_TYPES.includes(file.type)) {
+      setErrors((prev) => ({
+        ...prev,
+        passportCopy: t('validation.invalidFileType', {
+          defaultValue: 'Only JPG, PNG, WebP and PDF files are allowed.',
+        }),
+      }));
+      return false;
+    }
+    if (file.size > MAX_FILE_SIZE) {
+      setErrors((prev) => ({
+        ...prev,
+        passportCopy: t('validation.fileTooLarge', {
+          defaultValue: 'File size must be less than 5MB.',
+        }),
+      }));
+      return false;
+    }
+    return true;
+  };
+
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (!validateFile(file)) return;
       updateFormData({ passportCopy: file });
       if (errors.passportCopy) {
         setErrors((prev) => {
@@ -422,7 +448,7 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
                 e.preventDefault();
                 setDragActive(false);
                 const file = e.dataTransfer.files[0];
-                if (file) updateFormData({ passportCopy: file });
+                if (file && validateFile(file)) updateFormData({ passportCopy: file });
               }}
               className={`border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer h-[180px] flex flex-col items-center justify-center transition-all duration-300 ${
                 dragActive
@@ -433,7 +459,7 @@ const Step1_Travel = ({ formData, updateFormData, nextStep }) => {
                 type="file"
                 id="passportCopy"
                 className="hidden"
-                accept="image/*,.pdf"
+                accept=".jpg,.jpeg,.png,.webp,.pdf"
                 onChange={handleFileChange}
               />
               <motion.div
