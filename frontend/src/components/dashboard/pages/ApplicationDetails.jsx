@@ -113,18 +113,13 @@ export default function ApplicationDetails() {
   };
 
   const handleRefund = async () => {
-    if (!window.confirm('Are you sure you want to refund this payment?')) return;
     try {
       setActionLoading(true);
-      await api.post('/lemonsqueezy/refund', { applicationId: id });
-      setData((prev) => ({
-        ...prev,
-        payment_status: 'UNPAID',
-        payment_date: null,
-      }));
-      toast.success('Refund processed successfully');
+      const res = await api.post('/lemonsqueezy/refund', { applicationId: id });
+      window.open(res.data.orderUrl, '_blank');
+      toast.success('Lemon Squeezy dashboard opened. Process the refund there.');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Failed to process refund');
+      toast.error(err.response?.data?.message || 'Failed to get order details');
     } finally {
       setActionLoading(false);
     }
@@ -502,8 +497,8 @@ export default function ApplicationDetails() {
                   onClick={handleRefund}
                   disabled={actionLoading}
                   className="w-full px-4 py-2 bg-red-50 text-red-600 border border-red-100 rounded-lg text-sm font-medium hover:bg-red-100 flex items-center justify-center gap-2 disabled:opacity-50">
-                  <RotateCcw size={14} />
-                  {actionLoading ? 'Processing...' : 'Issue Refund'}
+                  <ExternalLink size={14} />
+                  {actionLoading ? 'Loading...' : 'Refund via Lemon Squeezy'}
                 </button>
               )}
               {data.payment_status === 'UNPAID' &&

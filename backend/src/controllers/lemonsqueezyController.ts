@@ -191,8 +191,9 @@ export const handleWebhook = async (req: Request, res: Response) => {
 };
 
 /**
- * Issues a refund via the Lemon Squeezy API for a paid application.
- * Admin-only endpoint.
+ * Returns the Lemon Squeezy order URL for manual refund via their dashboard.
+ * Lemon Squeezy does not have a refund API - refunds must be done from their dashboard.
+ * The order_refunded webhook will automatically update payment_status to UNPAID.
  */
 export const refundOrder = async (req: Request, res: Response) => {
   try {
@@ -211,36 +212,8 @@ export const refundOrder = async (req: Request, res: Response) => {
       return res.status(400).json({ message: 'No Lemon Squeezy order ID found' });
     }
 
-    const refundPayload = {
-      data: {
-        type: 'orders',
-        id: application.lemonsqueezy_order_id,
-      },
-    };
-
-    const response = await fetch(
-      `${LEMONSQUEEZY_API_URL}/orders/${application.lemonsqueezy_order_id}/refund`,
-      {
-        method: 'POST',
-        headers: getLSHeaders(),
-        body: JSON.stringify(refundPayload),
-      },
-    );
-
-    if (!response.ok) {
-      const errorData = await response.json();
-      console.error('Lemon Squeezy refund error:', errorData);
-      return res.status(response.status).json({
-        message: 'Failed to process refund',
-        error: errorData,
-      });
-    }
-
-    application.payment_status = PaymentStatus.UNPAID;
-    application.payment_date = null as any;
-    await appRepo.save(application);
-
-    res.json({ message: 'Refund processed successfully' });
+    const orderUrl = `https://app.lemonsqueezy.com/orders/${application.lemonsqueezy_order_id}`;
+    res.json({ orderUrl, message: 'Refund must be processed from Lemon Squeezy dashboard' });
   } catch (error: any) {
     console.error('Refund error:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
