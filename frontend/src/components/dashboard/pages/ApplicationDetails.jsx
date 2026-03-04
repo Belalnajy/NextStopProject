@@ -14,56 +14,11 @@ import {
   Printer,
   User,
   Plane,
+  RefreshCw,
+  RotateCcw,
+  ExternalLink,
 } from 'lucide-react';
 
-// Mock Data for a single application (In a real app, fetch by ID)
-const MOCK_APPLICATION = {
-  id: 'APP-2024-001',
-  status: 'pending',
-  submittedAt: '2024-02-12T10:30:00Z',
-  paymentIndex: 'PAY-8839201',
-  amount: '£97.00', // 16 + 81
-
-  travel: {
-    nationality: 'Egyptian',
-    hasOtherNationalities: 'No',
-    arrivalDate: '2024-03-15',
-    passportNumber: 'A12345678',
-    passportExpiry: '2029-05-20',
-    passportCopyUrl: '#', // Placeholder
-  },
-
-  personal: {
-    fullName: 'Ahmed Hassan',
-    dateOfBirth: '1990-05-15',
-    gender: 'Male',
-    phone: '+20 123 456 7890',
-    email: 'ahmed@example.com',
-    photoUrl: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Ahmed',
-  },
-
-  address: {
-    streetName: '123 Nile Street',
-    buildingNo: '45',
-    apartment: '12B',
-    area: 'Zamalek',
-    townCity: 'Cairo',
-    postalCode: '11211',
-    country: 'Egypt',
-  },
-
-  additional: {
-    employmentStatus: 'Employed',
-    jobTitle: 'Software Engineer',
-    hasCriminalRecord: 'No',
-    hasInvolvement: 'No',
-  },
-
-  declarations: {
-    confirmedInfo: true,
-    acceptedTerms: true,
-  },
-};
 
 const SectionCard = ({ title, icon: Icon, children }) => (
   <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-6">
@@ -111,8 +66,6 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 import api from '../../../api';
 
-// ... (SectionCard, DetailRow, StatusBadge stay same)
-
 export default function ApplicationDetails() {
   const { id } = useParams();
   const [data, setData] = useState(null);
@@ -137,6 +90,16 @@ export default function ApplicationDetails() {
   };
 
   const updateStatus = async (status) => {
+    if (
+      status === 'APPROVED' &&
+      data.payment_status !== 'PAID' &&
+      !window.confirm(
+        'This application has NOT been paid. Are you sure you want to approve it?',
+      )
+    ) {
+      return;
+    }
+
     try {
       setActionLoading(true);
       await api.patch(`/applications/${id}/status`, { status });
@@ -144,6 +107,41 @@ export default function ApplicationDetails() {
       toast.success(`Application ${status} successfully`);
     } catch (err) {
       toast.error(err.response?.data?.message || 'Failed to update status');
+    } finally {
+      setActionLoading(false);
+    }
+  };
+
+  const handleRefund = async () => {
+    if (!window.confirm('Are you sure you want to refund this payment?')) return;
+    try {
+      setActionLoading(true);
+      await api.post('/lemonsqueezy/refund', { applicationId: id });
+      setData((prev) => ({
+        ...prev,
+        payment_status: 'UNPAID',
+        payment_date: null,
+      }));
+      toast.success('Refund processed successfully');
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Failed to process refund');
+    } finally {
+      setActionLoading(false);
+    }
+  };
+
+  const handleResendCheckout = async () => {
+    try {
+      setActionLoading(true);
+      const res = await api.post('/lemonsqueezy/resend-checkout', {
+        applicationId: id,
+      });
+      await navigator.clipboard.writeText(res.data.checkoutUrl);
+      toast.success('Checkout link copied to clipboard!');
+    } catch (err) {
+      toast.error(
+        err.response?.data?.message || 'Failed to get checkout link',
+      );
     } finally {
       setActionLoading(false);
     }
@@ -458,14 +456,14 @@ export default function ApplicationDetails() {
           {/* Payment Info */}
           <SectionCard title="Payment Details" icon={CreditCard}>
             <div className="text-center py-4">
-              <p className="text-3xl font-bold text-slate-900">£97.00</p>
+              <p className="text-3xl font-bold text-slate-900">€97.00</p>
               <span
                 className={`inline-block px-3 py-1 text-xs font-bold rounded-full mt-2 ${
                   data.payment_status === 'PAID'
                     ? 'bg-green-100 text-green-800'
                     : 'bg-amber-100 text-amber-800'
                 }`}>
-                {data.payment_status || 'PAID'}
+                {data.payment_status || 'UNPAID'}
               </span>
             </div>
             <div className="space-y-3 mt-4">
@@ -475,20 +473,53 @@ export default function ApplicationDetails() {
                   {data.application_no || data.id}
                 </span>
               </div>
+              {data.lemonsqueezy_order_id && (
+                <div className="flex justify-between text-sm">
+                  <span className="text-slate-500">Order ID</span>
+                  <span className="font-mono text-slate-900">
+                    {data.lemonsqueezy_order_id}
+                  </span>
+                </div>
+              )}
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">Date</span>
+                <span className="text-slate-500">Payment Date</span>
                 <span className="text-slate-900">
-                  {new Date(data.created_at).toLocaleDateString()}
+                  {data.payment_date
+                    ? new Date(data.payment_date).toLocaleString()
+                    : '—'}
                 </span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-500">Method</span>
-                <span className="text-slate-900">Credit Card (Simulation)</span>
+                <span className="text-slate-900">Lemon Squeezy</span>
               </div>
+            </div>
+
+            {/* Payment Actions */}
+            <div className="mt-4 pt-4 border-t border-slate-100 space-y-2">
+              {data.payment_status === 'PAID' && (
+                <button
+                  onClick={handleRefund}
+                  disabled={actionLoading}
+                  className="w-full px-4 py-2 bg-red-50 text-red-600 border border-red-100 rounded-lg text-sm font-medium hover:bg-red-100 flex items-center justify-center gap-2 disabled:opacity-50">
+                  <RotateCcw size={14} />
+                  {actionLoading ? 'Processing...' : 'Issue Refund'}
+                </button>
+              )}
+              {data.payment_status === 'UNPAID' &&
+                data.lemonsqueezy_checkout_url && (
+                  <button
+                    onClick={handleResendCheckout}
+                    disabled={actionLoading}
+                    className="w-full px-4 py-2 bg-blue-50 text-blue-600 border border-blue-100 rounded-lg text-sm font-medium hover:bg-blue-100 flex items-center justify-center gap-2 disabled:opacity-50">
+                    <ExternalLink size={14} />
+                    Copy Checkout Link
+                  </button>
+                )}
             </div>
           </SectionCard>
 
-          {/* Timeline / History (Placeholder) */}
+          {/* Timeline / History */}
           <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h3 className="font-bold text-slate-900 mb-4">History Log</h3>
             <div className="space-y-6 relative pl-4 border-l border-slate-100">
@@ -498,24 +529,48 @@ export default function ApplicationDetails() {
                   Application Submitted
                 </p>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  Feb 12, 10:30 AM
+                  {new Date(data.created_at).toLocaleString()}
                 </p>
               </div>
-              <div className="relative">
-                <div className="absolute -left-[21px] top-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm" />
-                <p className="text-sm font-medium text-slate-900">
-                  Payment Successful
-                </p>
-                <p className="text-xs text-slate-500 mt-0.5">
-                  Feb 12, 10:32 AM
-                </p>
-              </div>
-              <div className="relative opacity-50">
-                <div className="absolute -left-[21px] top-1 w-3 h-3 bg-slate-200 rounded-full border-2 border-white shadow-sm" />
+              {data.payment_date && (
+                <div className="relative">
+                  <div className="absolute -left-[21px] top-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white shadow-sm" />
+                  <p className="text-sm font-medium text-slate-900">
+                    Payment Confirmed
+                  </p>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    {new Date(data.payment_date).toLocaleString()}
+                  </p>
+                </div>
+              )}
+              {!data.payment_date && (
+                <div className="relative opacity-50">
+                  <div className="absolute -left-[21px] top-1 w-3 h-3 bg-amber-300 rounded-full border-2 border-white shadow-sm" />
+                  <p className="text-sm font-medium text-slate-900">
+                    Awaiting Payment
+                  </p>
+                  <p className="text-xs text-slate-500 mt-0.5">Pending</p>
+                </div>
+              )}
+              <div
+                className={`relative ${data.status === 'PENDING' ? 'opacity-50' : ''}`}>
+                <div
+                  className={`absolute -left-[21px] top-1 w-3 h-3 rounded-full border-2 border-white shadow-sm ${
+                    data.status === 'APPROVED'
+                      ? 'bg-green-500'
+                      : data.status === 'REJECTED'
+                        ? 'bg-red-500'
+                        : 'bg-slate-200'
+                  }`}
+                />
                 <p className="text-sm font-medium text-slate-900">
                   Admin Review
                 </p>
-                <p className="text-xs text-slate-500 mt-0.5">Pending</p>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  {data.status === 'PENDING'
+                    ? 'Pending'
+                    : `${data.status} — ${new Date(data.updated_at).toLocaleString()}`}
+                </p>
               </div>
             </div>
           </div>

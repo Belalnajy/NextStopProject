@@ -9,6 +9,7 @@ import applicationRoutes from './routes/applicationRoutes';
 import settingsRoutes from './routes/settingsRoutes';
 import emailRoutes from './routes/emailRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
+import lemonsqueezyRoutes from './routes/lemonsqueezyRoutes';
 
 import compression from 'compression';
 import { apiLimiter, authLimiter } from './middlewares/rateLimiter';
@@ -29,6 +30,18 @@ app.use((req, res, next) => {
   console.log(`[Request] ${req.method} ${req.url}`);
   next();
 });
+
+// Lemon Squeezy webhook needs raw body for signature verification.
+// Must be registered BEFORE express.json() parses the body.
+app.use(
+  '/api/lemonsqueezy/webhook',
+  express.json({
+    verify: (req: any, _res, buf) => {
+      req.rawBody = buf;
+    },
+  }),
+);
+
 app.use(express.json());
 
 // Database Initialization Middleware
@@ -51,6 +64,7 @@ app.use('/api/applications', applicationRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/email', emailRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/lemonsqueezy', lemonsqueezyRoutes);
 
 // Debug Ping Route
 app.get('/api/ping', (req, res) => {

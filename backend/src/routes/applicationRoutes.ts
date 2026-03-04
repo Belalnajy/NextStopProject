@@ -3,6 +3,7 @@ import {
   createApplication,
   getApplications,
   getApplicationById,
+  getApplicationPublicInfo,
   updateApplicationStatus,
   downloadAttachment,
   sendApplicationEmail,
@@ -33,6 +34,9 @@ router.get(
   authenticate,
   downloadAttachment as any,
 );
+
+// Public: Get minimal application info (for success page)
+router.get('/:id/public-info', getApplicationPublicInfo as any);
 
 // Admin: Get Application Details
 router.get('/:id', authenticate, getApplicationById as any);

@@ -1,12 +1,11 @@
 import { Request, Response } from 'express';
 import { AppDataSource } from '../config/data-source';
-import { Application, ApplicationStatus } from '../entities/Application';
+import { Application, ApplicationStatus, PaymentStatus } from '../entities/Application';
 
 const appRepo = AppDataSource.getRepository(Application);
 
 export const getDashboardStats = async (req: Request, res: Response) => {
   try {
-    // 1. Get counts for status badges
     const totalApplications = await appRepo.count();
     const pendingReview = await appRepo.countBy({
       status: ApplicationStatus.PENDING,
@@ -17,15 +16,18 @@ export const getDashboardStats = async (req: Request, res: Response) => {
     const rejected = await appRepo.countBy({
       status: ApplicationStatus.REJECTED,
     });
+    const paidCount = await appRepo.countBy({
+      payment_status: PaymentStatus.PAID,
+    });
+    const unpaidCount = await appRepo.countBy({
+      payment_status: PaymentStatus.UNPAID,
+    });
+    const revenue = paidCount * 97;
 
-    // 2. Get recent applications (last 5)
     const recentApplications = await appRepo.find({
       order: { created_at: 'DESC' },
       take: 5,
     });
-
-    // 3. Simplified "change" calculation (placeholder for now, can be improved with time-based comparison)
-    // For now we'll return static strings or calculate based on last 30 days if needed
 
     res.json({
       stats: [
@@ -52,6 +54,18 @@ export const getDashboardStats = async (req: Request, res: Response) => {
           value: rejected.toLocaleString(),
           change: '+0%',
           category: 'rejected',
+        },
+        {
+          title: 'Revenue',
+          value: `€${revenue.toLocaleString()}`,
+          change: '+0%',
+          category: 'revenue',
+        },
+        {
+          title: 'Paid',
+          value: paidCount.toLocaleString(),
+          change: '+0%',
+          category: 'paid',
         },
       ],
       recentApplications,

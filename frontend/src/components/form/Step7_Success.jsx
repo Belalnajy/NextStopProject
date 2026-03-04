@@ -7,14 +7,29 @@ import {
   Sparkles,
   PartyPopper,
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import api from '../../api';
 
 const Step7_Success = () => {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
-  const referenceNumber = `${t('form.step7.labels.refPrefix')}${Math.floor(100000 + Math.random() * 900000)}`;
+  const [searchParams] = useSearchParams();
+  const [applicationNo, setApplicationNo] = useState('');
+
+  const appId = searchParams.get('app');
+
+  useEffect(() => {
+    if (appId) {
+      api
+        .get(`/applications/${appId}/public-info`)
+        .then((res) => setApplicationNo(res.data.application_no))
+        .catch(() => setApplicationNo(''));
+    }
+  }, [appId]);
+
+  const referenceNumber = applicationNo || `${t('form.step7.labels.refPrefix')}${Math.floor(100000 + Math.random() * 900000)}`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(referenceNumber);

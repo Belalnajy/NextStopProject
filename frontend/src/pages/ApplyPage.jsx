@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import { useSettings } from '../context/SettingsContext';
 import Step1_Travel from '../components/form/Step1_Travel';
 import Step2_Personal from '../components/form/Step2_Personal';
@@ -14,7 +15,14 @@ import Step7_Success from '../components/form/Step7_Success';
 const ApplyPage = () => {
   const { t } = useTranslation();
   const { settings } = useSettings();
+  const [searchParams] = useSearchParams();
   const [step, setStep] = useState(1);
+
+  useEffect(() => {
+    if (searchParams.get('payment') === 'success') {
+      setStep(7);
+    }
+  }, [searchParams]);
   const [formData, setFormData] = useState({
     // Travel Information
     nationality: '',

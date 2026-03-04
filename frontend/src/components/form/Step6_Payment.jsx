@@ -9,6 +9,7 @@ import {
   ArrowLeft,
   Receipt,
   CheckCircle,
+  ExternalLink,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -19,14 +20,9 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsProcessing(true);
-    setError('');
-
+  const buildFormData = () => {
     const data = new FormData();
 
-    // Map frontend keys to backend keys
     data.append('nationality', formData.nationality);
     data.append('arrival_date', formData.arrivalDate);
     data.append('passport_number', formData.passportNumber);
@@ -42,7 +38,6 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
     data.append('town_city', formData.townCity);
     data.append('country', formData.country);
 
-    // Additional Info
     data.append('has_job', formData.hasJob === 'yes' ? 'true' : 'false');
     data.append('job_title', formData.jobTitle || '');
     data.append(
@@ -62,7 +57,6 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
     data.append('other_nationalities', formData.otherNationalities || '');
     data.append('area', formData.area || '');
 
-    // Declarations
     data.append(
       'confirm_info_declaration',
       formData.confirmInfo ? 'true' : 'false',
@@ -76,7 +70,6 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
       formData.confirmProcessingTime ? 'true' : 'false',
     );
 
-    // Append files
     if (formData.passportCopy) {
       data.append('passportCopy', formData.passportCopy);
     }
@@ -84,19 +77,34 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
       data.append('personalPhoto', formData.personalPhoto);
     }
 
+    return data;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsProcessing(true);
+    setError('');
+
     try {
-      await api.post('/applications', data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
+      // Step 1: Save the application
+      const appResponse = await api.post('/applications', buildFormData(), {
+        headers: { 'Content-Type': 'multipart/form-data' },
       });
-      nextStep();
+
+      const applicationId = appResponse.data.application.id;
+
+      // Step 2: Create Lemon Squeezy checkout
+      const checkoutResponse = await api.post('/lemonsqueezy/checkout', {
+        applicationId,
+      });
+
+      // Step 3: Redirect to Lemon Squeezy checkout page
+      window.location.href = checkoutResponse.data.checkoutUrl;
     } catch (err) {
       console.error('Submission Error:', err);
       const backendError = err.response?.data;
 
       if (backendError?.errors && Array.isArray(backendError.errors)) {
-        // Handle Zod validation errors
         const errorMsgs = backendError.errors
           .map((e) => `${e.path.join('.')}: ${e.message}`)
           .join(', ');
@@ -212,13 +220,13 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
             <span className="text-gray-600">
               {t('form.step6.labels.pricing.govFee')}
             </span>
-            <span className="font-medium text-gray-800">£16.00</span>
+            <span className="font-medium text-gray-800">€16.00</span>
           </div>
           <div className="flex justify-between items-center text-sm">
             <span className="text-gray-600">
               {t('form.step6.labels.pricing.serviceFee')}
             </span>
-            <span className="font-medium text-gray-800">£81.00</span>
+            <span className="font-medium text-gray-800">€81.00</span>
           </div>
           <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
             <span className="font-bold text-gray-800">
@@ -228,13 +236,13 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
               className="text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-primary to-accent"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}>
-              £97.00
+              €97.00
             </motion.span>
           </div>
         </div>
       </motion.div>
 
-      {/* Payment Form */}
+      {/* Secure Payment Notice */}
       <motion.div
         className="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm"
         initial={{ opacity: 0, y: 20 }}
@@ -245,61 +253,24 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
           {t('form.step6.labels.card.title')}
         </h3>
 
-        <div className="space-y-5">
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              {t('form.step6.labels.card.holder')}
-            </label>
-            <input
-              type="text"
-              className={inputClasses}
-              placeholder={t('form.step6.placeholders.holder')}
-            />
+        <div className="text-center space-y-4 py-4">
+          <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto">
+            <ShieldCheck size={32} className="text-green-600" />
           </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
-              {t('form.step6.labels.card.number')}
-            </label>
-            <div className="relative">
-              <input
-                type="text"
-                className={`${inputClasses} pl-12`}
-                placeholder="0000 0000 0000 0000"
-              />
-              <CreditCard
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
-                size={20}
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                {t('form.step6.labels.card.expiry')}
-              </label>
-              <input type="text" className={inputClasses} placeholder="MM/YY" />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                {t('form.step6.labels.card.cvc')}
-              </label>
-              <input type="text" className={inputClasses} placeholder="123" />
-            </div>
+          <p className="text-gray-600 text-sm max-w-md mx-auto">
+            {t('form.step6.subtexts.redirectNote', {
+              defaultValue:
+                'You will be securely redirected to our payment provider to complete your payment. Your card details are never stored on our servers.',
+            })}
+          </p>
+          <div className="flex items-center justify-center gap-2 text-xs text-gray-400">
+            <Lock size={14} />
+            <span>{t('form.step6.subtexts.securePayment')}</span>
+            <span className="mx-1">•</span>
+            <ExternalLink size={14} />
+            <span>Powered by Lemon Squeezy</span>
           </div>
         </div>
-
-        <motion.div
-          className="mt-6 flex items-center justify-center gap-2 text-xs p-3 bg-green-50 rounded-xl border border-green-100"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}>
-          <ShieldCheck size={16} className="text-green-600" />
-          <span className="text-green-700 font-medium">
-            {t('form.step6.subtexts.securePayment')}
-          </span>
-        </motion.div>
       </motion.div>
 
       {/* reCAPTCHA notice */}

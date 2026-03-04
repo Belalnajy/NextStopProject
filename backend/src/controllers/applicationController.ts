@@ -150,6 +150,24 @@ export const getApplications = async (req: Request, res: Response) => {
   }
 };
 
+export const getApplicationPublicInfo = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const application = await appRepo.findOneBy({ id: id as any });
+
+    if (!application) {
+      return res.status(404).json({ message: 'Application not found' });
+    }
+
+    res.json({
+      application_no: application.application_no,
+      payment_status: application.payment_status,
+    });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
 export const getApplicationById = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;

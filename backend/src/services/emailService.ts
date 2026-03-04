@@ -273,6 +273,44 @@ export const initializeTemplates = async () => {
       '#1a2f6b',
     );
 
+    const paymentConfirmedBody = emailWrapper(
+      `
+      <div style="text-align:center;margin-bottom:24px;">
+        <div style="width:64px;height:64px;background:#dcfce7;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">
+          <span style="font-size:32px;">💳</span>
+        </div>
+      </div>
+      <h2 style="margin:0 0 8px;color:#1a2f6b;font-size:22px;font-weight:700;text-align:center;">Payment Confirmed!</h2>
+      <p style="margin:0 0 24px;color:#64748b;font-size:14px;text-align:center;">Your payment has been successfully processed.</p>
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px;margin-bottom:24px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:6px 0;color:#64748b;font-size:13px;width:140px;">Applicant Name</td>
+            <td style="padding:6px 0;color:#1e293b;font-size:13px;font-weight:600;">{{name}}</td>
+          </tr>
+          <tr>
+            <td style="padding:6px 0;color:#64748b;font-size:13px;">Application No.</td>
+            <td style="padding:6px 0;color:#1e293b;font-size:13px;font-weight:600;">{{appNo}}</td>
+          </tr>
+          <tr>
+            <td style="padding:6px 0;color:#64748b;font-size:13px;">Amount Paid</td>
+            <td style="padding:6px 0;color:#1e293b;font-size:13px;font-weight:600;">€97.00</td>
+          </tr>
+          <tr>
+            <td style="padding:6px 0;color:#64748b;font-size:13px;">Payment Status</td>
+            <td style="padding:6px 0;">
+              <span style="display:inline-block;background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:0.5px;">Paid</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin:0;color:#475569;font-size:14px;line-height:1.6;">Dear <strong>{{name}}</strong>,</p>
+      <p style="margin:12px 0 0;color:#475569;font-size:14px;line-height:1.6;">We have received your payment for visa application <strong>{{appNo}}</strong>. Your application is now being processed by our team.</p>
+      <p style="margin:12px 0 0;color:#475569;font-size:14px;line-height:1.6;">You will receive another email once a decision has been made. Thank you for choosing NextStop Visa.</p>
+    `,
+      '#16a34a',
+    );
+
     const templates = [
       {
         type: EmailType.WELCOME,
@@ -302,6 +340,12 @@ export const initializeTemplates = async () => {
         type: EmailType.APPLICATION_REJECTED,
         subject: '❌ Application Update: {{appNo}}',
         body_html: rejectedBody,
+        variables_description: 'name, appNo',
+      },
+      {
+        type: EmailType.PAYMENT_CONFIRMED,
+        subject: '💳 Payment Confirmed: {{appNo}}',
+        body_html: paymentConfirmedBody,
         variables_description: 'name, appNo',
       },
     ];

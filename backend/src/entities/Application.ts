@@ -126,6 +126,15 @@ export class Application {
   })
   payment_status: PaymentStatus;
 
+  @Column({ nullable: true })
+  lemonsqueezy_order_id: string;
+
+  @Column({ nullable: true })
+  lemonsqueezy_checkout_url: string;
+
+  @Column({ type: 'timestamp', nullable: true })
+  payment_date: Date;
+
   @OneToMany(() => Attachment, (attachment) => attachment.application, {
     cascade: true,
   })

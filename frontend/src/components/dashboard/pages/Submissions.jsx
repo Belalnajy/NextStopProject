@@ -5,14 +5,13 @@ import { Link } from 'react-router-dom';
 import {
   Search,
   Filter,
-  MoreVertical,
   Eye,
   Mail,
-  FileText,
   CheckCircle,
   XCircle,
   Clock,
   Download,
+  CreditCard,
 } from 'lucide-react';
 import api from '../../../api';
 
@@ -46,7 +45,9 @@ export default function Submissions() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
+  const [paymentFilter, setPaymentFilter] = useState('all');
   const [showFilter, setShowFilter] = useState(false);
+  const [showPaymentFilter, setShowPaymentFilter] = useState(false);
 
   useEffect(() => {
     fetchApplications();
@@ -92,7 +93,9 @@ export default function Submissions() {
       item.email?.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesStatus =
       statusFilter === 'all' || item.status === statusFilter;
-    return matchesSearch && matchesStatus;
+    const matchesPayment =
+      paymentFilter === 'all' || item.payment_status === paymentFilter;
+    return matchesSearch && matchesStatus && matchesPayment;
   });
 
   const exportCSV = () => {
@@ -108,6 +111,7 @@ export default function Submissions() {
       'Nationality',
       'Arrival Date',
       'Status',
+      'Payment',
       'App No',
       'Submitted',
     ];
@@ -119,6 +123,7 @@ export default function Submissions() {
       item.nationality,
       item.arrival_date,
       item.status,
+      item.payment_status,
       item.application_no,
       new Date(item.created_at).toLocaleDateString(),
     ]);
@@ -220,6 +225,33 @@ export default function Submissions() {
             </div>
           )}
         </div>
+        <div className="relative">
+          <button
+            onClick={() => setShowPaymentFilter(!showPaymentFilter)}
+            className={`px-4 py-2.5 border rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${paymentFilter !== 'all' ? 'bg-primary/5 border-primary text-primary' : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'}`}>
+            <CreditCard size={18} />
+            {paymentFilter === 'all' ? 'Payment' : paymentFilter}
+          </button>
+          {showPaymentFilter && (
+            <div className="absolute right-0 top-full mt-2 w-44 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden">
+              {['all', 'PAID', 'UNPAID'].map((s) => (
+                <button
+                  key={s}
+                  onClick={() => {
+                    setPaymentFilter(s);
+                    setShowPaymentFilter(false);
+                  }}
+                  className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 ${paymentFilter === s ? 'bg-primary/5 text-primary font-medium' : 'text-slate-700 hover:bg-slate-50'}`}>
+                  {s === 'all'
+                    ? '🔍 All'
+                    : s === 'PAID'
+                      ? '✅ Paid'
+                      : '⏳ Unpaid'}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Data Table */}
@@ -239,6 +271,9 @@ export default function Submissions() {
                 </th>
                 <th className="py-4 px-6 text-xs font-semibold text-slate-500 uppercase tracking-wider">
                   Status
+                </th>
+                <th className="py-4 px-6 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  Payment
                 </th>
                 <th className="py-4 px-6 text-xs font-semibold text-slate-500 uppercase tracking-wider">
                   Submitted
@@ -281,6 +316,17 @@ export default function Submissions() {
                   </td>
                   <td className="py-4 px-6">
                     <StatusBadge status={item.status} />
+                  </td>
+                  <td className="py-4 px-6">
+                    <span
+                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border ${
+                        item.payment_status === 'PAID'
+                          ? 'bg-green-100 text-green-800 border-green-200'
+                          : 'bg-amber-100 text-amber-800 border-amber-200'
+                      }`}>
+                      <CreditCard size={12} />
+                      {item.payment_status === 'PAID' ? 'Paid' : 'Unpaid'}
+                    </span>
                   </td>
                   <td className="py-4 px-6 text-sm text-slate-600">
                     {new Date(item.created_at).toLocaleDateString()}
