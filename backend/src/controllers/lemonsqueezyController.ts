@@ -53,7 +53,7 @@ export const createCheckout = async (req: Request, res: Response) => {
             },
           },
           product_options: {
-            redirect_url: `${req.headers.origin || process.env.FRONTEND_URL || 'http://localhost:5173'}/apply?payment=success&app=${application.id}`,
+            redirect_url: `${process.env.FRONTEND_URL || req.headers.origin || 'http://localhost:5173'}/apply?payment=success&app=${application.id}`,
             receipt_button_text: 'Return to Application',
             receipt_thank_you_note: `Thank you for your payment! Your application ${application.application_no} is now being processed.`,
           },
