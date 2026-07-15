@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import InfoSection from '../components/InfoSection';
 import TrustIndicators from '../components/TrustIndicators';
 import HowToApply from '../components/HowToApply';
+import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
 import Requirements from '../components/Requirements';
 import FAQ from '../components/FAQ';
@@ -13,6 +14,7 @@ const HomePage = () => {
       <InfoSection />
       <TrustIndicators />
       <HowToApply />
+      <Pricing />
       <Testimonials />
       <Requirements />
       <FAQ />

@@ -421,6 +421,30 @@
     "Brazil": "Brésil",
     "Nigeria": "Nigéria"
   },
+  "pricing": {
+    "badge": "Tarification transparente",
+    "title": "Simple et",
+    "title_highlight": "Transparent",
+    "subtitle": "Un prix clair sans frais cachés. Comprend les frais gouvernementaux britanniques et notre service complet de traitement de la demande.",
+    "breakdown_title": "Détail du prix",
+    "gov_fee_title": "Frais gouvernementaux britanniques",
+    "gov_fee_desc": "Frais officiels de l'ETA versés aux autorités britanniques.",
+    "service_fee_title": "Frais de service et de traitement",
+    "service_fee_desc": "Vérification de la demande par des experts, assistance et traitement.",
+    "included_title": "Ce qui est inclus",
+    "included": {
+      "item1": "Vérification de la demande par des experts ETA",
+      "item2": "Assistance client 24h/24 et 7j/7",
+      "item3": "Traitement rapide en 3 jours ouvrables",
+      "item4": "Paiement sécurisé et chiffré"
+    },
+    "total_title": "Total à payer",
+    "total_desc": "Paiement unique. Aucun abonnement ni frais cachés.",
+    "cta": "Postuler maintenant",
+    "trust_secure": "Paiement sécurisé chiffré SSL 256 bits",
+    "trust_encrypted": "Vos données sont en sécurité chez nous",
+    "note": "Prix en EUR, incluant tous les frais gouvernementaux applicables."
+  },
   "requirements": {
     "badge": "Ce dont vous aurez besoin",
     "title": "Exigences",

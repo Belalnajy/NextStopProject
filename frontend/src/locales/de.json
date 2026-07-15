@@ -421,6 +421,30 @@
     "Brazil": "Brasilien",
     "Nigeria": "Nigeria"
   },
+  "pricing": {
+    "badge": "Transparente Preise",
+    "title": "Einfach &",
+    "title_highlight": "Transparent",
+    "subtitle": "Ein klarer Preis ohne versteckte Gebühren. Enthält die britische Regierungsgebühr und unseren vollständigen Antragsbearbeitungsservice.",
+    "breakdown_title": "Preisaufschlüsselung",
+    "gov_fee_title": "Britische Regierungsgebühr",
+    "gov_fee_desc": "Offizielle ETA-Gebühr, die an die britischen Behörden gezahlt wird.",
+    "service_fee_title": "Service- und Bearbeitungsgebühr",
+    "service_fee_desc": "Antragsprüfung durch Experten, Support und Bearbeitung.",
+    "included_title": "Was ist enthalten",
+    "included": {
+      "item1": "Antragsprüfung durch ETA-Experten",
+      "item2": "Kundensupport rund um die Uhr",
+      "item3": "Schnelle Bearbeitung in 3 Werktagen",
+      "item4": "Sichere verschlüsselte Zahlung"
+    },
+    "total_title": "Gesamtbetrag",
+    "total_desc": "Einmalige Zahlung. Keine Abonnements oder versteckten Kosten.",
+    "cta": "Jetzt beantragen",
+    "trust_secure": "Sichere 256-Bit-SSL-verschlüsselte Zahlung",
+    "trust_encrypted": "Ihre Daten sind bei uns sicher",
+    "note": "Preise in EUR, inklusive aller anfallenden Regierungsgebühren."
+  },
   "requirements": {
     "badge": "Was Sie brauchen",
     "title": "Anforderungen",

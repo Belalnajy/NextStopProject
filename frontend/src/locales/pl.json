@@ -421,6 +421,30 @@
     "Nigeria": "Nigeria",
     "Japan": "Japonia"
   },
+  "pricing": {
+    "badge": "Przejrzyste ceny",
+    "title": "Proste i",
+    "title_highlight": "Przejrzyste",
+    "subtitle": "Jedna jasna cena bez ukrytych opłat. Zawiera brytyjską opłatę rządową oraz naszą pełną usługę obsługi wniosku.",
+    "breakdown_title": "Szczegóły ceny",
+    "gov_fee_title": "Brytyjska opłata rządowa",
+    "gov_fee_desc": "Oficjalna opłata ETA wnoszona do władz brytyjskich.",
+    "service_fee_title": "Opłata serwisowa i za przetwarzanie",
+    "service_fee_desc": "Weryfikacja wniosku przez ekspertów, wsparcie i przetwarzanie.",
+    "included_title": "Co jest wliczone",
+    "included": {
+      "item1": "Weryfikacja wniosku przez ekspertów ETA",
+      "item2": "Obsługa klienta 24/7",
+      "item3": "Szybkie przetwarzanie w 3 dni robocze",
+      "item4": "Bezpieczna szyfrowana płatność"
+    },
+    "total_title": "Łączna kwota do zapłaty",
+    "total_desc": "Płatność jednorazowa. Bez subskrypcji i ukrytych opłat.",
+    "cta": "Złóż wniosek",
+    "trust_secure": "Bezpieczna płatność szyfrowana 256-bit SSL",
+    "trust_encrypted": "Twoje dane są u nas bezpieczne",
+    "note": "Ceny w EUR i obejmują wszystkie stosowne opłaty rządowe."
+  },
   "requirements": {
     "badge": "Czego będziesz potrzebować",
     "title": "Wymagania",

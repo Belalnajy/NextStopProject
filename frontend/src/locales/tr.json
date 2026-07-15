@@ -421,6 +421,30 @@
     "Brazil": "Brezilya",
     "Nigeria": "Nijerya"
   },
+  "pricing": {
+    "badge": "Şeffaf Fiyatlandırma",
+    "title": "Basit ve",
+    "title_highlight": "Şeffaf",
+    "subtitle": "Gizli ücret olmadan tek net fiyat. İngiltere hükümet harcını ve tam başvuru işlem hizmetimizi içerir.",
+    "breakdown_title": "Fiyat Dökümü",
+    "gov_fee_title": "İngiltere Hükümet Harcı",
+    "gov_fee_desc": "İngiliz makamlarına ödenen resmi ETA harcı.",
+    "service_fee_title": "Servis ve İşlem Ücreti",
+    "service_fee_desc": "Uzman başvuru incelemesi, destek ve işlem.",
+    "included_title": "Neler Dahil",
+    "included": {
+      "item1": "ETA uzmanları tarafından başvuru incelemesi",
+      "item2": "7/24 müşteri desteği",
+      "item3": "3 iş günü içinde hızlı işlem",
+      "item4": "Güvenli şifreli ödeme"
+    },
+    "total_title": "Ödeyeceğiniz Tutar",
+    "total_desc": "Tek seferlik ödeme. Abonelik veya gizli ücret yok.",
+    "cta": "Şimdi Başvur",
+    "trust_secure": "Güvenli 256-bit SSL şifreli ödeme",
+    "trust_encrypted": "Verileriniz bizimle güvende",
+    "note": "Fiyatlar EUR cinsindendir ve tüm ilgili hükümet harçlarını içerir."
+  },
   "requirements": {
     "badge": "İhtiyacınız olan şey",
     "title": "Gereksinimler",

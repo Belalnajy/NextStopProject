@@ -421,6 +421,30 @@
     "Brazil": "브라질",
     "Nigeria": "나이지리아"
   },
+  "pricing": {
+    "badge": "투명한 요금",
+    "title": "간단하고",
+    "title_highlight": "투명한 요금",
+    "subtitle": "숨겨진 비용이 없는 명확한 가격. 영국 정부 수수료와 전체 신청 처리 서비스가 포함됩니다.",
+    "breakdown_title": "가격 상세",
+    "gov_fee_title": "영국 정부 수수료",
+    "gov_fee_desc": "영국 당국에 지불되는 공식 ETA 수수료.",
+    "service_fee_title": "서비스 및 처리 수수료",
+    "service_fee_desc": "전문가의 신청 검토, 지원 및 처리.",
+    "included_title": "포함 사항",
+    "included": {
+      "item1": "ETA 전문가의 신청 검토",
+      "item2": "24시간 연중무휴 고객 지원",
+      "item3": "3영업일 내 빠른 처리",
+      "item4": "안전한 암호화 결제"
+    },
+    "total_title": "총 결제 금액",
+    "total_desc": "1회 결제. 구독이나 숨겨진 비용 없음.",
+    "cta": "지금 신청",
+    "trust_secure": "256비트 SSL 암호화 보안 결제",
+    "trust_encrypted": "고객님의 데이터는 안전하게 보호됩니다",
+    "note": "가격은 EUR로 표시되며 모든 해당 정부 수수료가 포함됩니다."
+  },
   "requirements": {
     "badge": "필요한 것",
     "title": "요구사항",

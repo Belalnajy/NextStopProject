@@ -421,6 +421,30 @@
     "Brazil": "Brasile",
     "Nigeria": "Nigeria"
   },
+  "pricing": {
+    "badge": "Prezzi Trasparenti",
+    "title": "Semplice e",
+    "title_highlight": "Trasparente",
+    "subtitle": "Un prezzo chiaro senza costi nascosti. Include la tassa governativa del Regno Unito e il nostro servizio completo di elaborazione della domanda.",
+    "breakdown_title": "Dettaglio prezzo",
+    "gov_fee_title": "Tassa Governativa del Regno Unito",
+    "gov_fee_desc": "Tassa ufficiale dell'ETA versata alle autorità britanniche.",
+    "service_fee_title": "Tariffa di Servizio ed Elaborazione",
+    "service_fee_desc": "Revisione della domanda da parte di esperti, supporto ed elaborazione.",
+    "included_title": "Cosa è incluso",
+    "included": {
+      "item1": "Revisione della domanda da parte di esperti ETA",
+      "item2": "Assistenza clienti 24/7",
+      "item3": "Elaborazione rapida in 3 giorni lavorativi",
+      "item4": "Pagamento sicuro e crittografato"
+    },
+    "total_title": "Totale da pagare",
+    "total_desc": "Pagamento unico. Nessun abbonamento o costo nascosto.",
+    "cta": "Fai domanda ora",
+    "trust_secure": "Pagamento sicuro con crittografia SSL 256-bit",
+    "trust_encrypted": "I tuoi dati sono al sicuro con noi",
+    "note": "Prezzi in EUR, includono tutte le tasse governative applicabili."
+  },
   "requirements": {
     "badge": "Di cosa avrai bisogno",
     "title": "Requisiti",

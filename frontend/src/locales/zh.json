@@ -421,6 +421,30 @@
     "Brazil": "巴西",
     "Nigeria": "尼日利亚"
   },
+  "pricing": {
+    "badge": "透明定价",
+    "title": "简单",
+    "title_highlight": "透明",
+    "subtitle": "明码标价，没有隐藏费用。包含英国政府费用及完整的申请处理服务。",
+    "breakdown_title": "价格明细",
+    "gov_fee_title": "英国政府费用",
+    "gov_fee_desc": "支付给英国当局的正式 ETA 费用。",
+    "service_fee_title": "服务和处理费",
+    "service_fee_desc": "专家申请审核、支持及处理。",
+    "included_title": "包含内容",
+    "included": {
+      "item1": "ETA 专家审核申请",
+      "item2": "全天候客户支持",
+      "item3": "3 个工作日内快速处理",
+      "item4": "安全加密支付"
+    },
+    "total_title": "应付总额",
+    "total_desc": "一次性付款，无订阅或隐藏费用。",
+    "cta": "立即申请",
+    "trust_secure": "256 位 SSL 加密安全支付",
+    "trust_encrypted": "您的数据在我们这里是安全的",
+    "note": "价格以欧元 (EUR) 计算，已包含所有适用的政府费用。"
+  },
   "requirements": {
     "badge": "你需要什么",
     "title": "要求",

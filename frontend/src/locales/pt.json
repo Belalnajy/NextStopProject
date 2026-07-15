@@ -421,6 +421,30 @@
     "Brazil": "Brasil",
     "Nigeria": "Nigéria"
   },
+  "pricing": {
+    "badge": "Preços Transparentes",
+    "title": "Simples e",
+    "title_highlight": "Transparente",
+    "subtitle": "Um preço claro sem taxas ocultas. Inclui a taxa governamental do Reino Unido e nosso serviço completo de processamento da solicitação.",
+    "breakdown_title": "Detalhamento do preço",
+    "gov_fee_title": "Taxa Governamental do Reino Unido",
+    "gov_fee_desc": "Taxa oficial da ETA paga às autoridades britânicas.",
+    "service_fee_title": "Taxa de Serviço e Processamento",
+    "service_fee_desc": "Revisão da solicitação por especialistas, suporte e processamento.",
+    "included_title": "O que está incluído",
+    "included": {
+      "item1": "Revisão da solicitação por especialistas em ETA",
+      "item2": "Atendimento ao cliente 24/7",
+      "item3": "Processamento rápido em 3 dias úteis",
+      "item4": "Pagamento seguro e criptografado"
+    },
+    "total_title": "Total a pagar",
+    "total_desc": "Pagamento único. Sem assinaturas ou taxas ocultas.",
+    "cta": "Solicitar agora",
+    "trust_secure": "Pagamento seguro com criptografia SSL 256-bit",
+    "trust_encrypted": "Seus dados estão seguros conosco",
+    "note": "Preços em EUR, incluem todas as taxas governamentais aplicáveis."
+  },
   "requirements": {
     "badge": "O que você precisa",
     "title": "Requisitos",

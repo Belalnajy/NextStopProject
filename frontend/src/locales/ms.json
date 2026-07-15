@@ -421,6 +421,30 @@
     "Brazil": "Brazil",
     "Nigeria": "Nigeria"
   },
+  "pricing": {
+    "badge": "Harga Telus",
+    "title": "Mudah dan",
+    "title_highlight": "Telus",
+    "subtitle": "Satu harga yang jelas tanpa caj tersembunyi. Termasuk yuran kerajaan UK dan perkhidmatan pemprosesan permohonan penuh kami.",
+    "breakdown_title": "Perincian Harga",
+    "gov_fee_title": "Yuran Kerajaan UK",
+    "gov_fee_desc": "Yuran ETA rasmi yang dibayar kepada pihak berkuasa UK.",
+    "service_fee_title": "Yuran Perkhidmatan dan Pemprosesan",
+    "service_fee_desc": "Semakan permohonan oleh pakar, sokongan dan pemprosesan.",
+    "included_title": "Yang Termasuk",
+    "included": {
+      "item1": "Semakan permohonan oleh pakar ETA",
+      "item2": "Sokongan pelanggan 24/7",
+      "item3": "Pemprosesan pantas dalam 3 hari bekerja",
+      "item4": "Pembayaran yang selamat dan disulitkan"
+    },
+    "total_title": "Jumlah Bayaran",
+    "total_desc": "Bayaran sekali sahaja. Tiada langganan atau caj tersembunyi.",
+    "cta": "Mohon Sekarang",
+    "trust_secure": "Pembayaran selamat SSL 256-bit",
+    "trust_encrypted": "Data anda selamat bersama kami",
+    "note": "Harga dalam EUR dan termasuk semua yuran kerajaan yang berkenaan."
+  },
   "requirements": {
     "badge": "Apa yang anda perlukan",
     "title": "Keperluan",

@@ -48,6 +48,30 @@
     "step3_title": "Receive ETA",
     "step3_desc": "Get your approved ETA sent directly to your email."
   },
+  "pricing": {
+    "badge": "Transparent Pricing",
+    "title": "Simple & Transparent",
+    "title_highlight": "Pricing",
+    "subtitle": "One clear price with no hidden fees. Includes the UK government fee and our full application processing service.",
+    "breakdown_title": "Price Breakdown",
+    "gov_fee_title": "UK Government Fee",
+    "gov_fee_desc": "Official ETA fee paid to UK authorities.",
+    "service_fee_title": "Service & Processing Fee",
+    "service_fee_desc": "Expert application review, support, and processing.",
+    "included_title": "What's Included",
+    "included": {
+      "item1": "Application review by ETA experts",
+      "item2": "24/7 customer support",
+      "item3": "Fast 3 business-day processing",
+      "item4": "Secure encrypted payment"
+    },
+    "total_title": "Total You Pay",
+    "total_desc": "One-time payment. No subscriptions or hidden charges.",
+    "cta": "Apply Now",
+    "trust_secure": "Secure 256-bit SSL encrypted payment",
+    "trust_encrypted": "Your data is safe with us",
+    "note": "Prices are in EUR and include all applicable government fees."
+  },
   "requirements": {
     "badge": "What You'll Need",
     "title": "Requirements",
