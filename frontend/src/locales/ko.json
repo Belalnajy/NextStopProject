@@ -543,5 +543,13 @@
     "form_message_placeholder": "어떻게 도와드릴까요?",
     "form_submit": "메시지 전송",
     "form_sent": "메시지가 전송되었습니다!"
+  },
+  "currency": {
+    "label": "통화",
+    "auto_detected": "위치를 기준으로 감지되었습니다",
+    "switch_hint": "표시 통화 변경",
+    "charged_in_eur": "표시 금액은 대략적인 값이며, 결제 시 {{amount}}가 청구됩니다.",
+    "show_all": "모든 통화 보기",
+    "show_less": "간단히 보기"
   }
 }

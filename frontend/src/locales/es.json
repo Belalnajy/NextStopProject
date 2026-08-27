@@ -543,5 +543,13 @@
     "form_message_placeholder": "¿Cómo podemos ayudarle?",
     "form_submit": "Enviar mensaje",
     "form_sent": "¡Mensaje enviado!"
+  },
+  "currency": {
+    "label": "Moneda",
+    "auto_detected": "Detectada según tu ubicación",
+    "switch_hint": "Cambiar la moneda de visualización",
+    "charged_in_eur": "Precio aproximado. Se te cobrará {{amount}} al pagar.",
+    "show_all": "Mostrar todas las monedas",
+    "show_less": "Mostrar menos"
   }
 }

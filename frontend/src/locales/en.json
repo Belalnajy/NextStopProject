@@ -543,5 +543,13 @@
     "South Korea": "South Korea",
     "Brazil": "Brazil",
     "Nigeria": "Nigeria"
+  },
+  "currency": {
+    "label": "Currency",
+    "auto_detected": "Detected from your location",
+    "switch_hint": "Change display currency",
+    "charged_in_eur": "Approximate price. You will be charged {{amount}} at checkout.",
+    "show_all": "Show all currencies",
+    "show_less": "Show less"
   }
 }

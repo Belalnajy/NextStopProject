@@ -4,6 +4,7 @@ import { Menu, X, ChevronRight, Globe, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useSettings } from '../context/SettingsContext';
+import CurrencySwitcher from './CurrencySwitcher';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -153,8 +154,13 @@ const Navbar = () => {
               </motion.a>
             ))}
 
+            {/* Currency Switcher */}
+            <div className="ms-4">
+              <CurrencySwitcher />
+            </div>
+
             {/* Language Switcher */}
-            <div className="relative mx-4">
+            <div className="relative mx-2">
               <motion.button
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 whileHover={{ scale: 1.05 }}
@@ -262,6 +268,13 @@ const Navbar = () => {
             variants={mobileMenuVariants}
             className="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
             <div className="px-6 py-8 space-y-4">
+              <div className="mb-4">
+                <CurrencySwitcher
+                  variant="mobile"
+                  onSelect={() => setIsMobileMenuOpen(false)}
+                />
+              </div>
+
               <div className="grid grid-cols-2 gap-2 mb-4">
                 {(isLangOpen ? languages : languages.slice(0, 4)).map(
                   (lang) => (

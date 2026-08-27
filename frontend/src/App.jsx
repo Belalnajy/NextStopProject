@@ -21,6 +21,7 @@ import ApplicationDetails from './components/dashboard/pages/ApplicationDetails'
 
 import { AuthProvider } from './context/AuthContext';
 import { SettingsProvider } from './context/SettingsContext';
+import { CurrencyProvider } from './context/CurrencyContext';
 
 import LoginPage from './pages/LoginPage';
 import { Toaster } from 'react-hot-toast';
@@ -41,34 +42,36 @@ export default function App() {
   return (
     <AuthProvider>
       <SettingsProvider>
-        <Toaster position="top-right" />
-        <ScrollToTop />
-        <Routes>
-          {/* Public Routes */}
-          <Route element={<PublicLayout />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/apply" element={<ApplyPage />} />
-            <Route path="/eligibility" element={<EligibilityPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/cookie" element={<CookiePage />} />
-            <Route path="/refund" element={<RefundPage />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Route>
-
-          {/* Admin Dashboard Routes (Protected) */}
-          <Route element={<ProtectedRoute />}>
-            <Route path="/admin" element={<DashboardLayout />}>
-              <Route index element={<Overview />} />
-              <Route path="submissions" element={<Submissions />} />
-              <Route path="submissions/:id" element={<ApplicationDetails />} />
-              <Route path="email" element={<EmailSystem />} />
-              <Route path="settings" element={<Settings />} />
+        <CurrencyProvider>
+          <Toaster position="top-right" />
+          <ScrollToTop />
+          <Routes>
+            {/* Public Routes */}
+            <Route element={<PublicLayout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/apply" element={<ApplyPage />} />
+              <Route path="/eligibility" element={<EligibilityPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/cookie" element={<CookiePage />} />
+              <Route path="/refund" element={<RefundPage />} />
+              <Route path="/login" element={<LoginPage />} />
             </Route>
-          </Route>
-        </Routes>
+
+            {/* Admin Dashboard Routes (Protected) */}
+            <Route element={<ProtectedRoute />}>
+              <Route path="/admin" element={<DashboardLayout />}>
+                <Route index element={<Overview />} />
+                <Route path="submissions" element={<Submissions />} />
+                <Route path="submissions/:id" element={<ApplicationDetails />} />
+                <Route path="email" element={<EmailSystem />} />
+                <Route path="settings" element={<Settings />} />
+              </Route>
+            </Route>
+          </Routes>
+        </CurrencyProvider>
       </SettingsProvider>
     </AuthProvider>
   );

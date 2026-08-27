@@ -543,5 +543,13 @@
     "form_message_placeholder": "我们能如何帮助您？",
     "form_submit": "发送消息",
     "form_sent": "消息已发送！"
+  },
+  "currency": {
+    "label": "货币",
+    "auto_detected": "根据您的位置自动识别",
+    "switch_hint": "更改显示货币",
+    "charged_in_eur": "价格为约数，结账时将收取 {{amount}}。",
+    "show_all": "显示所有货币",
+    "show_less": "收起"
   }
 }
