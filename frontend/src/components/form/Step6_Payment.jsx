@@ -14,9 +14,12 @@ import {
 import { useTranslation } from 'react-i18next';
 
 import api from '../../api';
+import { useCurrency } from '../../context/CurrencyContext';
+import { FEES } from '../../config/pricing';
 
 const Step6_Payment = ({ formData, prevStep, nextStep }) => {
   const { t } = useTranslation();
+  const { format, formatBase, isConverted } = useCurrency();
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState('');
 
@@ -220,13 +223,17 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
             <span className="text-gray-600">
               {t('form.step6.labels.pricing.govFee')}
             </span>
-            <span className="font-medium text-gray-800">€16.00</span>
+            <span className="font-medium text-gray-800">
+              {format(FEES.government)}
+            </span>
           </div>
           <div className="flex justify-between items-center text-sm">
             <span className="text-gray-600">
               {t('form.step6.labels.pricing.serviceFee')}
             </span>
-            <span className="font-medium text-gray-800">€81.00</span>
+            <span className="font-medium text-gray-800">
+              {format(FEES.service)}
+            </span>
           </div>
           <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
             <span className="font-bold text-gray-800">
@@ -236,9 +243,18 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
               className="text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-primary to-accent"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}>
-              €97.00
+              {format(FEES.total)}
             </motion.span>
           </div>
+          {isConverted && (
+            <p className="text-xs text-gray-500 text-end">
+              {t('currency.charged_in_eur', {
+                amount: formatBase(FEES.total),
+                defaultValue:
+                  'Approximate price. You will be charged {{amount}} at checkout.',
+              })}
+            </p>
+          )}
         </div>
       </motion.div>
 

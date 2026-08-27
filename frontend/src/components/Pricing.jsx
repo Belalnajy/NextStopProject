@@ -9,9 +9,12 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useCurrency } from '../context/CurrencyContext';
+import { FEES } from '../config/pricing';
 
 const Pricing = () => {
   const { t } = useTranslation();
+  const { format, formatBase, isConverted, currency } = useCurrency();
 
   const includedItems = [
     t('pricing.included.item1'),
@@ -123,7 +126,7 @@ const Pricing = () => {
                       </div>
                     </div>
                     <div className="text-xl font-bold text-gray-800 whitespace-nowrap ms-4">
-                      €16.00
+                      {format(FEES.government)}
                     </div>
                   </motion.div>
 
@@ -139,7 +142,7 @@ const Pricing = () => {
                       </div>
                     </div>
                     <div className="text-xl font-bold text-gray-800 whitespace-nowrap ms-4">
-                      €81.00
+                      {format(FEES.service)}
                     </div>
                   </motion.div>
                 </div>
@@ -180,17 +183,24 @@ const Pricing = () => {
                   <div className="text-sm font-semibold uppercase tracking-wider text-accent/90 mb-3">
                     {t('pricing.total_title')}
                   </div>
-                  <div className="flex items-baseline gap-2 mb-2">
+                  <div className="flex flex-wrap items-baseline gap-2 mb-2">
                     <motion.span
-                      className="text-6xl md:text-7xl font-display font-black text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light"
+                      className="text-5xl md:text-6xl font-display font-black text-transparent bg-clip-text bg-linear-to-r from-accent to-accent-light"
                       animate={{ scale: [1, 1.03, 1] }}
                       transition={{ duration: 3, repeat: Infinity }}>
-                      €97
+                      {format(FEES.total)}
                     </motion.span>
-                    <span className="text-2xl font-bold text-white/80">
-                      .00
-                    </span>
                   </div>
+                  {isConverted && (
+                    <p className="text-blue-100/70 text-xs mb-3">
+                      {t('currency.charged_in_eur', {
+                        amount: formatBase(FEES.total),
+                        currency,
+                        defaultValue:
+                          'Approximate price. You will be charged {{amount}} at checkout.',
+                      })}
+                    </p>
+                  )}
                   <p className="text-blue-100/70 text-sm leading-relaxed mb-8">
                     {t('pricing.total_desc')}
                   </p>

@@ -543,5 +543,13 @@
     "form_message_placeholder": "お手伝いできることはありますか？",
     "form_submit": "メッセージを送信",
     "form_sent": "メッセージ送信完了！"
+  },
+  "currency": {
+    "label": "通貨",
+    "auto_detected": "お客様の所在地から判定しました",
+    "switch_hint": "表示通貨を変更",
+    "charged_in_eur": "表示は概算です。決済時には {{amount}} が請求されます。",
+    "show_all": "すべての通貨を表示",
+    "show_less": "表示を減らす"
   }
 }

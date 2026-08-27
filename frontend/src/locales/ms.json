@@ -543,5 +543,13 @@
     "form_message_placeholder": "Bagaimana kami boleh membantu anda?",
     "form_submit": "Hantar mesej",
     "form_sent": "Mesej dihantar!"
+  },
+  "currency": {
+    "label": "Mata wang",
+    "auto_detected": "Dikesan daripada lokasi anda",
+    "switch_hint": "Tukar mata wang paparan",
+    "charged_in_eur": "Harga anggaran. Anda akan dicaj {{amount}} semasa pembayaran.",
+    "show_all": "Tunjuk semua mata wang",
+    "show_less": "Tunjuk kurang"
   }
 }

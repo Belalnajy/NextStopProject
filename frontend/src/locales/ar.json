@@ -543,5 +543,13 @@
     "form_message_placeholder": "كيف يمكننا مساعدتك؟",
     "form_submit": "إرسال الرسالة",
     "form_sent": "تم إرسال الرسالة!"
+  },
+  "currency": {
+    "label": "العملة",
+    "auto_detected": "تم تحديدها حسب موقعك",
+    "switch_hint": "تغيير عملة العرض",
+    "charged_in_eur": "السعر تقريبي. سيتم تحصيل {{amount}} عند الدفع.",
+    "show_all": "عرض كل العملات",
+    "show_less": "عرض أقل"
   }
 }

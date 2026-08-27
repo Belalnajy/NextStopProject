@@ -543,5 +543,13 @@
     "form_message_placeholder": "Size nasıl yardımcı olabiliriz?",
     "form_submit": "Mesaj gönder",
     "form_sent": "Mesaj gönderildi!"
+  },
+  "currency": {
+    "label": "Para birimi",
+    "auto_detected": "Konumunuza göre belirlendi",
+    "switch_hint": "Görüntüleme para birimini değiştir",
+    "charged_in_eur": "Yaklaşık fiyat. Ödemede {{amount}} tahsil edilecektir.",
+    "show_all": "Tüm para birimlerini göster",
+    "show_less": "Daha az göster"
   }
 }

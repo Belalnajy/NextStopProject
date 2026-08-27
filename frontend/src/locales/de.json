@@ -543,5 +543,13 @@
     "form_message_placeholder": "Wie können wir Ihnen helfen?",
     "form_submit": "Nachricht senden",
     "form_sent": "Nachricht gesendet!"
+  },
+  "currency": {
+    "label": "Währung",
+    "auto_detected": "Anhand Ihres Standorts erkannt",
+    "switch_hint": "Anzeigewährung ändern",
+    "charged_in_eur": "Ungefährer Preis. Bei der Zahlung werden {{amount}} berechnet.",
+    "show_all": "Alle Währungen anzeigen",
+    "show_less": "Weniger anzeigen"
   }
 }

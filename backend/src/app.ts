@@ -10,6 +10,7 @@ import settingsRoutes from './routes/settingsRoutes';
 import emailRoutes from './routes/emailRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
 import lemonsqueezyRoutes from './routes/lemonsqueezyRoutes';
+import currencyRoutes from './routes/currencyRoutes';
 
 import compression from 'compression';
 import { apiLimiter, authLimiter } from './middlewares/rateLimiter';
@@ -42,6 +43,10 @@ app.use('/api/lemonsqueezy/webhook', express.text({ type: '*/*' }), (req: any, _
 });
 
 app.use(express.json());
+
+// Currency detection/conversion is public and DB-free, so it is mounted before
+// the database initialization middleware to keep page loads fast.
+app.use('/api/currency', apiLimiter, currencyRoutes);
 
 // Database Initialization Middleware
 app.use(async (req, res, next) => {
