@@ -27,7 +27,7 @@ export const getSettings = async (req: Request, res: Response) => {
         stats_approval: '99%',
         contact_email: 'support@nextstopvisa.com',
         contact_phone: '+1 (555) 123-4567',
-        contact_address: '123 Premier Way, London, EC1A 1BB, United Kingdom',
+        contact_address: 'Egypt',
         copyright_text: '© 2026 NextStop Visa. All rights reserved.',
       });
       await settingsRepo.save(settings);

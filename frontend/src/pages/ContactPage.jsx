@@ -50,9 +50,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       label: t('contact.address_label'),
-      value:
-        settings?.contact_address ||
-        '123 Premier Way, London\nUnited Kingdom, EC1A 1BB',
+      value: settings?.contact_address || t('footer.address'),
       href: null,
     },
   ];
