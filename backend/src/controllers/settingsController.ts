@@ -5,6 +5,10 @@ import cloudinary from '../config/cloudinary';
 
 const settingsRepo = AppDataSource.getRepository(Settings);
 
+// Older installs were seeded with a placeholder UK office address.
+const LEGACY_UK_ADDRESS = /Premier Way|Premier Road|EC1A 1BB/i;
+const COMPANY_ADDRESS = 'Egypt';
+
 export const getSettings = async (req: Request, res: Response) => {
   try {
     let settings = await settingsRepo.findOne({ where: { id: 1 } });
@@ -27,9 +31,15 @@ export const getSettings = async (req: Request, res: Response) => {
         stats_approval: '99%',
         contact_email: 'support@nextstopvisa.com',
         contact_phone: '+1 (555) 123-4567',
-        contact_address: 'Egypt',
+        contact_address: COMPANY_ADDRESS,
         copyright_text: '© 2026 NextStop Visa. All rights reserved.',
       });
+      await settingsRepo.save(settings);
+    }
+
+    // One-time cleanup so the old placeholder address stops showing up.
+    if (settings.contact_address && LEGACY_UK_ADDRESS.test(settings.contact_address)) {
+      settings.contact_address = COMPANY_ADDRESS;
       await settingsRepo.save(settings);
     }
 
