@@ -9,6 +9,10 @@ const settingsRepo = AppDataSource.getRepository(Settings);
 const LEGACY_UK_ADDRESS = /Premier Way|Premier Road|EC1A 1BB/i;
 const COMPANY_ADDRESS = 'Egypt';
 
+// Same story for the placeholder US phone number that shipped with the seed.
+const LEGACY_PLACEHOLDER_PHONE = /^\+1 \(555\)/;
+const COMPANY_PHONE = '+20 12 71602944';
+
 export const getSettings = async (req: Request, res: Response) => {
   try {
     let settings = await settingsRepo.findOne({ where: { id: 1 } });
@@ -30,16 +34,24 @@ export const getSettings = async (req: Request, res: Response) => {
         stats_support: '24/7',
         stats_approval: '99%',
         contact_email: 'support@nextstopvisa.com',
-        contact_phone: '+1 (555) 123-4567',
+        contact_phone: COMPANY_PHONE,
         contact_address: COMPANY_ADDRESS,
         copyright_text: '© 2026 NextStop Visa. All rights reserved.',
       });
       await settingsRepo.save(settings);
     }
 
-    // One-time cleanup so the old placeholder address stops showing up.
+    // One-time cleanup so the old placeholder contact details stop showing up.
+    let cleaned = false;
     if (settings.contact_address && LEGACY_UK_ADDRESS.test(settings.contact_address)) {
       settings.contact_address = COMPANY_ADDRESS;
+      cleaned = true;
+    }
+    if (settings.contact_phone && LEGACY_PLACEHOLDER_PHONE.test(settings.contact_phone)) {
+      settings.contact_phone = COMPANY_PHONE;
+      cleaned = true;
+    }
+    if (cleaned) {
       await settingsRepo.save(settings);
     }
 

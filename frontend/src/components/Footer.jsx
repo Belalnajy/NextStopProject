@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import {
   Mail,
+  Phone,
   MapPin,
   ExternalLink,
   ShieldAlert,
@@ -14,6 +15,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useSettings } from '../context/SettingsContext';
+import { COMPANY_EMAIL, COMPANY_PHONE, telHref } from '../config/company';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -184,9 +186,27 @@ const Footer = () => {
                     {t('footer.email_support')}
                   </p>
                   <a
-                    href={`mailto:${settings?.contact_email || 'support@nextstopvisa.com'}`}
+                    href={`mailto:${settings?.contact_email || COMPANY_EMAIL}`}
                     className="hover:text-accent transition-colors">
-                    {settings?.contact_email || 'support@nextstopvisa.com'}
+                    {settings?.contact_email || COMPANY_EMAIL}
+                  </a>
+                </div>
+              </motion.div>
+              <motion.div
+                className="flex gap-4 items-start text-gray-600 group cursor-pointer"
+                whileHover={{ x: 5 }}>
+                <div className="p-3 bg-linear-to-br from-slate-100 to-slate-50 rounded-xl text-primary group-hover:from-primary group-hover:to-primary-light group-hover:text-white transition-all">
+                  <Phone size={18} />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-primary mb-1">
+                    {t('footer.phone_support')}
+                  </p>
+                  <a
+                    href={telHref(settings?.contact_phone || COMPANY_PHONE)}
+                    dir="ltr"
+                    className="hover:text-accent transition-colors inline-block">
+                    {settings?.contact_phone || COMPANY_PHONE}
                   </a>
                 </div>
               </motion.div>

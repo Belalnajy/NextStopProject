@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
 import { useSettings } from '../context/SettingsContext';
+import { COMPANY_EMAIL, COMPANY_PHONE, telHref } from '../config/company';
 import { useTranslation } from 'react-i18next';
 
 export default function ContactPage() {
@@ -34,19 +35,16 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: t('contact.email_label'),
-      value: settings?.contact_email || 'support@nextstopvisa.com',
-      href: `mailto:${settings?.contact_email || 'support@nextstopvisa.com'}`,
+      value: settings?.contact_email || COMPANY_EMAIL,
+      href: `mailto:${settings?.contact_email || COMPANY_EMAIL}`,
     },
-    ...(settings?.contact_phone
-      ? [
-          {
-            icon: Phone,
-            label: t('contact.phone_label'),
-            value: settings.contact_phone,
-            href: `tel:${settings.contact_phone}`,
-          },
-        ]
-      : []),
+    {
+      icon: Phone,
+      label: t('contact.phone_label'),
+      value: settings?.contact_phone || COMPANY_PHONE,
+      href: telHref(settings?.contact_phone || COMPANY_PHONE),
+      ltr: true,
+    },
     {
       icon: MapPin,
       label: t('contact.address_label'),
@@ -100,7 +98,8 @@ export default function ContactPage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-slate-600 hover:text-accent transition-colors text-sm">
+                        dir={item.ltr ? 'ltr' : undefined}
+                        className="text-slate-600 hover:text-accent transition-colors text-sm inline-block">
                         {item.value}
                       </a>
                     ) : (
