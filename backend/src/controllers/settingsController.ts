@@ -5,9 +5,9 @@ import cloudinary from '../config/cloudinary';
 
 const settingsRepo = AppDataSource.getRepository(Settings);
 
-// Older installs were seeded with a placeholder UK office address.
-const LEGACY_UK_ADDRESS = /Premier Way|Premier Road|EC1A 1BB/i;
-const COMPANY_ADDRESS = 'Egypt';
+// Older installs were seeded with a placeholder UK office address (and later
+// with just "Egypt"). Clearing it lets the site show its translated address.
+const LEGACY_ADDRESS = /Premier Way|Premier Road|EC1A 1BB|^\s*Egypt\s*$/i;
 
 // Same story for the placeholder US phone number that shipped with the seed.
 const LEGACY_PLACEHOLDER_PHONE = /^\+1 \(555\)/;
@@ -35,7 +35,7 @@ export const getSettings = async (req: Request, res: Response) => {
         stats_approval: '99%',
         contact_email: 'support@nextstopvisa.com',
         contact_phone: COMPANY_PHONE,
-        contact_address: COMPANY_ADDRESS,
+        contact_address: '',
         copyright_text: '© 2026 NextStop Visa. All rights reserved.',
       });
       await settingsRepo.save(settings);
@@ -43,8 +43,8 @@ export const getSettings = async (req: Request, res: Response) => {
 
     // One-time cleanup so the old placeholder contact details stop showing up.
     let cleaned = false;
-    if (settings.contact_address && LEGACY_UK_ADDRESS.test(settings.contact_address)) {
-      settings.contact_address = COMPANY_ADDRESS;
+    if (settings.contact_address && LEGACY_ADDRESS.test(settings.contact_address)) {
+      settings.contact_address = '';
       cleaned = true;
     }
     if (settings.contact_phone && LEGACY_PLACEHOLDER_PHONE.test(settings.contact_phone)) {
