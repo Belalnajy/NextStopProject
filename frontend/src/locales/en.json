@@ -552,5 +552,16 @@
     "charged_in_eur": "Approximate price. You will be charged {{amount}} at checkout.",
     "show_all": "Show all currencies",
     "show_less": "Show less"
+  },
+  "demo_checkout": {
+    "banner_title": "Test mode",
+    "banner_text": "This is a demo checkout. No payment is taken and no card details are requested.",
+    "title": "Checkout",
+    "application_no": "Application number",
+    "complete": "Complete test payment",
+    "cancel": "Cancel",
+    "not_found": "We could not find this application. Please start a new application.",
+    "back_to_apply": "Back to the application",
+    "success_note": "This was a test payment. No money was charged."
   }
 }

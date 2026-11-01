@@ -10,6 +10,7 @@ import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import CookiePage from './pages/CookiePage';
 import RefundPage from './pages/RefundPage';
+import DemoCheckoutPage from './pages/DemoCheckoutPage';
 
 // Dashboard Imports
 import DashboardLayout from './components/dashboard/layout/DashboardLayout';
@@ -57,6 +58,7 @@ export default function App() {
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/cookie" element={<CookiePage />} />
               <Route path="/refund" element={<RefundPage />} />
+              <Route path="/checkout/demo" element={<DemoCheckoutPage />} />
               <Route path="/login" element={<LoginPage />} />
             </Route>
 

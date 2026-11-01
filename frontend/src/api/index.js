@@ -29,12 +29,14 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
+    // Only the admin dashboard needs a login. A 401 on a public page (e.g. a
+    // failed payment request) must never send visitors to the admin login.
+    if (
+      error.response?.status === 401 &&
+      window.location.pathname.startsWith('/admin')
+    ) {
       localStorage.removeItem('token');
-      // Only redirect if not already on login page to avoid loops
-      if (!window.location.pathname.includes('/login')) {
-        window.location.href = '/login';
-      }
+      window.location.href = '/login';
     }
     return Promise.reject(error);
   },

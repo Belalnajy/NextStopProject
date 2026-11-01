@@ -83,8 +83,10 @@ export const createCheckout = async (req: Request, res: Response) => {
 
     if (!response.ok) {
       const errorData = await response.json();
-      console.error('Lemon Squeezy checkout error:', errorData);
-      return res.status(response.status).json({
+      console.error('Lemon Squeezy checkout error:', response.status, errorData);
+      // Don't pass the provider's status through: a 401 from Lemon Squeezy
+      // (bad API key) would otherwise look like our own auth failing.
+      return res.status(502).json({
         message: 'Failed to create checkout',
         error: errorData,
       });

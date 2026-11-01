@@ -96,12 +96,12 @@ const Step6_Payment = ({ formData, prevStep, nextStep }) => {
 
       const applicationId = appResponse.data.application.id;
 
-      // Step 2: Create Lemon Squeezy checkout
-      const checkoutResponse = await api.post('/lemonsqueezy/checkout', {
+      // Step 2: Create a checkout with the active payment provider
+      const checkoutResponse = await api.post('/payments/checkout', {
         applicationId,
       });
 
-      // Step 3: Redirect to Lemon Squeezy checkout page
+      // Step 3: Redirect to the checkout page
       window.location.href = checkoutResponse.data.checkoutUrl;
     } catch (err) {
       console.error('Submission Error:', err);

@@ -19,6 +19,7 @@ const Step7_Success = () => {
   const [applicationNo, setApplicationNo] = useState('');
 
   const appId = searchParams.get('app');
+  const isDemoPayment = searchParams.get('mode') === 'demo';
 
   useEffect(() => {
     if (appId) {
@@ -130,6 +131,14 @@ const Step7_Success = () => {
         transition={{ delay: 0.4 }}>
         {t('form.step7.subtitle')}
       </motion.p>
+
+      {isDemoPayment && (
+        <p className="max-w-md mx-auto mb-8 p-3 rounded-xl border border-amber-200 bg-amber-50 text-amber-900 text-sm">
+          {t('demo_checkout.success_note', {
+            defaultValue: 'This was a test payment. No money was charged.',
+          })}
+        </p>
+      )}
 
       {/* Reference Box */}
       <motion.div

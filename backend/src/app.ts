@@ -11,6 +11,7 @@ import emailRoutes from './routes/emailRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
 import lemonsqueezyRoutes from './routes/lemonsqueezyRoutes';
 import currencyRoutes from './routes/currencyRoutes';
+import paymentRoutes from './routes/paymentRoutes';
 
 import compression from 'compression';
 import { apiLimiter, authLimiter } from './middlewares/rateLimiter';
@@ -69,6 +70,7 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/email', emailRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/lemonsqueezy', lemonsqueezyRoutes);
+app.use('/api/payments', paymentRoutes);
 
 // Debug Ping Route
 app.get('/api/ping', (req, res) => {
