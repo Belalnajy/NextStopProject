@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import PublicLayout from './components/PublicLayout';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
@@ -11,6 +11,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import CookiePage from './pages/CookiePage';
 import RefundPage from './pages/RefundPage';
 import DemoCheckoutPage from './pages/DemoCheckoutPage';
+import { ADMIN_LOGIN_PATH } from './config/admin';
 
 // Dashboard Imports
 import DashboardLayout from './components/dashboard/layout/DashboardLayout';
@@ -59,7 +60,8 @@ export default function App() {
               <Route path="/cookie" element={<CookiePage />} />
               <Route path="/refund" element={<RefundPage />} />
               <Route path="/checkout/demo" element={<DemoCheckoutPage />} />
-              <Route path="/login" element={<LoginPage />} />
+              <Route path={ADMIN_LOGIN_PATH} element={<LoginPage />} />
+              <Route path="/login" element={<Navigate to="/" replace />} />
             </Route>
 
             {/* Admin Dashboard Routes (Protected) */}

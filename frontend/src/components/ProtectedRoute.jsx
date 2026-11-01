@@ -2,7 +2,8 @@ import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-const ProtectedRoute = ({ redirectPath = '/login' }) => {
+// Visitors without a session go to the homepage, not to the admin login.
+const ProtectedRoute = ({ redirectPath = '/' }) => {
   const { user, isLoading } = useAuth();
 
   if (isLoading) {

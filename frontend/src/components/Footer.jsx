@@ -10,7 +10,6 @@ import {
   Instagram,
   Linkedin,
   ArrowUpRight,
-  Lock // Added Lock icon
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -253,24 +252,6 @@ const Footer = () => {
             <p className="text-sm text-gray-400 font-medium">
               {t('footer.copyright', { year: currentYear })}
             </p>
-            <div className="flex gap-6 items-center">
-              <Link
-                to="/admin"
-                className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-primary transition-colors font-bold uppercase tracking-wider group">
-                <Lock
-                  size={12}
-                  strokeWidth={2.5}
-                  className="group-hover:text-primary transition-colors"
-                />
-                {t('footer.admin')}
-              </Link>
-              <Link
-                to="/status"
-                className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors font-bold uppercase tracking-wider">
-                {t('footer.system_status')}
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              </Link>
-            </div>
           </div>
         </motion.div>
       </div>

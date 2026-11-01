@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { ADMIN_LOGIN_PATH } from '../config/admin';
 
 const defaultBaseURL = import.meta.env.PROD
   ? '/api'
@@ -36,7 +37,7 @@ api.interceptors.response.use(
       window.location.pathname.startsWith('/admin')
     ) {
       localStorage.removeItem('token');
-      window.location.href = '/login';
+      window.location.href = ADMIN_LOGIN_PATH;
     }
     return Promise.reject(error);
   },
